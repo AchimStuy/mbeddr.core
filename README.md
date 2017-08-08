@@ -1,10 +1,9 @@
-Mbeddr core
-===========
+Ergänzung von mbeddr um die Analyse zur Echtzeit-Schedulebarkeit
+================================================================
 
-To install: please, visit http://mbeddr.com for instructions!
+Einer der großen Vorteile von mbeddr gegenüber anderen integrierten Entwicklungsumgebungen sind die statischen und dynamischen Analysen. mbeddr bietet bereits eine Implementierung zum Scheduling verschiedener Tasks, der aber jene Analysen fehlen.
+Die Masterarbeit soll in einem ersten Schritt die zentralen Konzepte (z. B. Ereignisbehandlung und Ressourcen) verschiedener Echtzeit-Betriebssysteme vergleichen und mbeddrs Scheduling-Implementierung um diese erweitern. Im zweiten Schritt wird mbeddr um die für ein Scheduling notwendigen Konzepte erweitert, um die Echtzeitfähigkeit eines implementierten Systems zu untersuchen. Grundlage dafür ist die Bachelorarbeit von Jan-Philipp Jäger, deren Inhalt evaluiert und auf mbeddrs Komponenten-Ebene umgesetzt werden soll.
 
-mbeddr aims at creating a different way of developing embedded software systems. Instead of using archaic modeling tools and manually written C code, we use the open source [JetBrains MPS](http://jetbrains.com/mps) language workbench to create an integrated approach to embedded development, where C programming, DSLs, domain specific extensions to C, product line variability, requirements traceability and model checking are supported directly.
+This a private fork of the mbeddr-repository in order to have a repository for my master thesis.
 
-At this point we are well ahead in developing an implementation of C in MPS which can then be used as a basis for domain-specific extensions. The development progress can be see from our [blog page](http://mbeddr.com/blog/).
-
-For more details please visit http://mbeddr.com
+Allways refer to https://github.com/mbeddr/mbeddr.core
