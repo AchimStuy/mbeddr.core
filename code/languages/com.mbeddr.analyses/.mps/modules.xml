@@ -32,6 +32,7 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cpa/com.mbeddr.analyses.cpa.mpl" folder="cpa" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.fm.base/com.mbeddr.analyses.fm.base.mpl" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.lantest/com.mbeddr.analyses.lantest.mpl" folder="lantest" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.mast.model/com.mbeddr.analyses.mast.model.mpl" folder="mast" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.mast/com.mbeddr.analyses.mast.mpl" folder="mast" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c.patterns/com.mbeddr.analyses.spin.c.patterns.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c/com.mbeddr.analyses.spin.c.mpl" folder="spin" />
