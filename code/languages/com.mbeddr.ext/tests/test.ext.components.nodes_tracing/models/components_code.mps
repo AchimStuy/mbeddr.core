@@ -3,7 +3,7 @@
   <persistence version="9" />
   <languages>
     <use id="85e94e86-9fcb-43a2-9083-64c40006219e" name="com.mbeddr.mpsutil.nodes_tracing.test" version="0" />
-    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="1" />
+    <use id="8585453e-6bfb-4d80-98de-b16074f1d86c" name="jetbrains.mps.lang.test" version="2" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="24565007-e59f-42fc-ac10-da3836deec1c(com.mbeddr.components)" />
     <devkit ref="b1972fb0-9171-4e58-8cee-05866bb91ec2(de.itemis.mps.editor.diagram.devkit)" />
@@ -365,7 +365,7 @@
         <ref role="2EWCuU" node="6JVEnxIj0gY" resolve="LoggerImpl" />
         <node concept="1xGALR" id="73SKUHFbe_I" role="lGtFl">
           <node concept="1xFd8N" id="73SKUHFbeAM" role="1xGcb7">
-            <property role="1xFd8M" value="Main_wiring_logger_p_logger__ops.log = &amp;Main_LoggerImpl_p_logger_log;" />
+            <property role="1xFd8M" value="ComponentsTracingTest_wiring_logger_p_logger__ops.log = &amp;ComponentsTracingTest_LoggerImpl_p_logger_log;" />
           </node>
         </node>
       </node>
@@ -603,7 +603,7 @@
           </node>
           <node concept="1xGALR" id="73SKUHFbhUU" role="lGtFl">
             <node concept="1xFd8N" id="73SKUHFbtQS" role="1xGcb7">
-              <property role="1xFd8M" value="void  Main_MotorImpl_p_motor_move(int8_t speed, void *___id)" />
+              <property role="1xFd8M" value="void  ComponentsTracingTest_MotorImpl_p_motor_move(int8_t speed, void *___id)" />
             </node>
           </node>
         </node>
@@ -633,7 +633,7 @@
           </node>
           <node concept="1xGALR" id="3zlDaOXovDZ" role="lGtFl">
             <node concept="1xFd8N" id="3zlDaOXovEV" role="1xGcb7">
-              <property role="1xFd8M" value=" Main_LoggerImpl__cdata_t *___cid = ((Main_LoggerImpl__cdata_t *)(___id));" />
+              <property role="1xFd8M" value=" ComponentsTracingTest_LoggerImpl__cdata_t *___cid = ((ComponentsTracingTest_LoggerImpl__cdata_t *)(___id));" />
             </node>
           </node>
         </node>
