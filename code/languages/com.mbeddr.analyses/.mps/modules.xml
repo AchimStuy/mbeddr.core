@@ -32,8 +32,9 @@
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.cpa/com.mbeddr.analyses.cpa.mpl" folder="cpa" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.fm.base/com.mbeddr.analyses.fm.base.mpl" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.lantest/com.mbeddr.analyses.lantest.mpl" folder="lantest" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.mast.model/com.mbeddr.analyses.mast.model.mpl" folder="mast" />
-      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.mast/com.mbeddr.analyses.mast.mpl" folder="mast" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.schedulability.mast.model/com.mbeddr.analyses.schedulability.mast.model.mpl" folder="schedulability.mast" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.schedulability.mast/com.mbeddr.analyses.schedulability.mast.mpl" folder="schedulability.mast" />
+      <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.schedulability/com.mbeddr.analyses.schedulability.mpl" folder="schedulability" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c.patterns/com.mbeddr.analyses.spin.c.patterns.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.c/com.mbeddr.analyses.spin.c.mpl" folder="spin" />
       <modulePath path="$PROJECT_DIR$/languages/com.mbeddr.analyses.spin.promela.patterns/com.mbeddr.analyses.spin.promela.patterns.mpl" folder="spin" />
@@ -57,10 +58,11 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cpa.pluginSolution/com.mbeddr.analyses.cpa.pluginSolution.msd" folder="cpa" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.cpa.rt/com.mbeddr.analyses.cpa.rt.msd" folder="cpa" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.lantest.pluginSolution/com.mbeddr.analyses.lantest.pluginSolution.msd" folder="lantest" />
-      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.mast.pluginSolution/com.mbeddr.analyses.mast.pluginSolution.msd" folder="mast" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm.pluginSolution/com.mbeddr.analyses.sat4j.fm.pluginSolution.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j.fm/com.mbeddr.analyses.sat4j.fm.msd" folder="sat4j" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.sat4j/com.mbeddr.analyses.sat4j.msd" folder="sat4j" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.schedulability.mast.pluginSolution/com.mbeddr.analyses.schedulability.mast.pluginSolution.msd" folder="schedulability.mast" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.schedulability.pluginSolution/com.mbeddr.analyses.schedulability.pluginSolution.msd" folder="schedulability" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.documentation/com.mbeddr.analyses.spin.documentation.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.pluginSolution/com.mbeddr.analyses.spin.pluginSolution.msd" folder="spin" />
       <modulePath path="$PROJECT_DIR$/solutions/com.mbeddr.analyses.spin.rt/com.mbeddr.analyses.spin.rt.msd" folder="spin" />
