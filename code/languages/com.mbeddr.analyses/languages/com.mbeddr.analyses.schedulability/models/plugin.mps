@@ -12,55 +12,9 @@
   <imports>
     <import index="tpcq" ref="r:00000000-0000-4000-0000-011c89590286(jetbrains.mps.lang.core.plugin)" />
     <import index="vvvw" ref="r:b16ff46d-fa06-479d-9f5c-5b6e17e7f1b2(jetbrains.mps.make.facet.structure)" />
+    <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
+    <import index="yfjr" ref="r:a10d7171-7185-4cc9-901b-4c0282332c8d(com.mbeddr.analyses.schedulability.pluginSolution.plugin)" />
   </imports>
-  <registry>
-    <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
-      <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
-        <child id="1137022507850" name="body" index="2VODD2" />
-      </concept>
-      <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS" />
-    </language>
-    <language id="696c1165-4a59-463b-bc5d-902caab85dd0" name="jetbrains.mps.make.facet">
-      <concept id="6418371274763029565" name="jetbrains.mps.make.facet.structure.TargetDeclaration" flags="ng" index="15KeUm">
-        <child id="2360002718792633290" name="job" index="ElM8M" />
-        <child id="6418371274763146553" name="dependency" index="15LFui" />
-      </concept>
-      <concept id="6418371274763029523" name="jetbrains.mps.make.facet.structure.FacetDeclaration" flags="ng" index="15KeUS">
-        <child id="6418371274763146558" name="targetDeclaration" index="15LFul" />
-      </concept>
-      <concept id="6418371274763029600" name="jetbrains.mps.make.facet.structure.TargetDependency" flags="ng" index="15KeVb">
-        <reference id="6418371274763029603" name="dependsOn" index="15KeV8" />
-      </concept>
-    </language>
-    <language id="95f8a3e6-f994-4ca0-a65e-763c9bae2d3b" name="jetbrains.mps.make.script">
-      <concept id="505095865854384109" name="jetbrains.mps.make.script.structure.JobDeclaration" flags="ng" index="2aLE7I">
-        <child id="505095865854384110" name="job" index="2aLE7H" />
-      </concept>
-      <concept id="2360002718792625579" name="jetbrains.mps.make.script.structure.JobDefinition" flags="in" index="ElOhj" />
-    </language>
-    <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
-      </concept>
-      <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
-        <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-    </language>
-  </registry>
-  <node concept="15KeUS" id="eRF9c9PxXx">
-    <property role="3GE5qa" value="" />
-    <property role="TrG5h" value="GenerateSchedulabilityAnalysisInput" />
-    <node concept="15KeUm" id="eRF9c9Qo$9" role="15LFul">
-      <property role="TrG5h" value="configure" />
-      <node concept="15KeVb" id="eRF9c9Qsj5" role="15LFui">
-        <ref role="15KeV8" node="eRF9c9Qo$9" resolve="configure" />
-      </node>
-      <node concept="2aLE7I" id="eRF9c9Qo$a" role="ElM8M">
-        <node concept="ElOhj" id="eRF9c9Qo$b" role="2aLE7H">
-          <node concept="3clFbS" id="eRF9c9Qo$c" role="2VODD2" />
-        </node>
-      </node>
-    </node>
-  </node>
+  <registry />
 </model>
 

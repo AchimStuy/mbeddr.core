@@ -85,19 +85,12 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="71xd" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide.tools(MPS.Platform/)" implicit="true" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" implicit="true" />
-    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
     <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
     <import index="31cb" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.module(MPS.Core/)" implicit="true" />
+    <import index="tprs" ref="r:00000000-0000-4000-0000-011c895904a4(jetbrains.mps.ide.actions)" implicit="true" />
   </imports>
   <registry>
     <language id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples">
-      <concept id="1239360506533" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleDeclaration" flags="ng" index="2fD8I5">
-        <child id="1239529553065" name="component" index="2pHZQ9" />
-      </concept>
-      <concept id="1239462176079" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleComponentDeclaration" flags="ng" index="2lGYhJ">
-        <property id="1240400839614" name="final" index="3dDGau" />
-        <child id="1239462974287" name="type" index="2lK19J" />
-      </concept>
       <concept id="1239531918181" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleType" flags="in" index="2pR195" />
       <concept id="1239559992092" name="jetbrains.mps.baseLanguage.tuples.structure.NamedTupleLiteral" flags="nn" index="2ry78W">
         <reference id="1239560008022" name="tupleDeclaration" index="2ryb1Q" />
@@ -111,6 +104,9 @@
         <reference id="1239576542472" name="component" index="2sxfKC" />
       </concept>
     </language>
+    <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
+      <concept id="8974276187400029883" name="jetbrains.mps.lang.resources.structure.FileIcon" flags="ng" index="1QGGSu" />
+    </language>
     <language id="28f9e497-3b42-4291-aeba-0a1039153ab1" name="jetbrains.mps.lang.plugin">
       <concept id="1204908117386" name="jetbrains.mps.lang.plugin.structure.Separator" flags="ng" index="2a7GMi" />
       <concept id="1207145163717" name="jetbrains.mps.lang.plugin.structure.ElementListContents" flags="ng" index="ftmFs">
@@ -122,6 +118,7 @@
         <child id="1203083461638" name="executeFunction" index="tncku" />
         <child id="1205851242421" name="methodDeclaration" index="32lrUH" />
         <child id="1217413222820" name="parameter" index="1NuT2Z" />
+        <child id="8976425910813834639" name="icon" index="3Uehp1" />
       </concept>
       <concept id="1203071677434" name="jetbrains.mps.lang.plugin.structure.ToolDeclaration" flags="ng" index="sEfby">
         <child id="1214307129846" name="getComponentBlock" index="2Um5zG" />
@@ -130,9 +127,6 @@
       <concept id="1203087890642" name="jetbrains.mps.lang.plugin.structure.ActionGroupDeclaration" flags="ng" index="tC5Ba">
         <child id="1204991552650" name="modifier" index="2f5YQi" />
         <child id="1207145245948" name="contents" index="ftER_" />
-      </concept>
-      <concept id="1203088046679" name="jetbrains.mps.lang.plugin.structure.ActionInstance" flags="ng" index="tCFHf">
-        <reference id="1203088061055" name="action" index="tCJdB" />
       </concept>
       <concept id="1203092361741" name="jetbrains.mps.lang.plugin.structure.ModificationStatement" flags="lg" index="tT9cl">
         <reference id="1204992316090" name="point" index="2f8Tey" />
@@ -387,13 +381,7 @@
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
-      <concept id="1820634577908471810" name="jetbrains.mps.lang.generator.plan.structure.Transform" flags="ng" index="2VgMA2">
-        <child id="2944629966652439181" name="languages" index="1t_9vn" />
-      </concept>
       <concept id="6257322641293267918" name="jetbrains.mps.lang.generator.plan.structure.CheckpointDeclaration" flags="ng" index="19BiC4" />
-      <concept id="8296877263936070001" name="jetbrains.mps.lang.generator.plan.structure.ApplyGenerators" flags="ng" index="3uMcMo">
-        <child id="8296877263936660572" name="generator" index="3uOsAP" />
-      </concept>
     </language>
     <language id="c0080a47-7e37-4558-bee9-9ae18e690549" name="jetbrains.mps.lang.extension">
       <concept id="6626851894249711936" name="jetbrains.mps.lang.extension.structure.ExtensionPointExpression" flags="nn" index="2O5UvJ">
@@ -460,19 +448,8 @@
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
-      <concept id="427659576753752243" name="jetbrains.mps.lang.smodel.structure.ModulePointer" flags="ng" index="20RdaH">
-        <property id="427659576753753627" name="moduleId" index="20Rdg5" />
-        <property id="427659576753753625" name="moduleName" index="20Rdg7" />
-      </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="1143226024141" name="jetbrains.mps.lang.smodel.structure.SModelType" flags="in" index="H_c77" />
-      <concept id="3542851458883438784" name="jetbrains.mps.lang.smodel.structure.LanguageId" flags="ng" index="2V$Bhx">
-        <property id="3542851458883439831" name="namespace" index="2V$B1Q" />
-        <property id="3542851458883439832" name="languageId" index="2V$B1T" />
-      </concept>
-      <concept id="8296877263936075789" name="jetbrains.mps.lang.smodel.structure.GeneratorModulePointer" flags="ng" index="3uMdn$">
-        <child id="8296877263936075892" name="module" index="3uMdmt" />
-      </concept>
       <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
         <reference id="1219352800908" name="referentNode" index="3B5MYn" />
       </concept>
@@ -534,11 +511,6 @@
         <child id="1197683466920" name="keyType" index="3rvQeY" />
         <child id="1197683475734" name="valueType" index="3rvSg0" />
       </concept>
-      <concept id="1197686869805" name="jetbrains.mps.baseLanguage.collections.structure.HashMapCreator" flags="nn" index="3rGOSV">
-        <child id="1197687026896" name="keyType" index="3rHrn6" />
-        <child id="1197687035757" name="valueType" index="3rHtpV" />
-        <child id="1206655950512" name="initializer" index="3Mj9YC" />
-      </concept>
       <concept id="1165525191778" name="jetbrains.mps.baseLanguage.collections.structure.GetFirstOperation" flags="nn" index="1uHKPH" />
       <concept id="1165530316231" name="jetbrains.mps.baseLanguage.collections.structure.IsEmptyOperation" flags="nn" index="1v1jN8" />
       <concept id="1202120902084" name="jetbrains.mps.baseLanguage.collections.structure.WhereOperation" flags="nn" index="3zZkjj" />
@@ -548,13 +520,6 @@
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
       <concept id="1176501494711" name="jetbrains.mps.baseLanguage.collections.structure.IsNotEmptyOperation" flags="nn" index="3GX2aA" />
-      <concept id="1206655653991" name="jetbrains.mps.baseLanguage.collections.structure.MapInitializer" flags="ng" index="3Mi1_Z">
-        <child id="1206655902276" name="entries" index="3MiYds" />
-      </concept>
-      <concept id="1206655735055" name="jetbrains.mps.baseLanguage.collections.structure.MapEntry" flags="ng" index="3Milgn">
-        <child id="1206655844556" name="key" index="3MiK7k" />
-        <child id="1206655853135" name="value" index="3MiMdn" />
-      </concept>
     </language>
   </registry>
   <node concept="2DaZZR" id="3mI77GZpfhJ" />
@@ -917,28 +882,7 @@
         <ref role="ehGHo" to="5wll:66UaKxBOkro" resolve="ScheduleSpecification" />
       </node>
     </node>
-  </node>
-  <node concept="tC5Ba" id="3mI77GZprKh">
-    <property role="TrG5h" value="AnalyzeSchedulabilityGroup" />
-    <node concept="tT9cl" id="3mI77GZprKj" role="2f5YQi">
-      <ref role="tU$_T" to="tprs:3tSbrEIgTKR" resolve="Analyze" />
-    </node>
-    <node concept="tT9cl" id="3rNCeQoUavA" role="2f5YQi">
-      <ref role="tU$_T" to="d244:53G_t0FcvfX" resolve="mbeddrPlatformEditorPopupGroup" />
-      <ref role="2f8Tey" to="d244:39c7fuKwbnA" resolve="mbeddrPlatformEditorPopupAnalysisExtensions" />
-    </node>
-    <node concept="ftmFs" id="3mI77GZprL9" role="ftER_">
-      <node concept="2a7GMi" id="3mI77GZpur9" role="ftvYc" />
-      <node concept="tCFHf" id="2Ze$eewcwRt" role="ftvYc">
-        <ref role="tCJdB" node="2Ze$eewbWNy" resolve="MastAnalysisUsingGeneratorFacade" />
-      </node>
-      <node concept="tCFHf" id="3$_fRNkO2g6" role="ftvYc">
-        <ref role="tCJdB" node="5r194mcx$_u" resolve="MastAnalysisRebuildingFacet" />
-      </node>
-      <node concept="tCFHf" id="3$_fRNkMv$v" role="ftvYc">
-        <ref role="tCJdB" node="3$_fRNkKwA4" resolve="SetPlan" />
-      </node>
-    </node>
+    <node concept="1QGGSu" id="1smrqobzedl" role="3Uehp1" />
   </node>
   <node concept="312cEu" id="2QI0Dpv87lG">
     <property role="TrG5h" value="MastModel" />
@@ -2543,139 +2487,8 @@
     </node>
     <node concept="3Tm1VV" id="5G5BQcYVByb" role="1B3o_S" />
   </node>
-  <node concept="312cEu" id="2Ze$eewaE6A">
-    <property role="TrG5h" value="MastAnalysesUtils" />
-    <node concept="2tJIrI" id="2Ze$eewbvT$" role="jymVt" />
-    <node concept="2YIFZL" id="2Ze$eewaTkJ" role="jymVt">
-      <property role="TrG5h" value="performAnalysis" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3clFbS" id="2Ze$eewaTkM" role="3clF47">
-        <node concept="3cpWs8" id="5BA47MNiCjd" role="3cqZAp">
-          <node concept="3cpWsn" id="5BA47MNiCjg" role="3cpWs9">
-            <property role="TrG5h" value="parameters" />
-            <node concept="3rvAFt" id="5BA47MNiCj7" role="1tU5fm">
-              <node concept="17QB3L" id="5BA47MNiCuU" role="3rvQeY" />
-              <node concept="3uibUv" id="5BA47MNiCE2" role="3rvSg0">
-                <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-              </node>
-            </node>
-            <node concept="2ShNRf" id="5BA47MNiKfJ" role="33vP2m">
-              <node concept="3rGOSV" id="5BA47MNiKc3" role="2ShVmc">
-                <node concept="17QB3L" id="5BA47MNiKc4" role="3rHrn6" />
-                <node concept="3uibUv" id="5BA47MNiKc5" role="3rHtpV">
-                  <ref role="3uigEE" to="wyt6:~Object" resolve="Object" />
-                </node>
-                <node concept="3Mi1_Z" id="5BA47MNiSEW" role="3Mj9YC">
-                  <node concept="3Milgn" id="5BA47MNiSFP" role="3MiYds">
-                    <node concept="Xl_RD" id="5BA47MNiSJz" role="3MiK7k">
-                      <property role="Xl_RC" value="Foo" />
-                    </node>
-                    <node concept="Xl_RD" id="5BA47MNiSNL" role="3MiMdn">
-                      <property role="Xl_RC" value="Bar" />
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="5BA47MNiQAe" role="3cqZAp" />
-        <node concept="3cpWs8" id="3$_fRNkVx_V" role="3cqZAp">
-          <node concept="3cpWsn" id="3$_fRNkVx_W" role="3cpWs9">
-            <property role="TrG5h" value="make" />
-            <node concept="3uibUv" id="3$_fRNkVxMu" role="1tU5fm">
-              <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
-            </node>
-            <node concept="2YIFZM" id="3$_fRNkVxYp" role="33vP2m">
-              <ref role="1Pybhc" to="qh45:6SYIklyM6Mg" resolve="MakeUtils" />
-              <ref role="37wK5l" to="qh45:4FpLBMtUK3m" resolve="makeProject" />
-              <node concept="37vLTw" id="3$_fRNkVyaR" role="37wK5m">
-                <ref role="3cqZAo" node="2Ze$eewaTqJ" resolve="project" />
-              </node>
-              <node concept="37vLTw" id="3$_fRNkVyPN" role="37wK5m">
-                <ref role="3cqZAo" node="2Ze$eewaTri" resolve="model" />
-              </node>
-              <node concept="3clFbT" id="3$_fRNkVz9e" role="37wK5m">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbH" id="3$_fRNkVwW9" role="3cqZAp" />
-        <node concept="3clFbF" id="2H5doxugIEf" role="3cqZAp">
-          <node concept="2YIFZM" id="2H5doxugIMV" role="3clFbG">
-            <ref role="37wK5l" to="ood5:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
-            <ref role="1Pybhc" to="ood5:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
-            <node concept="37vLTw" id="2Ze$eewb2Wg" role="37wK5m">
-              <ref role="3cqZAo" node="2Ze$eewaTqJ" resolve="project" />
-            </node>
-            <node concept="2ShNRf" id="2Ze$eewboSK" role="37wK5m">
-              <node concept="1pGfFk" id="2Ze$eewbvMA" role="2ShVmc">
-                <ref role="37wK5l" node="2Ze$eewboeL" resolve="MastAnalyzerFactory" />
-                <node concept="37vLTw" id="2Ze$eewc7NT" role="37wK5m">
-                  <ref role="3cqZAo" node="2Ze$eewc7rx" resolve="tool" />
-                </node>
-              </node>
-            </node>
-            <node concept="37vLTw" id="3$_fRNkVzpB" role="37wK5m">
-              <ref role="3cqZAo" node="3$_fRNkVx_W" resolve="make" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="2Ze$eewaT9s" role="1B3o_S" />
-      <node concept="3cqZAl" id="2Ze$eewaTkC" role="3clF45" />
-      <node concept="37vLTG" id="2Ze$eewaTqJ" role="3clF46">
-        <property role="TrG5h" value="project" />
-        <node concept="3uibUv" id="2Ze$eewaTqI" role="1tU5fm">
-          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2Ze$eewaTri" role="3clF46">
-        <property role="TrG5h" value="model" />
-        <node concept="3uibUv" id="2Ze$eewaTwY" role="1tU5fm">
-          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="2Ze$eewc7rx" role="3clF46">
-        <property role="TrG5h" value="tool" />
-        <node concept="3uibUv" id="2Ze$eewc7Gd" role="1tU5fm">
-          <ref role="3uigEE" to="ood5:5A94f9EE$RB" resolve="MPSToolAdapter" />
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="4ujvS86ZpH" role="jymVt" />
-    <node concept="2fD8I5" id="4ujvS87aKV" role="jymVt">
-      <property role="TrG5h" value="GeneratorConfig" />
-      <node concept="2lGYhJ" id="4ujvS87aMt" role="2pHZQ9">
-        <property role="3dDGau" value="false" />
-        <property role="TrG5h" value="transientModelsProvider" />
-        <node concept="3uibUv" id="4ujvS87bCS" role="2lK19J">
-          <ref role="3uigEE" to="ap4t:~TransientModelsProvider" resolve="TransientModelsProvider" />
-        </node>
-      </node>
-      <node concept="2lGYhJ" id="4ujvS87bCW" role="2pHZQ9">
-        <property role="3dDGau" value="false" />
-        <property role="TrG5h" value="optionsBuilder" />
-        <node concept="3uibUv" id="4ujvS87bKT" role="2lK19J">
-          <ref role="3uigEE" to="ap4t:~GenerationOptions$OptionsBuilder" resolve="GenerationOptions.OptionsBuilder" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="4ujvS87aKW" role="1B3o_S" />
-    </node>
-    <node concept="3Tm1VV" id="2Ze$eewaE6B" role="1B3o_S" />
-    <node concept="3UR2Jj" id="2Ze$eewaRDm" role="lGtFl">
-      <node concept="TZ5HA" id="2Ze$eewaRDn" role="TZ5H$">
-        <node concept="1dT_AC" id="2Ze$eewaRDo" role="1dT_Ay">
-          <property role="1dT_AB" value="Facade for MAST analyses started from the UI." />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="312cEu" id="2Ze$eewblyo">
-    <property role="TrG5h" value="MastAnalyzerFactory" />
+    <property role="TrG5h" value="SchedulabilityAnalyzerFactory" />
     <node concept="2tJIrI" id="2Ze$eewbnZN" role="jymVt" />
     <node concept="312cEg" id="2Ze$eewbLtc" role="jymVt">
       <property role="34CwA1" value="false" />
@@ -2734,7 +2547,7 @@
         <node concept="3clFbF" id="2Ze$eewbKlj" role="3cqZAp">
           <node concept="2ShNRf" id="2Ze$eewbKlh" role="3clFbG">
             <node concept="1pGfFk" id="2Ze$eewbNkD" role="2ShVmc">
-              <ref role="37wK5l" node="2Ze$eewbF3C" resolve="MastAnalyzer" />
+              <ref role="37wK5l" node="2Ze$eewbF3C" resolve="SchedulabilityAnalyzer" />
               <node concept="37vLTw" id="2Ze$eewbNpc" role="37wK5m">
                 <ref role="3cqZAo" node="2Ze$eewbLtc" resolve="_tool" />
               </node>
@@ -2751,7 +2564,7 @@
     </node>
   </node>
   <node concept="312cEu" id="2Ze$eewbw1T">
-    <property role="TrG5h" value="MastAnalyzer" />
+    <property role="TrG5h" value="SchedulabilityAnalyzer" />
     <node concept="2tJIrI" id="2Ze$eewbEG_" role="jymVt" />
     <node concept="3clFbW" id="2Ze$eewbF3C" role="jymVt">
       <node concept="3cqZAl" id="2Ze$eewbF3E" role="3clF45" />
@@ -4756,17 +4569,6 @@
       <node concept="1oajcY" id="2Ze$eewc5AA" role="1oa70y" />
     </node>
   </node>
-  <node concept="2VgMpV" id="7CXgsvDLzrd">
-    <property role="TrG5h" value="GenerateMastModelPlan" />
-    <node concept="3uMcMo" id="7CXgsvDLzrf" role="2VgMA7">
-      <node concept="3uMdn$" id="22JeYi1y4wA" role="3uOsAP">
-        <node concept="20RdaH" id="22JeYi1y4wB" role="3uMdmt">
-          <property role="20Rdg5" value="79a93f34-0096-46bd-a0a1-c2ab0107d810" />
-          <property role="20Rdg7" value="com.mbeddr.analyses.mast#3868060445627970669" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="sE7Ow" id="7CXgsvDLZVs">
     <property role="TrG5h" value="MastAnalysisThroughAnalysesUtils" />
     <property role="2uzpH1" value="Mast Analysis through Mast AnalysesUtils" />
@@ -4803,7 +4605,7 @@
         <node concept="3clFbF" id="2Ze$eewbXOa" role="3cqZAp">
           <node concept="2YIFZM" id="2Ze$eewbXPc" role="3clFbG">
             <ref role="37wK5l" node="2Ze$eewaTkJ" resolve="performAnalysis" />
-            <ref role="1Pybhc" node="2Ze$eewaE6A" resolve="MastAnalysesUtils" />
+            <ref role="1Pybhc" node="2Ze$eewaE6A" resolve="SchedulabilityAnalysesUtils" />
             <node concept="2OqwBi" id="2Ze$eewc5PP" role="37wK5m">
               <node concept="2WthIp" id="2Ze$eewc5Bo" role="2Oq$k0" />
               <node concept="1DTwFV" id="2Ze$eewc6q6" role="2OqNvi">
@@ -4821,15 +4623,6 @@
             </node>
           </node>
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="2VgMpV" id="7CXgsvDNkRl">
-    <property role="TrG5h" value="TransformMastModelPlan" />
-    <node concept="2VgMA2" id="7CXgsvDNkRq" role="2VgMA7">
-      <node concept="2V$Bhx" id="7CXgsvDNkRw" role="1t_9vn">
-        <property role="2V$B1T" value="db7cb640-1f8e-4bb2-a7cb-e28a0ac9d2d4" />
-        <property role="2V$B1Q" value="com.mbeddr.analyses.mast.model" />
       </node>
     </node>
   </node>
@@ -9563,7 +9356,7 @@
         <node concept="3clFbH" id="3$_fRNkVo07" role="3cqZAp" />
         <node concept="3clFbF" id="3$_fRNkVn_l" role="3cqZAp">
           <node concept="2YIFZM" id="3$_fRNkVn_m" role="3clFbG">
-            <ref role="1Pybhc" node="2Ze$eewaE6A" resolve="MastAnalysesUtils" />
+            <ref role="1Pybhc" node="2Ze$eewaE6A" resolve="SchedulabilityAnalysesUtils" />
             <ref role="37wK5l" node="2Ze$eewaTkJ" resolve="performAnalysis" />
             <node concept="2OqwBi" id="3$_fRNkVn_n" role="37wK5m">
               <node concept="2WthIp" id="3$_fRNkVn_o" role="2Oq$k0" />
@@ -10284,6 +10077,254 @@
       <node concept="TZ5HA" id="3$_fRNkR6z2" role="TZ5H$">
         <node concept="1dT_AC" id="3$_fRNkR6z3" role="1dT_Ay">
           <property role="1dT_AB" value="to generate the Schedulability Analysis Model." />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="tC5Ba" id="1smrqobw$GF">
+    <property role="TrG5h" value="AnalyzeSchedulabilityGroup" />
+    <property role="3GE5qa" value="" />
+    <node concept="tT9cl" id="1smrqobw$GG" role="2f5YQi">
+      <ref role="tU$_T" to="tprs:3tSbrEIgTKR" resolve="Analyze" />
+    </node>
+    <node concept="tT9cl" id="1smrqobw$GH" role="2f5YQi">
+      <ref role="2f8Tey" to="d244:39c7fuKwbnA" resolve="mbeddrPlatformEditorPopupAnalysisExtensions" />
+      <ref role="tU$_T" to="d244:53G_t0FcvfX" resolve="mbeddrPlatformEditorPopupGroup" />
+    </node>
+    <node concept="ftmFs" id="1smrqobw$GI" role="ftER_">
+      <node concept="2a7GMi" id="1smrqobw$GJ" role="ftvYc" />
+    </node>
+  </node>
+  <node concept="312cEu" id="1smrqobxzDr">
+    <property role="3GE5qa" value="" />
+    <property role="TrG5h" value="SchedulabiltiyMakeUtils" />
+    <node concept="2YIFZL" id="4FpLBMtUK3m" role="jymVt">
+      <property role="TrG5h" value="makeProject" />
+      <node concept="3uibUv" id="4FpLBMtUK3n" role="3clF45">
+        <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
+        <node concept="3uibUv" id="6nns7dDd3iJ" role="11_B2D">
+          <ref role="3uigEE" to="i9so:17I1R__cQ5X" resolve="IResult" />
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4FpLBMtUK3o" role="1B3o_S" />
+      <node concept="3clFbS" id="4FpLBMtUK3p" role="3clF47" />
+      <node concept="37vLTG" id="7uk5GW4LVxx" role="3clF46">
+        <property role="TrG5h" value="proj" />
+        <property role="3TUv4t" value="true" />
+        <node concept="3uibUv" id="7uk5GW4LVxy" role="1tU5fm">
+          <ref role="3uigEE" to="z1c4:~Project" resolve="Project" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4FpLBMtUK3B" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="4FpLBMtUK3C" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4FpLBMtUKXN" role="3clF46">
+        <property role="TrG5h" value="shouldRebuild" />
+        <node concept="10P_77" id="4FpLBMtUL0s" role="1tU5fm" />
+      </node>
+      <node concept="37vLTG" id="1smrqobxEEE" role="3clF46">
+        <property role="TrG5h" value="plan" />
+        <node concept="3Tqbb2" id="1smrqobxEU0" role="1tU5fm">
+          <ref role="ehGHo" to="bjdw:1_4co2y1LvV" resolve="Plan" />
+        </node>
+      </node>
+      <node concept="NWlO9" id="4FpLBMtUK3D" role="lGtFl">
+        <property role="NWlVz" value="Returns a future that makes the project. If we run from tests then we should not rebuild." />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1smrqobx$zz" role="jymVt" />
+    <node concept="3Tm1VV" id="1smrqobxzDs" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="2Ze$eewaE6A">
+    <property role="TrG5h" value="SchedulabilityAnalysesUtils" />
+    <node concept="2tJIrI" id="2Ze$eewbvT$" role="jymVt" />
+    <node concept="Wx3nA" id="1smrqobyhoq" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="lastProj" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1smrqobyhaj" role="1B3o_S" />
+      <node concept="3uibUv" id="1smrqobyhoe" role="1tU5fm">
+        <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+      </node>
+      <node concept="z59LJ" id="1smrqobyjY1" role="lGtFl">
+        <node concept="TZ5HA" id="1smrqobyjY2" role="TZ5H$">
+          <node concept="1dT_AC" id="1smrqobyjY3" role="1dT_Ay">
+            <property role="1dT_AB" value="Last project of the run analysis." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1smrqobyhpG" role="jymVt" />
+    <node concept="Wx3nA" id="1smrqobyhQf" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="lastModel" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1smrqobyhyf" role="1B3o_S" />
+      <node concept="3uibUv" id="1smrqobyhQ1" role="1tU5fm">
+        <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+      </node>
+      <node concept="z59LJ" id="1smrqobyjYq" role="lGtFl">
+        <node concept="TZ5HA" id="1smrqobyjYr" role="TZ5H$">
+          <node concept="1dT_AC" id="1smrqobyjYs" role="1dT_Ay">
+            <property role="1dT_AB" value="Last model of the run analysis." />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1smrqobyh38" role="jymVt" />
+    <node concept="Wx3nA" id="1smrqobyXWb" role="jymVt">
+      <property role="2dlcS1" value="false" />
+      <property role="2dld4O" value="false" />
+      <property role="TrG5h" value="lastGenerationPlan" />
+      <property role="3TUv4t" value="false" />
+      <node concept="3Tm6S6" id="1smrqobyXBh" role="1B3o_S" />
+      <node concept="3Tqbb2" id="1smrqobyXVU" role="1tU5fm">
+        <ref role="ehGHo" to="bjdw:1_4co2y1LvV" resolve="Plan" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1smrqobyXuP" role="jymVt" />
+    <node concept="2YIFZL" id="2Ze$eewaTkJ" role="jymVt">
+      <property role="TrG5h" value="performAnalysis" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="2Ze$eewaTkM" role="3clF47">
+        <node concept="3clFbF" id="1smrqobyktG" role="3cqZAp">
+          <node concept="37vLTI" id="1smrqobyl6W" role="3clFbG">
+            <node concept="37vLTw" id="1smrqobylg_" role="37vLTx">
+              <ref role="3cqZAo" node="2Ze$eewaTqJ" resolve="project" />
+            </node>
+            <node concept="37vLTw" id="1smrqobyktE" role="37vLTJ">
+              <ref role="3cqZAo" node="1smrqobyhoq" resolve="lastProj" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1smrqobylyV" role="3cqZAp">
+          <node concept="37vLTI" id="1smrqobylOw" role="3clFbG">
+            <node concept="37vLTw" id="1smrqobym3w" role="37vLTx">
+              <ref role="3cqZAo" node="2Ze$eewaTri" resolve="model" />
+            </node>
+            <node concept="37vLTw" id="1smrqobylyT" role="37vLTJ">
+              <ref role="3cqZAo" node="1smrqobyhQf" resolve="lastModel" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="1smrqobyZw5" role="3cqZAp">
+          <node concept="37vLTI" id="1smrqobyZO7" role="3clFbG">
+            <node concept="37vLTw" id="1smrqobz03l" role="37vLTx">
+              <ref role="3cqZAo" node="1smrqobxZ2P" resolve="generationPlan" />
+            </node>
+            <node concept="37vLTw" id="1smrqobyZw3" role="37vLTJ">
+              <ref role="3cqZAo" node="1smrqobyXWb" resolve="lastGenerationPlan" />
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbH" id="1smrqobykbU" role="3cqZAp" />
+        <node concept="3cpWs8" id="3$_fRNkVx_V" role="3cqZAp">
+          <node concept="3cpWsn" id="3$_fRNkVx_W" role="3cpWs9">
+            <property role="TrG5h" value="make" />
+            <node concept="3uibUv" id="3$_fRNkVxMu" role="1tU5fm">
+              <ref role="3uigEE" to="5zyv:~Future" resolve="Future" />
+            </node>
+            <node concept="2YIFZM" id="3$_fRNkVxYp" role="33vP2m">
+              <ref role="1Pybhc" node="1smrqobxzDr" resolve="SchedulabiltiyMakeUtils" />
+              <ref role="37wK5l" node="4FpLBMtUK3m" resolve="makeProject" />
+              <node concept="37vLTw" id="3$_fRNkVyaR" role="37wK5m">
+                <ref role="3cqZAo" node="2Ze$eewaTqJ" resolve="project" />
+              </node>
+              <node concept="37vLTw" id="3$_fRNkVyPN" role="37wK5m">
+                <ref role="3cqZAo" node="2Ze$eewaTri" resolve="model" />
+              </node>
+              <node concept="3clFbT" id="3$_fRNkVz9e" role="37wK5m">
+                <property role="3clFbU" value="true" />
+              </node>
+              <node concept="37vLTw" id="1smrqobxZMF" role="37wK5m">
+                <ref role="3cqZAo" node="1smrqobxZ2P" resolve="generationPlan" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="2H5doxugIEf" role="3cqZAp">
+          <node concept="2YIFZM" id="2H5doxugIMV" role="3clFbG">
+            <ref role="37wK5l" to="ood5:505H3_WY3P2" resolve="doMakeAndRunAnalysis" />
+            <ref role="1Pybhc" to="ood5:505H3_WY3P0" resolve="AnalyzerMPSRunner" />
+            <node concept="37vLTw" id="2Ze$eewb2Wg" role="37wK5m">
+              <ref role="3cqZAo" node="2Ze$eewaTqJ" resolve="project" />
+            </node>
+            <node concept="2ShNRf" id="2Ze$eewboSK" role="37wK5m">
+              <node concept="1pGfFk" id="2Ze$eewbvMA" role="2ShVmc">
+                <ref role="37wK5l" node="2Ze$eewboeL" resolve="SchedulabilityAnalyzerFactory" />
+                <node concept="37vLTw" id="2Ze$eewc7NT" role="37wK5m">
+                  <ref role="3cqZAo" node="2Ze$eewc7rx" resolve="tool" />
+                </node>
+              </node>
+            </node>
+            <node concept="37vLTw" id="3$_fRNkVzpB" role="37wK5m">
+              <ref role="3cqZAo" node="3$_fRNkVx_W" resolve="make" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="2Ze$eewaT9s" role="1B3o_S" />
+      <node concept="3cqZAl" id="2Ze$eewaTkC" role="3clF45" />
+      <node concept="37vLTG" id="2Ze$eewaTqJ" role="3clF46">
+        <property role="TrG5h" value="project" />
+        <node concept="3uibUv" id="2Ze$eewaTqI" role="1tU5fm">
+          <ref role="3uigEE" to="z1c3:~MPSProject" resolve="MPSProject" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="2Ze$eewaTri" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="2Ze$eewaTwY" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="1smrqobxZ2P" role="3clF46">
+        <property role="TrG5h" value="generationPlan" />
+        <node concept="3Tqbb2" id="1smrqobxZn8" role="1tU5fm">
+          <ref role="ehGHo" to="bjdw:1_4co2y1LvV" resolve="Plan" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="1smrqobymR0" role="jymVt" />
+    <node concept="2YIFZL" id="1smrqobynsX" role="jymVt">
+      <property role="TrG5h" value="rerunLastAnalysis" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3clFbS" id="1smrqobynt0" role="3clF47">
+        <node concept="3clFbF" id="1smrqobyYln" role="3cqZAp">
+          <node concept="1rXfSq" id="1smrqobyYlm" role="3clFbG">
+            <ref role="37wK5l" node="2Ze$eewaTkJ" resolve="performAnalysis" />
+            <node concept="37vLTw" id="1smrqobyYsH" role="37wK5m">
+              <ref role="3cqZAo" node="1smrqobyhoq" resolve="lastProj" />
+            </node>
+            <node concept="37vLTw" id="1smrqobyYDN" role="37wK5m">
+              <ref role="3cqZAo" node="1smrqobyhQf" resolve="lastModel" />
+            </node>
+            <node concept="37vLTw" id="1smrqobyYYU" role="37wK5m">
+              <ref role="3cqZAo" node="1smrqobyXWb" resolve="lastGenerationPlan" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="1smrqobyneu" role="1B3o_S" />
+      <node concept="3cqZAl" id="1smrqobynsN" role="3clF45" />
+      <node concept="3uibUv" id="1smrqobyXr2" role="Sfmx6">
+        <ref role="3uigEE" to="wyt6:~RuntimeException" resolve="RuntimeException" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4ujvS86ZpH" role="jymVt" />
+    <node concept="3Tm1VV" id="2Ze$eewaE6B" role="1B3o_S" />
+    <node concept="3UR2Jj" id="2Ze$eewaRDm" role="lGtFl">
+      <node concept="TZ5HA" id="2Ze$eewaRDn" role="TZ5H$">
+        <node concept="1dT_AC" id="2Ze$eewaRDo" role="1dT_Ay">
+          <property role="1dT_AB" value="Facade for Schedulability analyses started from the UI." />
         </node>
       </node>
     </node>
