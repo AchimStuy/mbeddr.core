@@ -102,7 +102,6 @@
       </concept>
       <concept id="1217970068025" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_ShowInfoMessage" flags="nn" index="2kF5Gy" />
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
-      <concept id="1217369610610" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetTemplateNode" flags="nn" index="1KSxxD" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -158,7 +157,14 @@
       </concept>
     </language>
     <language id="758b51c6-9c80-4abd-8309-d3b51619c9be" name="com.mbeddr.analyses.schedulability.mast">
-      <concept id="8761444038913435464" name="com.mbeddr.analyses.schedulability.mast.structure.MastModel" flags="ng" index="2jsc6A" />
+      <concept id="8761444038913435464" name="com.mbeddr.analyses.schedulability.mast.structure.MastModel" flags="ng" index="2jsc6A">
+        <child id="7904611458378071211" name="date" index="3tEqUm" />
+      </concept>
+      <concept id="7904611458378141336" name="com.mbeddr.analyses.schedulability.mast.structure.Date" flags="ng" index="3tF_M_">
+        <property id="7904611458378148499" name="day" index="3tFByI" />
+        <property id="7904611458378148494" name="month" index="3tFByN" />
+        <property id="7904611458378148491" name="year" index="3tFByQ" />
+      </concept>
     </language>
   </registry>
   <node concept="bUwia" id="3Z0HnMe6ndc">
@@ -194,6 +200,11 @@
           </node>
         </node>
       </node>
+    </node>
+    <node concept="3tF_M_" id="6QMOzQK884U" role="3tEqUm">
+      <property role="3tFByQ" value="2017" />
+      <property role="3tFByN" value="10" />
+      <property role="3tFByI" value="10" />
     </node>
   </node>
   <node concept="1pmfR0" id="7fBF14d6M6o">
@@ -259,13 +270,6 @@
                     <ref role="2Gs0qQ" node="7fBF14d754l" resolve="scheduleSpec" />
                   </node>
                 </node>
-              </node>
-            </node>
-            <node concept="3clFbH" id="7fBF14d76Ph" role="3cqZAp" />
-            <node concept="3clFbF" id="7fBF14d7q2v" role="3cqZAp">
-              <node concept="2OqwBi" id="7fBF14d7qmX" role="3clFbG">
-                <node concept="1iwH7S" id="7fBF14d7q2t" role="2Oq$k0" />
-                <node concept="1KSxxD" id="7fBF14d7qPE" role="2OqNvi" />
               </node>
             </node>
             <node concept="3clFbH" id="7fBF14d7pOu" role="3cqZAp" />
