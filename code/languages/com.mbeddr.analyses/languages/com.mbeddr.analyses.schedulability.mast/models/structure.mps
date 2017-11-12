@@ -9,6 +9,7 @@
   <imports>
     <import index="ric" ref="r:e5a76249-cb8e-4819-94c4-41ac88316cb8(com.mbeddr.mpsutil.datepicker.structure)" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
     <language id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources">
@@ -22,6 +23,8 @@
       </concept>
       <concept id="1169125787135" name="jetbrains.mps.lang.structure.structure.AbstractConceptDeclaration" flags="ig" index="PkWjJ">
         <property id="6714410169261853888" name="conceptId" index="EcuMT" />
+        <property id="4628067390765956807" name="final" index="R5$K2" />
+        <property id="4628067390765956802" name="abstract" index="R5$K7" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
         <child id="1071489727084" name="propertyDeclaration" index="1TKVEl" />
       </concept>
@@ -62,6 +65,9 @@
   <node concept="PlHQZ" id="59ngc0aNxyp">
     <property role="EcuMT" value="5933282227643095193" />
     <property role="TrG5h" value="IMastModelContent" />
+    <node concept="PrWs8" id="6QMOzQK8pfw" role="PrDN$">
+      <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7AmTIVETyt8">
     <property role="EcuMT" value="8761444038913435464" />
@@ -122,6 +128,160 @@
       <node concept="t5JxF" id="6QMOzQK7zQr" role="lGtFl">
         <property role="t5JxN" value="day of month" />
       </node>
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8pfv">
+    <property role="EcuMT" value="7904611458378470367" />
+    <property role="3GE5qa" value="ProcessingResources" />
+    <property role="TrG5h" value="RegularProcessor" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6QMOzQK8AVB" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378526439" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="WorstIsrSwitch" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8AVN" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378526451" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="AvgIsrSwitch" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8AVS" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378526456" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="BestIsrSwitch" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8qI2" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378476418" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="MaxInterruptPriority" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6QMOzQK8pfG" resolve="Priority" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8qI4" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378476420" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="MinInterruptPriority" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6QMOzQK8pfG" resolve="Priority" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8LNz" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378570979" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="SystemTimer" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8AVY" resolve="SystemTimer" />
+    </node>
+    <node concept="PrWs8" id="6QMOzQK8pf_" role="PzmwI">
+      <ref role="PrY4T" node="6QMOzQK8pfy" resolve="IProcessingResource" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6QMOzQK8pfy">
+    <property role="EcuMT" value="7904611458378470370" />
+    <property role="3GE5qa" value="ProcessingResources" />
+    <property role="TrG5h" value="IProcessingResource" />
+    <node concept="1TJgyi" id="6QMOzQK8pfB" role="1TKVEl">
+      <property role="IQ2nx" value="7904611458378470375" />
+      <property role="TrG5h" value="SpeedFactor" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+      <node concept="t5JxF" id="6QMOzQK8pfE" role="lGtFl">
+        <property role="t5JxN" value="All execution times will be expressed in normalized units. The real execution time is obtained by dividing the normalized execution time by the speed factor. The default value is 1.0." />
+      </node>
+    </node>
+    <node concept="PrWs8" id="6QMOzQK8pfz" role="PrDN$">
+      <ref role="PrY4T" node="59ngc0aNxyp" resolve="IMastModelContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8pfG">
+    <property role="EcuMT" value="7904611458378470380" />
+    <property role="3GE5qa" value="SimpleTypes" />
+    <property role="TrG5h" value="Priority" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6QMOzQK8pfH" role="1TKVEl">
+      <property role="IQ2nx" value="7904611458378470381" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8ATL">
+    <property role="EcuMT" value="7904611458378526321" />
+    <property role="3GE5qa" value="SimpleTypes" />
+    <property role="TrG5h" value="NormalizedExecutionTime" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6QMOzQK8ATU" role="1TKVEl">
+      <property role="IQ2nx" value="7904611458378526330" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+    </node>
+    <node concept="t5JxF" id="6QMOzQK8ATW" role="lGtFl">
+      <property role="t5JxN" value="Floating point number that represents the amount of processing resource capacity that is required for the execution of an operation. It is expressed as the execution time of an operation, when it is executed by a normalized processing resource of speed factor equal to one. It is obtained by multiplying the real execution time by the processing resource’s speed factor." />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8AVY">
+    <property role="EcuMT" value="7904611458378526462" />
+    <property role="3GE5qa" value="SystemTimers" />
+    <property role="TrG5h" value="SystemTimer" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6QMOzQK8OY6" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378583942" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="WorstOverhead" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8OY8" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378583944" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="AvgOverhead" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+    <node concept="1TJgyj" id="6QMOzQK8OYb" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378583947" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="BestOverhead" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8OYf">
+    <property role="EcuMT" value="7904611458378583951" />
+    <property role="3GE5qa" value="SystemTimers" />
+    <property role="TrG5h" value="AlarmClock" />
+    <ref role="1TJDcQ" node="6QMOzQK8AVY" resolve="SystemTimer" />
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8OYg">
+    <property role="EcuMT" value="7904611458378583952" />
+    <property role="3GE5qa" value="SystemTimers" />
+    <property role="TrG5h" value="Ticker" />
+    <ref role="1TJDcQ" node="6QMOzQK8AVY" resolve="SystemTimer" />
+    <node concept="1TJgyj" id="6QMOzQK8OYh" role="1TKVEi">
+      <property role="IQ2ns" value="7904611458378583953" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="Period" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6QMOzQK8OYj">
+    <property role="EcuMT" value="7904611458378583955" />
+    <property role="3GE5qa" value="SimpleTypes" />
+    <property role="TrG5h" value="Time" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyi" id="6QMOzQK8OYk" role="1TKVEl">
+      <property role="IQ2nx" value="7904611458378583956" />
+      <property role="TrG5h" value="value" />
+      <ref role="AX2Wp" to="tpee:4_5hYVHKxAU" resolve="_FloatNumberValue" />
+    </node>
+    <node concept="t5JxF" id="6QMOzQK8OYm" role="lGtFl">
+      <property role="t5JxN" value="Floating point number that represents a time interval in unspecified time units." />
     </node>
   </node>
 </model>

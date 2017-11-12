@@ -38,6 +38,9 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
+        <property id="1070475926801" name="value" index="Xl_RC" />
+      </concept>
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -292,6 +295,34 @@
           </node>
         </node>
       </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6QMOzQK8qIb">
+    <property role="3GE5qa" value="ProcessingResources" />
+    <ref role="13h7C2" to="1a4w:6QMOzQK8pfy" resolve="IProcessingResource" />
+    <node concept="13hLZK" id="6QMOzQK8qIc" role="13h7CW">
+      <node concept="3clFbS" id="6QMOzQK8qId" role="2VODD2">
+        <node concept="3clFbF" id="6QMOzQK8_Bm" role="3cqZAp">
+          <node concept="37vLTI" id="6QMOzQK8AJh" role="3clFbG">
+            <node concept="Xl_RD" id="6QMOzQK8AJz" role="37vLTx">
+              <property role="Xl_RC" value="1.0" />
+            </node>
+            <node concept="2OqwBi" id="6QMOzQK8_Ka" role="37vLTJ">
+              <node concept="13iPFW" id="6QMOzQK8_Bl" role="2Oq$k0" />
+              <node concept="3TrcHB" id="6QMOzQK8AaT" role="2OqNvi">
+                <ref role="3TsBF5" to="1a4w:6QMOzQK8pfB" resolve="SpeedFactor" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="6QMOzQK8ATY">
+    <property role="3GE5qa" value="SimpleTypes" />
+    <ref role="13h7C2" to="1a4w:6QMOzQK8pfG" resolve="Priority" />
+    <node concept="13hLZK" id="6QMOzQK8ATZ" role="13h7CW">
+      <node concept="3clFbS" id="6QMOzQK8AU0" role="2VODD2" />
     </node>
   </node>
 </model>

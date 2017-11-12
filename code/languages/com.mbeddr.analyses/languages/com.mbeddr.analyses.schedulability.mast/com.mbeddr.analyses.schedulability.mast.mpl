@@ -16,7 +16,6 @@
       <external-templates />
       <dependencies>
         <dependency reexport="false">2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)</dependency>
-        <dependency reexport="false">db7cb640-1f8e-4bb2-a7cb-e28a0ac9d2d4(com.mbeddr.analyses.schedulability.mast.model)</dependency>
         <dependency reexport="false">b879012d-402b-40e0-8df7-e6fa93b9b711(com.mbeddr.ext.concurrency)</dependency>
       </dependencies>
       <languageVersions>

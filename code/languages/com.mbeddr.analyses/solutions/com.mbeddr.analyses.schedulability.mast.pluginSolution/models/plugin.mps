@@ -11,6 +11,7 @@
     <use id="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00" name="jetbrains.mps.lang.generator.plan" version="1" />
     <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="2" />
     <use id="ef7bf5ac-d06c-4342-b11d-e42104eb9343" name="jetbrains.mps.lang.plugin.standalone" version="0" />
+    <use id="63e0e566-5131-447e-90e3-12ea330e1a00" name="com.mbeddr.mpsutil.blutil" version="1" />
   </languages>
   <imports>
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
@@ -29,6 +30,8 @@
     <import index="dqnv" ref="r:eb55a79e-712e-453c-8ff8-d50d0340bc94(com.mbeddr.mpsutil.toolrunner)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
+    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
+    <import index="btm1" ref="b0f8641f-bd77-4421-8425-30d9088a82f7/java:org.apache.commons.lang3(org.apache.commons/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -989,7 +992,7 @@
                 <node concept="37vLTw" id="6QnDh7FRLlt" role="2Oq$k0">
                   <ref role="3cqZAo" node="6QnDh7FRLmh" resolve="fileToAnalyse" />
                 </node>
-                <node concept="liA8E" id="7fBF14d9Eh7" role="2OqNvi">
+                <node concept="liA8E" id="6QMOzQKdsC5" role="2OqNvi">
                   <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
                 </node>
               </node>
@@ -1002,17 +1005,17 @@
               <ref role="3cqZAo" node="6QnDh7FRLlh" resolve="files" />
             </node>
             <node concept="TSZUe" id="3ChLhEGIc5I" role="2OqNvi">
-              <node concept="3cpWs3" id="3ChLhEGIdMN" role="25WWJ7">
-                <node concept="Xl_RD" id="3ChLhEGIdPo" role="3uHU7w">
-                  <property role="Xl_RC" value="_output.txt" />
-                </node>
-                <node concept="2OqwBi" id="3ChLhEGIcDv" role="3uHU7B">
-                  <node concept="37vLTw" id="3ChLhEGIcwB" role="2Oq$k0">
+              <node concept="3cpWs3" id="6QMOzQKdsMH" role="25WWJ7">
+                <node concept="2OqwBi" id="6QMOzQKdteX" role="3uHU7B">
+                  <node concept="37vLTw" id="6QMOzQKdsXn" role="2Oq$k0">
                     <ref role="3cqZAo" node="6QnDh7FRLmh" resolve="fileToAnalyse" />
                   </node>
-                  <node concept="liA8E" id="3ChLhEGId2l" role="2OqNvi">
+                  <node concept="liA8E" id="6QMOzQKdtzT" role="2OqNvi">
                     <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
                   </node>
+                </node>
+                <node concept="Xl_RD" id="3ChLhEGIdPo" role="3uHU7w">
+                  <property role="Xl_RC" value=".output.txt" />
                 </node>
               </node>
             </node>
@@ -1043,12 +1046,12 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbH" id="6QnDh7FRMqo" role="3cqZAp" />
+        <node concept="3clFbH" id="6QMOzQKadSu" role="3cqZAp" />
         <node concept="3cpWs6" id="6QnDh7FRPzC" role="3cqZAp">
           <node concept="2OqwBi" id="6QnDh7FRQtR" role="3cqZAk">
             <node concept="Xjq3P" id="6QnDh7FRQ78" role="2Oq$k0" />
             <node concept="liA8E" id="6QnDh7FRLm6" role="2OqNvi">
-              <ref role="37wK5l" to="dqnv:6iM0fX1NeWv" resolve="runTool" />
+              <ref role="37wK5l" to="yfjr:6iM0fX1NeWv" resolve="runTool" />
               <node concept="2ShNRf" id="6QnDh7FRLm7" role="37wK5m">
                 <node concept="kMnCb" id="6QnDh7FRLm8" role="2ShVmc">
                   <node concept="17QB3L" id="6QnDh7FRLm9" role="kMuH3" />
@@ -1069,6 +1072,9 @@
               <node concept="37vLTw" id="6QnDh7FRLmf" role="37wK5m">
                 <ref role="3cqZAo" node="6QnDh7FRLlN" resolve="args" />
               </node>
+              <node concept="37vLTw" id="6QMOzQKlVR5" role="37wK5m">
+                <ref role="3cqZAo" node="6QMOzQKlqqr" resolve="mh" />
+              </node>
             </node>
           </node>
         </node>
@@ -1079,11 +1085,16 @@
           <ref role="3uigEE" to="3ju5:~IFile" resolve="IFile" />
         </node>
       </node>
+      <node concept="37vLTG" id="6QMOzQKlqqr" role="3clF46">
+        <property role="TrG5h" value="mh" />
+        <node concept="3uibUv" id="6QMOzQKlqJG" role="1tU5fm">
+          <ref role="3uigEE" to="et5u:~IMessageHandler" resolve="IMessageHandler" />
+        </node>
+      </node>
       <node concept="2AHcQZ" id="6QnDh7FRTiw" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
-    <node concept="2tJIrI" id="6QnDh7FRLeh" role="jymVt" />
     <node concept="3Tm1VV" id="6QnDh7FRLaE" role="1B3o_S" />
     <node concept="3uibUv" id="6QnDh7FRT0O" role="1zkMxy">
       <ref role="3uigEE" to="yfjr:6QnDh7FRFyt" resolve="SchedulabilityAnalysisToolRunner" />
