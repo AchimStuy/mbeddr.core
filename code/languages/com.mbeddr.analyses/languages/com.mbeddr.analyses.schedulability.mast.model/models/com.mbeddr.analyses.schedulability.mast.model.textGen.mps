@@ -2,8 +2,7 @@
 <model ref="r:f5704c0e-bde4-473c-b02e-62730b397278(com.mbeddr.analyses.schedulability.mast.model.textGen)">
   <persistence version="9" />
   <languages>
-    <use id="b83431fe-5c8f-40bc-8a36-65e25f4dd253" name="jetbrains.mps.lang.textGen" version="0" />
-    <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
+    <devkit ref="fa73d85a-ac7f-447b-846c-fcdc41caa600(jetbrains.mps.devkit.aspect.textgen)" />
   </languages>
   <imports>
     <import index="w4bb" ref="r:8a71acd7-ad81-4d56-a63a-7f9f054655c9(com.mbeddr.analyses.schedulability.mast.model.structure)" implicit="true" />

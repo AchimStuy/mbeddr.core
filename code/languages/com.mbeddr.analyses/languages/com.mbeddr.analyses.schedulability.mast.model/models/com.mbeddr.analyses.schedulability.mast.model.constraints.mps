@@ -2,8 +2,8 @@
 <model ref="r:2da4f470-3660-44a2-a3be-fcb258a8cfb5(com.mbeddr.analyses.schedulability.mast.model.constraints)">
   <persistence version="9" />
   <languages>
-    <use id="3f4bc5f5-c6c1-4a28-8b10-c83066ffa4a1" name="jetbrains.mps.lang.constraints" version="2" />
     <devkit ref="2677cb18-f558-4e33-bc38-a5139cee06dc(jetbrains.mps.devkit.language-design)" />
+    <devkit ref="00000000-0000-4000-0000-5604ebd4f22c(jetbrains.mps.devkit.aspect.constraints)" />
   </languages>
   <imports>
     <import index="w4bb" ref="r:8a71acd7-ad81-4d56-a63a-7f9f054655c9(com.mbeddr.analyses.schedulability.mast.model.structure)" implicit="true" />
