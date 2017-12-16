@@ -2,6 +2,7 @@
 <model ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)">
   <persistence version="9" />
   <languages>
+    <use id="982eb8df-2c96-4bd7-9963-11712ea622e5" name="jetbrains.mps.lang.resources" version="-1" />
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
@@ -452,16 +453,16 @@
     <property role="3GE5qa" value="schedule" />
     <property role="TrG5h" value="IDeclaresTask" />
     <property role="EcuMT" value="2491447282819596071" />
-    <node concept="1TJgyi" id="4hMIGYxhuKH" role="1TKVEl">
-      <property role="TrG5h" value="taskID" />
-      <property role="IQ2nx" value="4932209942850825261" />
-      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
-    </node>
     <node concept="1TJgyj" id="Lf_sVJ1ewl" role="1TKVEi">
       <property role="IQ2ns" value="887092367621154837" />
       <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="wcet" />
       <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
+    </node>
+    <node concept="1TJgyi" id="4hMIGYxhuKH" role="1TKVEl">
+      <property role="TrG5h" value="taskID" />
+      <property role="IQ2nx" value="4932209942850825261" />
+      <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
   </node>
   <node concept="1TIwiD" id="4hMIGYxmX$X">

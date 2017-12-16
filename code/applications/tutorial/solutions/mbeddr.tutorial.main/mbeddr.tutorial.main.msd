@@ -34,12 +34,15 @@
     <language slang="l:53bab999-e9c3-428a-80be-fef5bed08f55:com.mbeddr.cc.trace" version="0" />
     <language slang="l:017fba0e-af15-4a23-b0a8-02b5c1141e75:com.mbeddr.cc.var.annotations" version="0" />
     <language slang="l:634736cf-ea73-4eb1-abe9-d2ecc5fcf837:com.mbeddr.cc.var.c" version="0" />
+    <language slang="l:21ac77a4-1b66-44c5-aaec-94e43bb86519:com.mbeddr.cc.var.composition" version="0" />
+    <language slang="l:03f78d94-3f33-4789-ad35-5950b32fdad8:com.mbeddr.cc.var.composition.c" version="0" />
     <language slang="l:e401b447-8019-4ccd-a72c-bfb0230f5782:com.mbeddr.cc.var.fm" version="1" />
     <language slang="l:b8eeb935-038d-48d8-ae7f-0c6768b8d4fc:com.mbeddr.cc.var.rt" version="0" />
     <language slang="l:d4280a54-f6df-4383-aa41-d1b2bffa7eb1:com.mbeddr.core.base" version="4" />
     <language slang="l:2d7fadf5-33f6-4e80-a78f-0f739add2bde:com.mbeddr.core.buildconfig" version="5" />
     <language slang="l:b2da2e1a-b542-47f5-9be0-4dc21efe74a4:com.mbeddr.core.checks" version="0" />
     <language slang="l:390de4af-0c8d-4716-8dec-3d05ca751b28:com.mbeddr.core.cinterpreter" version="0" />
+    <language slang="l:7d323e61-8358-4656-a071-a2bb68438615:com.mbeddr.core.codereview" version="0" />
     <language slang="l:223dd778-c44f-4ef3-9535-7aa7d12244a6:com.mbeddr.core.debug" version="0" />
     <language slang="l:ebb5e132-d298-4649-b320-b3f4d7f3acff:com.mbeddr.core.debug.blext" version="0" />
     <language slang="l:783af01f-87a7-412c-be99-293a162652b5:com.mbeddr.core.embedded" version="0" />
