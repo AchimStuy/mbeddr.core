@@ -171,7 +171,7 @@
       <concept id="842732463503928109" name="com.mbeddr.core.unittest.structure.TestIsolationStrategy" flags="ng" index="3GpDuo" />
     </language>
     <language id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded">
-      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.EmulatedInterruptKind" flags="ng" index="3_UBHe" />
+      <concept id="9172009453269286222" name="com.mbeddr.core.embedded.structure.DefaultInterruptKind" flags="ng" index="3_UBHe" />
       <concept id="9172009453269230746" name="com.mbeddr.core.embedded.structure.InterruptConfigItem" flags="ng" index="3_UEaq">
         <child id="9172009453269286214" name="kind" index="3_UBH6" />
       </concept>
@@ -195,6 +195,7 @@
       </concept>
       <concept id="7041988282448693100" name="com.mbeddr.ext.concurrency.structure.SingleTaskSchedulingConstraint" flags="ng" index="6qQL$">
         <reference id="7041988282448693101" name="task" index="6qQL_" />
+        <child id="3933288758485162331" name="taskReference" index="1A7$0i" />
       </concept>
       <concept id="7041988282448692952" name="com.mbeddr.ext.concurrency.structure.ScheduleSpecification" flags="ng" index="6qQRg">
         <child id="7041988282448692992" name="constraints" index="6qQK8" />
@@ -227,8 +228,12 @@
       </concept>
       <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
         <property id="4932209942850825261" name="taskID" index="3_dPry" />
+        <child id="887092367621154837" name="wcet" index="3ziRRr" />
       </concept>
       <concept id="4932209942852262205" name="com.mbeddr.ext.concurrency.structure.BlockingConstraint" flags="ng" index="3_amfM" />
+      <concept id="3933288758485159593" name="com.mbeddr.ext.concurrency.structure.TaskReference" flags="ng" index="1A7_vw">
+        <reference id="3933288758485159597" name="task" index="1A7_v$" />
+      </concept>
       <concept id="562973772910539128" name="com.mbeddr.ext.concurrency.structure.AwaitStatement" flags="ng" index="3JSqjh">
         <reference id="562973772910542361" name="event" index="3JSqIK" />
       </concept>
@@ -241,10 +246,14 @@
       <concept id="562973772910397190" name="com.mbeddr.ext.concurrency.structure.EventDeclaration" flags="ng" index="3JZTaJ" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
         <child id="7551459360499927672" name="period" index="6EqoZ" />
+        <child id="4932209942840385229" name="offset" index="3$P2g2" />
       </concept>
       <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
         <child id="1199577005875986116" name="genStrategy" index="1NkNSE" />
         <child id="7123590915949967433" name="schedules" index="1OIqLV" />
+      </concept>
+      <concept id="1199577005875757023" name="com.mbeddr.ext.concurrency.structure.WCRTConstraint" flags="ng" index="1NlFWL">
+        <child id="7551459360501617805" name="wcrt" index="6GRza" />
       </concept>
       <concept id="1199577005876317481" name="com.mbeddr.ext.concurrency.structure.TerminateStatement" flags="ng" index="1NmsR7" />
       <concept id="1199577005876533973" name="com.mbeddr.ext.concurrency.structure.IterationNoTarget" flags="ng" index="1NmDCV" />
@@ -256,7 +265,9 @@
       </concept>
     </language>
     <language id="8c1a7e14-9520-42a4-a3a7-b15e523af156" name="com.mbeddr.ext.concurrency.pthreads">
-      <concept id="2549588765560351127" name="com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy" flags="ng" index="1PVdNI" />
+      <concept id="2549588765560351127" name="com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy" flags="ng" index="1PVdNI">
+        <property id="4932209942851500486" name="checkWCRT" index="3_8Cc9" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
@@ -425,10 +436,45 @@
             <property role="2hmy$m" value="100" />
           </node>
         </node>
+        <node concept="6VUUj" id="7S1sqCuF5Pg" role="3ziRRr">
+          <node concept="3TlMh9" id="7S1sqCuF82f" role="6VY68">
+            <property role="2hmy$m" value="50" />
+          </node>
+        </node>
+        <node concept="6VUUj" id="7S1sqCuG4Im" role="3$P2g2">
+          <node concept="3TlMh9" id="7S1sqCuG4I$" role="6VY68">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
       </node>
       <node concept="3_amfM" id="1zeZsIba810" role="6qQK8">
         <property role="3_dPry" value="2" />
         <ref role="6qQL_" node="1zeZsIba3xp" resolve="sumUp" />
+        <node concept="6VUUj" id="7S1sqCuF84s" role="3ziRRr">
+          <node concept="3TlMh9" id="7S1sqCuF84E" role="6VY68">
+            <property role="2hmy$m" value="40" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NlFWL" id="4_vK5iD8khk" role="6qQK8">
+        <node concept="6VUUj" id="4_vK5iD8khm" role="6GRza">
+          <node concept="3TlMh9" id="4_vK5iD8khF" role="6VY68">
+            <property role="2hmy$m" value="100" />
+          </node>
+        </node>
+        <node concept="1A7_vw" id="4_vK5iD8kjS" role="1A7$0i">
+          <ref role="1A7_v$" node="1zeZsIba3x3" resolve="measure" />
+        </node>
+      </node>
+      <node concept="1NlFWL" id="4_vK5iDaFWm" role="6qQK8">
+        <node concept="6VUUj" id="4_vK5iDaFWo" role="6GRza">
+          <node concept="3TlMh9" id="4_vK5iDe6Xc" role="6VY68">
+            <property role="2hmy$m" value="100" />
+          </node>
+        </node>
+        <node concept="1A7_vw" id="4_vK5iDaFWI" role="1A7$0i">
+          <ref role="1A7_v$" node="1zeZsIba3xp" resolve="sumUp" />
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="1zeZsIba3xS" role="N3F5h">
@@ -484,12 +530,14 @@
   <node concept="2v9HqL" id="73GSrjduqIQ">
     <property role="TrG5h" value="dummy" />
     <node concept="1NkVLJ" id="73GSrjdvOxd" role="2Q9xDr">
-      <node concept="1PVdNI" id="73GSrjdvOxR" role="1NkNSE" />
       <node concept="1OId_O" id="73GSrjdvOxD" role="1OIqLV">
         <ref role="1OIdAa" node="1zeZsIba3xN" resolve="sched" />
       </node>
       <node concept="1OId_O" id="73GSrjdvOxL" role="1OIqLV">
         <ref role="1OIdAa" node="4hMIGYxmNE2" resolve="sched" />
+      </node>
+      <node concept="1PVdNI" id="5G6Lb_PZWLY" role="1NkNSE">
+        <property role="3_8Cc9" value="true" />
       </node>
     </node>
     <node concept="3_UEaq" id="73GSrjduqIR" role="2Q9xDr">
@@ -819,10 +867,40 @@
       <node concept="3_amfM" id="22CI9oafbHN" role="6qQK8">
         <property role="3_dPry" value="1" />
         <ref role="6qQL_" node="4hMIGYxmNDe" resolve="measure" />
+        <node concept="6VUUj" id="7S1sqCuF8KF" role="3ziRRr">
+          <node concept="3TlMh9" id="7S1sqCuF8KT" role="6VY68">
+            <property role="2hmy$m" value="50" />
+          </node>
+        </node>
       </node>
       <node concept="3_amfM" id="22CI9oafbHS" role="6qQK8">
         <property role="3_dPry" value="2" />
         <ref role="6qQL_" node="4hMIGYxmNDv" resolve="summer" />
+        <node concept="6VUUj" id="7S1sqCuF8N6" role="3ziRRr">
+          <node concept="3TlMh9" id="7S1sqCuF8Nk" role="6VY68">
+            <property role="2hmy$m" value="40" />
+          </node>
+        </node>
+      </node>
+      <node concept="1NlFWL" id="Lf_sVJ3Hn4" role="6qQK8">
+        <node concept="6VUUj" id="Lf_sVJ3Hn6" role="6GRza">
+          <node concept="3TlMh9" id="Lf_sVJ3Hnp" role="6VY68">
+            <property role="2hmy$m" value="100" />
+          </node>
+        </node>
+        <node concept="1A7_vw" id="Lf_sVJ3HDm" role="1A7$0i">
+          <ref role="1A7_v$" node="4hMIGYxmNDe" resolve="measure" />
+        </node>
+      </node>
+      <node concept="1NlFWL" id="Lf_sVJ3Hwe" role="6qQK8">
+        <node concept="6VUUj" id="Lf_sVJ3Hwg" role="6GRza">
+          <node concept="3TlMh9" id="Lf_sVJ3HwA" role="6VY68">
+            <property role="2hmy$m" value="100" />
+          </node>
+        </node>
+        <node concept="1A7_vw" id="Lf_sVJ3HDk" role="1A7$0i">
+          <ref role="1A7_v$" node="4hMIGYxmNDv" resolve="summer" />
+        </node>
       </node>
     </node>
     <node concept="2NXPZ9" id="4hMIGYxmNE8" role="N3F5h">

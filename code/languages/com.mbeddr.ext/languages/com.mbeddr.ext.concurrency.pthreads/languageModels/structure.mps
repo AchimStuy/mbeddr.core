@@ -35,7 +35,7 @@
     <property role="EcuMT" value="2549588765560351127" />
     <ref role="1TJDcQ" to="5wll:12_KeTzXJV3" resolve="ConcurrencyGenerationStrategy" />
     <node concept="1TJgyi" id="4hMIGYxk3B6" role="1TKVEl">
-      <property role="TrG5h" value="checkWCET" />
+      <property role="TrG5h" value="checkWCRT" />
       <property role="IQ2nx" value="4932209942851500486" />
       <ref role="AX2Wp" to="tpck:fKAQMTB" resolve="boolean" />
     </node>

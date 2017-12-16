@@ -47,6 +47,7 @@
     <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="a44020b8-e2c1-4be8-b501-ee215ffa169e(com.mbeddr.analyses.schedulability.mast.pluginSolution)" version="0" />
     <module reference="1a63965d-d17e-4157-92e6-4c3d585c8186(com.mbeddr.analyses.schedulability.pluginSolution)" version="0" />
+    <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="d4280a54-f6df-4383-aa41-d1b2bffa7eb1(com.mbeddr.core.base)" version="3" />
     <module reference="9e24fcdc-a232-4d24-8c95-1f525946191a(com.mbeddr.core.base.pluginSolution)" version="0" />
     <module reference="2d7fadf5-33f6-4e80-a78f-0f739add2bde(com.mbeddr.core.buildconfig)" version="0" />

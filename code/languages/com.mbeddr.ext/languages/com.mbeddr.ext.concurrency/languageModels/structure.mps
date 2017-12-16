@@ -362,13 +362,13 @@
   </node>
   <node concept="1TIwiD" id="12_KeTzWRZv">
     <property role="3GE5qa" value="schedule" />
-    <property role="TrG5h" value="WCETConstraint" />
-    <property role="34LRSv" value="check wcet" />
+    <property role="TrG5h" value="WCRTConstraint" />
+    <property role="34LRSv" value="check wcrt" />
     <property role="EcuMT" value="1199577005875757023" />
     <ref role="1TJDcQ" node="66UaKxBOktG" resolve="SingleTaskSchedulingConstraint" />
     <node concept="1TJgyj" id="6zcb4tIvPid" role="1TKVEi">
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="wcet" />
+      <property role="20kJfa" value="wcrt" />
       <property role="20lbJX" value="1" />
       <property role="IQ2ns" value="7551459360501617805" />
       <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
@@ -456,6 +456,12 @@
       <property role="TrG5h" value="taskID" />
       <property role="IQ2nx" value="4932209942850825261" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyj" id="Lf_sVJ1ewl" role="1TKVEi">
+      <property role="IQ2ns" value="887092367621154837" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="wcet" />
+      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
   <node concept="1TIwiD" id="4hMIGYxmX$X">

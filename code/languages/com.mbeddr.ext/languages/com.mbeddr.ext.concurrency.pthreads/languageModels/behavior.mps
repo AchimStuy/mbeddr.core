@@ -156,7 +156,7 @@
     <property role="TrG5h" value="GenConfigHelper" />
     <node concept="2tJIrI" id="4hMIGYxk9vq" role="jymVt" />
     <node concept="2YIFZL" id="4hMIGYxk9vH" role="jymVt">
-      <property role="TrG5h" value="checkWCET" />
+      <property role="TrG5h" value="checkWCRT" />
       <node concept="37vLTG" id="78Ts1skpDBK" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="1iwH7U" id="78Ts1skpDBL" role="1tU5fm" />
@@ -199,7 +199,7 @@
               <ref role="3cqZAo" node="4hMIGYxkghR" resolve="strategy" />
             </node>
             <node concept="3TrcHB" id="4hMIGYxkgIh" role="2OqNvi">
-              <ref role="3TsBF5" to="oevp:4hMIGYxk3B6" resolve="checkWCET" />
+              <ref role="3TsBF5" to="oevp:4hMIGYxk3B6" resolve="checkWCRT" />
             </node>
           </node>
         </node>
@@ -207,7 +207,7 @@
     </node>
     <node concept="2tJIrI" id="4hMIGYxkkGX" role="jymVt" />
     <node concept="2YIFZL" id="4hMIGYxkkzS" role="jymVt">
-      <property role="TrG5h" value="checkWCET" />
+      <property role="TrG5h" value="checkWCRT" />
       <node concept="37vLTG" id="4hMIGYxkkzT" role="3clF46">
         <property role="TrG5h" value="ctx" />
         <node concept="1iwH7U" id="4hMIGYxkkzU" role="1tU5fm" />
@@ -221,7 +221,7 @@
       <node concept="3clFbS" id="4hMIGYxkkzX" role="3clF47">
         <node concept="3clFbF" id="4hMIGYxkkST" role="3cqZAp">
           <node concept="1rXfSq" id="4hMIGYxkkSS" role="3clFbG">
-            <ref role="37wK5l" node="4hMIGYxk9vH" resolve="checkWCET" />
+            <ref role="37wK5l" node="4hMIGYxk9vH" resolve="checkWCRT" />
             <node concept="37vLTw" id="4hMIGYxkkTP" role="37wK5m">
               <ref role="3cqZAo" node="4hMIGYxkkzT" resolve="ctx" />
             </node>
@@ -318,7 +318,7 @@
               <node concept="3GX2aA" id="22CI9oacpfK" role="2OqNvi" />
             </node>
             <node concept="1rXfSq" id="22CI9oabYGK" role="3uHU7B">
-              <ref role="37wK5l" node="4hMIGYxkkzS" resolve="checkWCET" />
+              <ref role="37wK5l" node="4hMIGYxkkzS" resolve="checkWCRT" />
               <node concept="37vLTw" id="22CI9oabYGL" role="37wK5m">
                 <ref role="3cqZAo" node="22CI9oabYGv" resolve="ctx" />
               </node>

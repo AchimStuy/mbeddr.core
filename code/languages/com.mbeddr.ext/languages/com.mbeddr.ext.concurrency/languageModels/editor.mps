@@ -822,6 +822,13 @@
       <node concept="3F1sOY" id="6zcb4tIpoFu" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:4hMIGYwDDVd" resolve="offset" />
       </node>
+      <node concept="3F0ifn" id="Lf_sVJ1tSN" role="3EZMnx">
+        <property role="3F0ifm" value="with wcet" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F1sOY" id="Lf_sVJ1ulx" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:Lf_sVJ1ewl" resolve="wcet" />
+      </node>
       <node concept="3F0ifn" id="6zcb4tIpoH0" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
@@ -830,10 +837,10 @@
   </node>
   <node concept="24kQdi" id="12_KeTzWRZR">
     <property role="3GE5qa" value="schedule" />
-    <ref role="1XX52x" to="5wll:12_KeTzWRZv" resolve="WCETConstraint" />
+    <ref role="1XX52x" to="5wll:12_KeTzWRZv" resolve="WCRTConstraint" />
     <node concept="3EZMnI" id="12_KeTzWRZT" role="2wV5jI">
       <node concept="3F0ifn" id="12_KeTzWS00" role="3EZMnx">
-        <property role="3F0ifm" value="check wcet of" />
+        <property role="3F0ifm" value="check wcrt of" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
       </node>
       <node concept="1iCGBv" id="12_KeTzWS06" role="3EZMnx">
@@ -916,7 +923,7 @@
       </node>
       <node concept="l2Vlx" id="12_KeTzWRZW" role="2iSdaV" />
       <node concept="3F1sOY" id="6zcb4tIvPiz" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:6zcb4tIvPid" resolve="wcet" />
+        <ref role="1NtTu8" to="5wll:6zcb4tIvPid" resolve="wcrt" />
       </node>
       <node concept="3F0ifn" id="6zcb4tI8BSZ" role="3EZMnx">
         <property role="3F0ifm" value=";" />
@@ -1118,6 +1125,13 @@
       </node>
       <node concept="3F0A7n" id="4hMIGYxmXF$" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="taskID" />
+      </node>
+      <node concept="3F0ifn" id="Lf_sVJ1ve2" role="3EZMnx">
+        <property role="3F0ifm" value="with wcet" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F1sOY" id="Lf_sVJ1vSe" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:Lf_sVJ1ewl" resolve="wcet" />
       </node>
       <node concept="3F0ifn" id="6zcb4tIvPiW" role="3EZMnx">
         <property role="3F0ifm" value=";" />

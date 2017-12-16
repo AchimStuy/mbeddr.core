@@ -237,7 +237,7 @@
       <node concept="2vmPJf" id="4hMIGYxgF9C" role="2vmPJn">
         <property role="2vn0DO" value="true" />
         <property role="TrG5h" value="wcetExceeded" />
-        <property role="2vmPJh" value="Task has exceeded WCET" />
+        <property role="2vmPJh" value="Task has exceeded WCRT" />
         <node concept="2qqzEA" id="4hMIGYxhGOP" role="2qqzEG">
           <property role="TrG5h" value="threadID" />
           <node concept="26VqpV" id="4hMIGYxhGP2" role="2C2TGm">
@@ -351,7 +351,7 @@
                       <ref role="3ZUYvu" node="1zeZsIbz73d" resolve="taskID" />
                     </node>
                     <node concept="3ZUYvv" id="1zeZsIbz7xA" role="2qqZAa">
-                      <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcet" />
+                      <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcrt" />
                     </node>
                     <node concept="3ZVu4v" id="4hMIGYxgZEm" role="2qqZAa">
                       <ref role="3ZVs_2" node="4hMIGYxgImT" resolve="___actualET" />
@@ -364,7 +364,7 @@
                   <ref role="3ZVs_2" node="4hMIGYxgImT" resolve="___actualET" />
                 </node>
                 <node concept="3ZUYvv" id="1zeZsIbz6yK" role="3TlMhJ">
-                  <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcet" />
+                  <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcrt" />
                 </node>
               </node>
             </node>
@@ -374,7 +374,7 @@
               <property role="2hmy$m" value="0" />
             </node>
             <node concept="3ZUYvv" id="1zeZsIbz5y4" role="3TlMhI">
-              <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcet" />
+              <ref role="3ZUYvu" node="1zeZsIbz4mH" resolve="wcrt" />
             </node>
           </node>
         </node>
@@ -387,7 +387,7 @@
         </node>
       </node>
       <node concept="19RgSI" id="1zeZsIbz4mH" role="1UOdpc">
-        <property role="TrG5h" value="wcet" />
+        <property role="TrG5h" value="wcrt" />
         <node concept="26Vqp1" id="1zeZsIbz4mG" role="2C2TGm">
           <property role="2caQfQ" value="false" />
           <property role="2c7vTL" value="false" />
