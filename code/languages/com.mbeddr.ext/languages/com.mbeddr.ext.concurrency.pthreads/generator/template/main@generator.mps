@@ -1389,7 +1389,7 @@
                 </node>
               </node>
               <node concept="1dpRTG" id="1zeZsIbs7q_" role="HszBJ">
-                <property role="TrG5h" value="___wcet" />
+                <property role="TrG5h" value="___wcrt" />
                 <node concept="26Vqp1" id="1zeZsIbs7qz" role="2C2TGm">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
@@ -1992,7 +1992,7 @@
                     </node>
                     <node concept="1_9egQ" id="1zeZsIbzbYJ" role="3XIRFZ">
                       <node concept="3O_q_g" id="1zeZsIbzbYH" role="1_9egR">
-                        <ref role="3O_q_h" to="bicj:1zeZsIbz3jW" resolve="checkWCET" />
+                        <ref role="3O_q_h" to="bicj:1zeZsIbz3jW" resolve="checkWCRT" />
                         <node concept="2qmXGp" id="1zeZsIbzcf2" role="3O_q_j">
                           <node concept="1E4Tgc" id="1zeZsIbzduO" role="1ESnxz">
                             <ref role="1E4Tge" node="1zeZsIbs2Ni" resolve="___taskID" />
@@ -2003,7 +2003,7 @@
                         </node>
                         <node concept="2qmXGp" id="1zeZsIbzdMY" role="3O_q_j">
                           <node concept="1E4Tgc" id="1zeZsIbzf9g" role="1ESnxz">
-                            <ref role="1E4Tge" node="1zeZsIbs7q_" resolve="___wcet" />
+                            <ref role="1E4Tge" node="1zeZsIbs7q_" resolve="___wcrt" />
                           </node>
                           <node concept="3ZUYvv" id="1zeZsIbzdLz" role="1_9fRO">
                             <ref role="3ZUYvu" node="2dxXn_mADu2" resolve="___data" />
@@ -2019,7 +2019,7 @@
                             <node concept="3clFbS" id="6OFMQWQQaxx" role="2VODD2">
                               <node concept="3clFbF" id="6OFMQWQQaEX" role="3cqZAp">
                                 <node concept="Xl_RD" id="6OFMQWQQaEW" role="3clFbG">
-                                  <property role="Xl_RC" value="checkWCET" />
+                                  <property role="Xl_RC" value="checkWCRT" />
                                 </node>
                               </node>
                             </node>
@@ -2267,7 +2267,7 @@
                 </node>
               </node>
               <node concept="1dpRTG" id="1zeZsIbszRB" role="HszBJ">
-                <property role="TrG5h" value="wcet" />
+                <property role="TrG5h" value="___wcrt" />
                 <node concept="26Vqp1" id="1zeZsIbszR_" role="2C2TGm">
                   <property role="2caQfQ" value="false" />
                   <property role="2c7vTL" value="false" />
@@ -2709,7 +2709,7 @@
                     </node>
                     <node concept="1_9egQ" id="1zeZsIbzkxB" role="3XIRFZ">
                       <node concept="3O_q_g" id="1zeZsIbzkxC" role="1_9egR">
-                        <ref role="3O_q_h" to="bicj:1zeZsIbz3jW" resolve="checkWCET" />
+                        <ref role="3O_q_h" to="bicj:1zeZsIbz3jW" resolve="checkWCRT" />
                         <node concept="2qmXGp" id="1zeZsIbzkxD" role="3O_q_j">
                           <node concept="1E4Tgc" id="1zeZsIbzkxE" role="1ESnxz">
                             <ref role="1E4Tge" node="1zeZsIbsyK0" resolve="___taskID" />
@@ -2720,7 +2720,7 @@
                         </node>
                         <node concept="2qmXGp" id="1zeZsIbzkxG" role="3O_q_j">
                           <node concept="1E4Tgc" id="1zeZsIbzkxH" role="1ESnxz">
-                            <ref role="1E4Tge" node="1zeZsIbszRB" resolve="wcet" />
+                            <ref role="1E4Tge" node="1zeZsIbszRB" resolve="___wcrt" />
                           </node>
                           <node concept="3ZUYvv" id="1zeZsIbzkxI" role="1_9fRO">
                             <ref role="3ZUYvu" node="22QtsSp1hxU" resolve="___data" />
@@ -2736,7 +2736,7 @@
                             <node concept="3clFbS" id="6OFMQWQQcaU" role="2VODD2">
                               <node concept="3clFbF" id="6OFMQWQQctT" role="3cqZAp">
                                 <node concept="Xl_RD" id="6OFMQWQQctS" role="3clFbG">
-                                  <property role="Xl_RC" value="checkWCET" />
+                                  <property role="Xl_RC" value="checkWCRT" />
                                 </node>
                               </node>
                             </node>
@@ -3533,7 +3533,7 @@
               <node concept="1_9egQ" id="1zeZsIbtuoS" role="3XIRFZ">
                 <node concept="3pqW6w" id="1zeZsIbtuoT" role="1_9egR">
                   <node concept="2qmXGp" id="1zeZsIbtup4" role="3TlMhI">
-                    <node concept="1E4Tgc" id="5G6Lb_Q08aF" role="1ESnxz">
+                    <node concept="1E4Tgc" id="1zeZsIbtAIa" role="1ESnxz">
                       <ref role="1E4Tge" node="1zeZsIbt_Vx" resolve="___wcrt" />
                     </node>
                     <node concept="1S7827" id="1zeZsIbtup6" role="1_9fRO">
