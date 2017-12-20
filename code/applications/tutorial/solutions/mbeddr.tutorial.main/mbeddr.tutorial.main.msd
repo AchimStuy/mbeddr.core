@@ -8,6 +8,7 @@
   <sourcePath />
   <dependencies>
     <dependency reexport="false">2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)</dependency>
+    <dependency reexport="false">758b51c6-9c80-4abd-8309-d3b51619c9be(com.mbeddr.analyses.schedulability.mast)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:3c648e74-bfd0-47ab-a27b-a7ece174dc55:com.mbeddr.analyses.acsl" version="0" />
@@ -19,6 +20,7 @@
     <language slang="l:c9a5ade7-5f6a-41ae-a703-5d94a418cf4f:com.mbeddr.analyses.cbmc.components" version="0" />
     <language slang="l:0a02a8f9-14d0-4970-9bd2-ca35a097c80d:com.mbeddr.analyses.cbmc.core" version="0" />
     <language slang="l:daa1849d-6955-4fef-afe3-8aea1f61e6fa:com.mbeddr.analyses.cbmc.statemachines" version="0" />
+    <language slang="l:758b51c6-9c80-4abd-8309-d3b51619c9be:com.mbeddr.analyses.schedulability.mast" version="0" />
     <language slang="l:9aeff3a1-b145-418c-a75b-9a6e331d7333:com.mbeddr.analyses.spin" version="0" />
     <language slang="l:17b818a8-8533-4efe-8f51-f532146ae66b:com.mbeddr.analyses.spin.c" version="0" />
     <language slang="l:f027a490-7082-492e-99ce-dfe65d7342f7:com.mbeddr.analyses.spin.c.patterns" version="0" />
@@ -107,8 +109,10 @@
     <module reference="3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)" version="0" />
     <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
     <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
+    <module reference="1ed103c3-3aa6-49b7-9c21-6765ee11f224(MPS.Editor)" version="0" />
     <module reference="498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)" version="0" />
     <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+    <module reference="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61(MPS.Platform)" version="0" />
     <module reference="ecc1a5ec-1e73-4d85-a5c7-cf22734be4aa(com.mbeddr.analyses.acsl.cbmc.rt)" version="0" />
     <module reference="13c63209-1eb7-491d-accf-3ba493379657(com.mbeddr.analyses.cbmc.components.pluginSolution)" version="0" />
     <module reference="603a3466-f1f4-442a-b544-048f481ec3bb(com.mbeddr.analyses.cbmc.components.rt)" version="0" />
@@ -118,10 +122,15 @@
     <module reference="a3733d9d-fa94-4706-bdd4-596b968eba8e(com.mbeddr.analyses.cbmc.rt)" version="0" />
     <module reference="93df2f50-c615-4300-ad92-915871dcae02(com.mbeddr.analyses.cbmc.statemachines.pluginSolution)" version="0" />
     <module reference="0a31509b-f803-4558-b840-db9f6dc14b2f(com.mbeddr.analyses.cbmc.statemachines.rt)" version="0" />
+    <module reference="758b51c6-9c80-4abd-8309-d3b51619c9be(com.mbeddr.analyses.schedulability.mast)" version="0" />
     <module reference="1dcacc1a-8e53-470e-987d-f654ba2e645c(com.mbeddr.analyses.spin.documentation)" version="0" />
     <module reference="4c16cb42-7fa3-47c7-89c7-1c479c287588(com.mbeddr.analyses.utils)" version="0" />
     <module reference="2ed50273-af07-4e30-9004-b1f89545178a(com.mbeddr.core.stdlib)" version="0" />
     <module reference="30d40e06-2249-4bd3-b8ab-109459f5021f(com.mbeddr.ext.units.runtime)" version="0" />
+    <module reference="98a7bbe2-0ea1-4503-9fc1-9efb7b48c6ea(com.mbeddr.mpsutil.datepicker.runtime)" version="0" />
+    <module reference="ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)" version="0" />
+    <module reference="d7eb0a2a-bd50-4576-beae-e4a89db35f20(jetbrains.mps.lang.scopes.runtime)" version="0" />
+    <module reference="c72da2b9-7cce-4447-8389-f407dc1158b7(jetbrains.mps.lang.structure)" version="0" />
     <module reference="b87ff58e-456e-4d51-9ed6-4090f4e7b51c(mbeddr.tutorial.main)" version="0" />
   </dependencyVersions>
 </solution>

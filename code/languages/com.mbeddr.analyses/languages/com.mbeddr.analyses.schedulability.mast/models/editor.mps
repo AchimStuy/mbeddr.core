@@ -515,7 +515,7 @@
             <property role="3F0ifm" value="Scheduling Parameters      =&gt;" />
           </node>
           <node concept="3F1sOY" id="6GCmiwPcEhl" role="3EZMnx">
-            <ref role="1NtTu8" to="1a4w:6GCmiwPcEf$" resolve="SchedulingParameters" />
+            <ref role="1NtTu8" to="1a4w:6GCmiwPcEf$" resolve="schedulingParameters" />
           </node>
           <node concept="3F0ifn" id="6GCmiwPcEg4" role="3EZMnx">
             <property role="3F0ifm" value="," />
@@ -530,7 +530,7 @@
             <property role="3F0ifm" value="Synchronization Parameters =&gt;" />
           </node>
           <node concept="3F1sOY" id="6GCmiwPcEg9" role="3EZMnx">
-            <ref role="1NtTu8" to="1a4w:6GCmiwPcEfB" resolve="SynchronizationParameters" />
+            <ref role="1NtTu8" to="1a4w:6GCmiwPcEfB" resolve="synchronizationParameters" />
           </node>
           <node concept="3F0ifn" id="6GCmiwPcEga" role="3EZMnx">
             <property role="3F0ifm" value="," />
@@ -545,7 +545,7 @@
             <property role="3F0ifm" value="Scheduler                  =&gt;" />
           </node>
           <node concept="3F1sOY" id="6GCmiwPcEgf" role="3EZMnx">
-            <ref role="1NtTu8" to="1a4w:6GCmiwPbo88" resolve="Scheduler" />
+            <ref role="1NtTu8" to="1a4w:6GCmiwPbo88" resolve="scheduler" />
           </node>
           <node concept="2iRfu4" id="6GCmiwPcEgh" role="2iSdaV" />
         </node>

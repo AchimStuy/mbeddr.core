@@ -5,6 +5,7 @@
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
     <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="-1" />
+    <use id="758b51c6-9c80-4abd-8309-d3b51619c9be" name="com.mbeddr.analyses.schedulability.mast" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
   </languages>
@@ -182,6 +183,7 @@
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
+        <property id="1193676396447" name="virtualPackage" index="3GE5qa" />
         <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
       </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -246,7 +248,6 @@
       <concept id="562973772910397190" name="com.mbeddr.ext.concurrency.structure.EventDeclaration" flags="ng" index="3JZTaJ" />
       <concept id="1199577005874920622" name="com.mbeddr.ext.concurrency.structure.CyclicConstraint" flags="ng" index="1NgRL0">
         <child id="7551459360499927672" name="period" index="6EqoZ" />
-        <child id="4932209942840385229" name="offset" index="3$P2g2" />
       </concept>
       <concept id="1199577005875952769" name="com.mbeddr.ext.concurrency.structure.ConcurrencyConfigItem" flags="ng" index="1NkVLJ">
         <child id="1199577005875986116" name="genStrategy" index="1NkNSE" />
@@ -306,6 +307,7 @@
   </registry>
   <node concept="N3F5e" id="73GSrjduqBj">
     <property role="TrG5h" value="BlockingQueueDemo" />
+    <property role="3GE5qa" value="" />
     <node concept="1S7NMz" id="1zeZsIba3wR" role="N3F5h">
       <property role="TrG5h" value="sum" />
       <node concept="26Vqp1" id="1zeZsIba3wS" role="2C2TGm">
@@ -439,11 +441,6 @@
         <node concept="6VUUj" id="7S1sqCuF5Pg" role="3ziRRr">
           <node concept="3TlMh9" id="7S1sqCuF82f" role="6VY68">
             <property role="2hmy$m" value="50" />
-          </node>
-        </node>
-        <node concept="6VUUj" id="7S1sqCuG4Im" role="3$P2g2">
-          <node concept="3TlMh9" id="7S1sqCuG4I$" role="6VY68">
-            <property role="2hmy$m" value="0" />
           </node>
         </node>
       </node>

@@ -7,6 +7,7 @@
   </languages>
   <imports>
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -88,6 +89,9 @@
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7fBF14d6AhC" role="PzmwI">
       <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
+    </node>
+    <node concept="PrWs8" id="7UKVONqsUj8" role="PzmwI">
+      <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
     </node>
     <node concept="1TJgyj" id="59ngc0aNxzg" role="1TKVEi">
       <property role="IQ2ns" value="5933282227643095248" />
@@ -375,14 +379,21 @@
     <node concept="1TJgyj" id="6GCmiwPcEf$" role="1TKVEi">
       <property role="IQ2ns" value="7721519590352790500" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="SchedulingParameters" />
+      <property role="20kJfa" value="schedulingParameters" />
       <ref role="20lvS9" node="_lLs7YS6Oj" resolve="ISchedulingParameters" />
     </node>
     <node concept="1TJgyj" id="6GCmiwPcEfB" role="1TKVEi">
       <property role="IQ2ns" value="7721519590352790503" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="SynchronizationParameters" />
+      <property role="20kJfa" value="synchronizationParameters" />
       <ref role="20lvS9" node="6GCmiwPcDll" resolve="SynchronizationParameters" />
+    </node>
+    <node concept="1TJgyj" id="6GCmiwPbo88" role="1TKVEi">
+      <property role="IQ2ns" value="7721519590352454152" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scheduler" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6GCmiwPbo7Y" resolve="SchedulerRef" />
     </node>
     <node concept="PrWs8" id="6GCmiwPbo7S" role="PzmwI">
       <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
@@ -394,13 +405,6 @@
       <property role="IQ2nx" value="7721519590352454144" />
       <property role="TrG5h" value="Type" />
       <ref role="AX2Wp" node="6GCmiwPbo7U" resolve="SchedulingServerType" />
-    </node>
-    <node concept="1TJgyj" id="6GCmiwPbo88" role="1TKVEi">
-      <property role="IQ2ns" value="7721519590352454152" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="Scheduler" />
-      <property role="20lbJX" value="0..1" />
-      <ref role="20lvS9" node="6GCmiwPbo7Y" resolve="SchedulerRef" />
     </node>
   </node>
   <node concept="AxPO7" id="6GCmiwPbo7U">
@@ -1092,6 +1096,16 @@
     <property role="EcuMT" value="887092367619603102" />
     <property role="TrG5h" value="Foo" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="7UKVONqu742" role="1TKVEi">
+      <property role="IQ2ns" value="9129059558041874690" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="scheduler" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6GCmiwPbo7Y" resolve="SchedulerRef" />
+    </node>
+    <node concept="PrWs8" id="7UKVONqua9w" role="PzmwI">
+      <ref role="PrY4T" node="59ngc0aNxyp" resolve="IMastModelContent" />
+    </node>
   </node>
   <node concept="PlHQZ" id="Lf_sVJ7bmk">
     <property role="EcuMT" value="887092367622714772" />
