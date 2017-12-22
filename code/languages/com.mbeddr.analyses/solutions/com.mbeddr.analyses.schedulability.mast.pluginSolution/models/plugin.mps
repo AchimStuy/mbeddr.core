@@ -1115,28 +1115,6 @@
             </node>
           </node>
         </node>
-        <node concept="3clFbF" id="3ChLhEGIaqO" role="3cqZAp">
-          <node concept="2OqwBi" id="3ChLhEGIbgh" role="3clFbG">
-            <node concept="37vLTw" id="3ChLhEGIaqM" role="2Oq$k0">
-              <ref role="3cqZAo" node="6QnDh7FRLlh" resolve="files" />
-            </node>
-            <node concept="TSZUe" id="3ChLhEGIc5I" role="2OqNvi">
-              <node concept="3cpWs3" id="6QMOzQKdsMH" role="25WWJ7">
-                <node concept="2OqwBi" id="6QMOzQKdteX" role="3uHU7B">
-                  <node concept="37vLTw" id="6QMOzQKdsXn" role="2Oq$k0">
-                    <ref role="3cqZAo" node="6QnDh7FRLmh" resolve="fileToAnalyse" />
-                  </node>
-                  <node concept="liA8E" id="6QMOzQKdtzT" role="2OqNvi">
-                    <ref role="37wK5l" to="3ju5:~IFile.getPath():java.lang.String" resolve="getPath" />
-                  </node>
-                </node>
-                <node concept="Xl_RD" id="3ChLhEGIdPo" role="3uHU7w">
-                  <property role="Xl_RC" value=".output.txt" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3cpWs8" id="6QnDh7FRLlM" role="3cqZAp">
           <node concept="3cpWsn" id="6QnDh7FRLlN" role="3cpWs9">
             <property role="TrG5h" value="args" />
