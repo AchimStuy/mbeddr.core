@@ -20,8 +20,6 @@
     <import index="dqnv" ref="r:eb55a79e-712e-453c-8ff8-d50d0340bc94(com.mbeddr.mpsutil.toolrunner)" />
     <import index="d244" ref="r:0a882e21-5553-485b-8777-3b0ace5a0d84(com.mbeddr.core.base.pluginSolution.plugin)" />
     <import index="3ju5" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.vfs(MPS.Core/)" />
-    <import index="xygl" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.progress(MPS.IDEA/)" />
-    <import index="ood5" ref="r:aebc748f-699b-42a4-83dc-3c364ebcbd44(com.mbeddr.analyses.utils.analyzer)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -79,6 +77,9 @@
       </concept>
       <concept id="1188208481402" name="jetbrains.mps.baseLanguage.structure.HasAnnotation" flags="ng" index="2AJDlI">
         <child id="1188208488637" name="annotation" index="2AJF6D" />
+      </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
       </concept>
       <concept id="1197027756228" name="jetbrains.mps.baseLanguage.structure.DotExpression" flags="nn" index="2OqwBi">
         <child id="1197027771414" name="operand" index="2Oq$k0" />
@@ -358,8 +359,8 @@
               <node concept="1pGfFk" id="6GCmiwP1xED" role="2ShVmc">
                 <ref role="37wK5l" to="yfjr:2Ze$eewboeL" resolve="SchedulabilityAnalyzerFactory" />
                 <node concept="2ShNRf" id="6GCmiwP1xH7" role="37wK5m">
-                  <node concept="1pGfFk" id="6GCmiwP1yq2" role="2ShVmc">
-                    <ref role="37wK5l" node="6GCmiwOWq0t" resolve="MastToolRunner" />
+                  <node concept="HV5vD" id="7nGbtRHu2TS" role="2ShVmc">
+                    <ref role="HV5vE" node="6QnDh7FRLaD" resolve="MastToolRunner" />
                   </node>
                 </node>
                 <node concept="2ShNRf" id="6GCmiwP1ywc" role="37wK5m">
@@ -430,8 +431,8 @@
       <node concept="3clFbS" id="6QnDh7FRODc" role="3clF47">
         <node concept="3clFbF" id="6QnDh7FROJu" role="3cqZAp">
           <node concept="2ShNRf" id="6QnDh7FROJs" role="3clFbG">
-            <node concept="1pGfFk" id="6n_fD0ugGmz" role="2ShVmc">
-              <ref role="37wK5l" node="6GCmiwOWq0t" resolve="MastToolRunner" />
+            <node concept="HV5vD" id="7nGbtRHu2mp" role="2ShVmc">
+              <ref role="HV5vE" node="6QnDh7FRLaD" resolve="MastToolRunner" />
             </node>
           </node>
         </node>
@@ -465,25 +466,6 @@
       <node concept="3Tm6S6" id="7pDdqNq8iMa" role="1B3o_S" />
     </node>
     <node concept="2tJIrI" id="6QnDh7FSc_W" role="jymVt" />
-    <node concept="3clFbW" id="6GCmiwOWq0t" role="jymVt">
-      <node concept="3cqZAl" id="6GCmiwOWq0v" role="3clF45" />
-      <node concept="3Tm1VV" id="6GCmiwOWq0w" role="1B3o_S" />
-      <node concept="3clFbS" id="6GCmiwOWq0x" role="3clF47">
-        <node concept="3clFbF" id="6GCmiwOWstl" role="3cqZAp">
-          <node concept="37vLTI" id="6GCmiwOWsVa" role="3clFbG">
-            <node concept="2ShNRf" id="6GCmiwOWtk1" role="37vLTx">
-              <node concept="1pGfFk" id="6n_fD0ugEzn" role="2ShVmc">
-                <ref role="37wK5l" to="xygl:~DumbProgressIndicator.&lt;init&gt;()" resolve="DumbProgressIndicator" />
-              </node>
-            </node>
-            <node concept="37vLTw" id="6GCmiwOWstk" role="37vLTJ">
-              <ref role="3cqZAo" to="dqnv:5bdxpKkKYAS" resolve="progress" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="6GCmiwOWktA" role="jymVt" />
     <node concept="3clFb_" id="6QnDh7FRLlc" role="jymVt">
       <property role="1EzhhJ" value="false" />
       <property role="TrG5h" value="runTool" />
