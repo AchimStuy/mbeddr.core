@@ -408,5 +408,17 @@
     <property role="EcuMT" value="1869287722499775694" />
     <ref role="1TJDcQ" to="tpee:g76ryKb" resolve="ConceptFunctionParameter" />
   </node>
+  <node concept="1TIwiD" id="19uTc5NurtL">
+    <property role="EcuMT" value="1323746860010682225" />
+    <property role="TrG5h" value="ExecutablePathFieldPreferenceFormProperty" />
+    <property role="3GE5qa" value="property" />
+    <property role="34LRSv" value="executable path" />
+    <ref role="1TJDcQ" node="86yKXFHOKF" resolve="AbstractPreferenceFormProperty" />
+    <node concept="1TJgyi" id="19uTc5NurtM" role="1TKVEl">
+      <property role="IQ2nx" value="1323746860010682226" />
+      <property role="TrG5h" value="defaultValue" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
+  </node>
 </model>
 

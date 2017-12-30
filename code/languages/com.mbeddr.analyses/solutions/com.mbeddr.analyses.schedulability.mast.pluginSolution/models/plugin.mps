@@ -263,6 +263,9 @@
       <concept id="1160612413312" name="jetbrains.mps.baseLanguage.collections.structure.AddElementOperation" flags="nn" index="TSZUe" />
     </language>
     <language id="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265" name="com.mbeddr.mpsutil.preferenceform">
+      <concept id="1323746860010682225" name="com.mbeddr.mpsutil.preferenceform.structure.ExecutablePathFieldPreferenceFormProperty" flags="ng" index="1x9PeK">
+        <property id="1323746860010682226" name="defaultValue" index="1x9PeN" />
+      </concept>
       <concept id="1210676672555" name="com.mbeddr.mpsutil.preferenceform.structure.OnBeforeWriteBlockApplication" flags="in" index="3xWZ$N" />
       <concept id="1210676879526" name="com.mbeddr.mpsutil.preferenceform.structure.OnAfterReadBlockApplication" flags="in" index="3xXM6Z" />
       <concept id="145956936283289547" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceForm" flags="ng" index="1DFvN4">
@@ -274,9 +277,6 @@
       </concept>
       <concept id="145956936284064811" name="com.mbeddr.mpsutil.preferenceform.structure.AbstractPreferenceFormProperty" flags="ng" index="1DGss$">
         <child id="8884256830696181817" name="label" index="XGeyX" />
-      </concept>
-      <concept id="145956936284064820" name="com.mbeddr.mpsutil.preferenceform.structure.TextFieldPreferenceFormProperty" flags="ng" index="1DGssV">
-        <property id="145956936284064821" name="defaultValue" index="1DGssU" />
       </concept>
       <concept id="145956936288329552" name="com.mbeddr.mpsutil.preferenceform.structure.PreferenceFormPropertyReference" flags="ng" index="1DZHhv" />
     </language>
@@ -587,20 +587,20 @@
     </node>
   </node>
   <node concept="1DFvN4" id="ty4hbPIVUW">
-    <property role="TrG5h" value="Mast Preferences" />
+    <property role="TrG5h" value="MAST Preferences" />
     <property role="3NeIjD" value="1" />
     <property role="3GE5qa" value="preference" />
     <node concept="3xWZ$M" id="4o4$mVT_Guc" role="3xXVxh">
       <node concept="3clFbS" id="4o4$mVT_Gud" role="2VODD2" />
     </node>
-    <node concept="1DGssV" id="3TgxovjqxZk" role="1DEjpx">
-      <property role="TrG5h" value="executablePath" />
-      <property role="1DGssU" value=" " />
-      <node concept="17QB3L" id="3TgxovjqxZl" role="1tU5fm" />
-      <node concept="3ZQQOj" id="3TgxovjqxZn" role="XGeyX">
+    <node concept="1x9PeK" id="1Nk4MoL2U6h" role="1DEjpx">
+      <property role="TrG5h" value="mastExecutablePath" />
+      <property role="1x9PeN" value=" " />
+      <node concept="17QB3L" id="1Nk4MoL2U6i" role="1tU5fm" />
+      <node concept="3ZQQOj" id="1Nk4MoL2U6l" role="XGeyX">
         <ref role="3ZOmrH" node="7Hbe8h74lsl" resolve="MastExecutablePath" />
       </node>
-      <node concept="Xl_RD" id="3TgxovjqTK9" role="33vP2m">
+      <node concept="Xl_RD" id="1Nk4MoL2Uea" role="33vP2m">
         <property role="Xl_RC" value=" " />
       </node>
     </node>
@@ -610,15 +610,15 @@
           <node concept="37vLTI" id="7pDdqNq993A" role="3clFbG">
             <node concept="2OqwBi" id="7pDdqNq98Cj" role="37vLTJ">
               <node concept="2WthIp" id="7pDdqNq98uD" role="2Oq$k0" />
-              <node concept="1DZHhv" id="7pDdqNq98LQ" role="2OqNvi">
-                <ref role="2WH_rO" node="3TgxovjqxZk" resolve="executablePath" />
+              <node concept="1DZHhv" id="1Nk4MoL3Vxf" role="2OqNvi">
+                <ref role="2WH_rO" node="1Nk4MoL2U6h" resolve="mastExecutablePath" />
               </node>
             </node>
             <node concept="2OqwBi" id="7pDdqNq927e" role="37vLTx">
               <node concept="2OqwBi" id="7pDdqNq91G1" role="2Oq$k0">
                 <node concept="2WthIp" id="7pDdqNq91yN" role="2Oq$k0" />
-                <node concept="1DZHhv" id="7pDdqNq91P$" role="2OqNvi">
-                  <ref role="2WH_rO" node="3TgxovjqxZk" resolve="executablePath" />
+                <node concept="1DZHhv" id="1Nk4MoL3VEE" role="2OqNvi">
+                  <ref role="2WH_rO" node="1Nk4MoL2U6h" resolve="mastExecutablePath" />
                 </node>
               </node>
               <node concept="17S1cR" id="7pDdqNq9317" role="2OqNvi" />
@@ -635,8 +635,8 @@
               <ref role="37wK5l" node="4gGXGcLLFJ9" resolve="setMastExecutablePath" />
               <node concept="2OqwBi" id="7pDdqNq7pkC" role="37wK5m">
                 <node concept="2WthIp" id="7pDdqNq7pkF" role="2Oq$k0" />
-                <node concept="1DZHhv" id="7pDdqNq7pkH" role="2OqNvi">
-                  <ref role="2WH_rO" node="3TgxovjqxZk" resolve="executablePath" />
+                <node concept="1DZHhv" id="1Nk4MoL3VOp" role="2OqNvi">
+                  <ref role="2WH_rO" node="1Nk4MoL2U6h" resolve="mastExecutablePath" />
                 </node>
               </node>
             </node>
@@ -656,8 +656,8 @@
               <ref role="37wK5l" node="4gGXGcLLFJ9" resolve="setMastExecutablePath" />
               <node concept="2OqwBi" id="7pDdqNq7pQt" role="37wK5m">
                 <node concept="2WthIp" id="7pDdqNq7pM_" role="2Oq$k0" />
-                <node concept="1DZHhv" id="7pDdqNq7pVA" role="2OqNvi">
-                  <ref role="2WH_rO" node="3TgxovjqxZk" resolve="executablePath" />
+                <node concept="1DZHhv" id="1Nk4MoL3VVt" role="2OqNvi">
+                  <ref role="2WH_rO" node="1Nk4MoL2U6h" resolve="mastExecutablePath" />
                 </node>
               </node>
             </node>

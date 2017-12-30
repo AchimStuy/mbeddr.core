@@ -517,5 +517,39 @@
       <node concept="2iRfu4" id="fFi6Pd8Js" role="2iSdaV" />
     </node>
   </node>
+  <node concept="24kQdi" id="19uTc5NurtO">
+    <property role="3GE5qa" value="property" />
+    <ref role="1XX52x" to="3iid:19uTc5NurtL" resolve="ExecutablePathFieldPreferenceFormProperty" />
+    <node concept="3EZMnI" id="19uTc5NurtQ" role="2wV5jI">
+      <node concept="PMmxH" id="19uTc5NurtR" role="3EZMnx">
+        <ref role="PMmxG" to="tpco:2wZex4PafBj" resolve="alias" />
+      </node>
+      <node concept="3F0A7n" id="19uTc5NurtS" role="3EZMnx">
+        <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+      </node>
+      <node concept="3F0ifn" id="19uTc5NurtT" role="3EZMnx">
+        <property role="3F0ifm" value=":" />
+        <node concept="11L4FC" id="19uTc5NurtU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F1sOY" id="19uTc5NurtV" role="3EZMnx">
+        <ref role="1NtTu8" to="3iid:7Hbe8h6YX0T" resolve="label" />
+      </node>
+      <node concept="3EZMnI" id="19uTc5NurtW" role="3EZMnx">
+        <node concept="VPM3Z" id="19uTc5NurtX" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="3F0ifn" id="19uTc5NurtY" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
+        </node>
+        <node concept="3F0A7n" id="19uTc5NurtZ" role="3EZMnx">
+          <ref role="1NtTu8" to="3iid:19uTc5NurtM" resolve="defaultValue" />
+        </node>
+        <node concept="2iRfu4" id="19uTc5Nuru0" role="2iSdaV" />
+      </node>
+      <node concept="2iRfu4" id="19uTc5Nuru1" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

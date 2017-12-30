@@ -4,6 +4,7 @@
   <languages>
     <use id="af65afd8-f0dd-4942-87d9-63a55f2a9db1" name="jetbrains.mps.lang.behavior" version="1" />
     <use id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation" version="0" />
+    <use id="774bf8a0-62e5-41e1-af63-f4812e60e48b" name="jetbrains.mps.baseLanguage.checkedDots" version="0" />
     <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
   </languages>
   <imports>
@@ -1339,6 +1340,57 @@
             <node concept="2OqwBi" id="fFi6Pdb6c" role="37vLTJ">
               <node concept="13iPFW" id="fFi6Pdb6d" role="2Oq$k0" />
               <node concept="3TrEf2" id="fFi6Pdb6e" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:fz3vP1I" resolve="initializer" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="13h7C7" id="19uTc5Nusyz">
+    <property role="3GE5qa" value="property" />
+    <ref role="13h7C2" to="3iid:19uTc5NurtL" resolve="ExecutablePathFieldPreferenceFormProperty" />
+    <node concept="13i0hz" id="19uTc5Nusy$" role="13h7CS">
+      <property role="13i0iv" value="false" />
+      <property role="13i0it" value="false" />
+      <property role="TrG5h" value="getComponentType" />
+      <ref role="13i0hy" node="5C8n8D5Vy2T" resolve="getComponentType" />
+      <node concept="3Tm1VV" id="19uTc5Nusy_" role="1B3o_S" />
+      <node concept="3clFbS" id="19uTc5NusyA" role="3clF47">
+        <node concept="3cpWs6" id="19uTc5NusyB" role="3cqZAp">
+          <node concept="3B5_sB" id="19uTc5NusyC" role="3cqZAk">
+            <ref role="3B5MYn" to="dxuu:~JTextField" resolve="JTextField" />
+          </node>
+        </node>
+      </node>
+      <node concept="3Tqbb2" id="19uTc5NusyD" role="3clF45">
+        <ref role="ehGHo" to="tpee:g7pOWCK" resolve="Classifier" />
+      </node>
+    </node>
+    <node concept="13hLZK" id="19uTc5NusyE" role="13h7CW">
+      <node concept="3clFbS" id="19uTc5NusyF" role="2VODD2">
+        <node concept="3clFbF" id="19uTc5NusyG" role="3cqZAp">
+          <node concept="37vLTI" id="19uTc5NusyH" role="3clFbG">
+            <node concept="2c44tf" id="19uTc5NusyI" role="37vLTx">
+              <node concept="17QB3L" id="19uTc5NusyJ" role="2c44tc" />
+            </node>
+            <node concept="2OqwBi" id="19uTc5NusyK" role="37vLTJ">
+              <node concept="13iPFW" id="19uTc5NusyL" role="2Oq$k0" />
+              <node concept="3TrEf2" id="19uTc5NusyM" role="2OqNvi">
+                <ref role="3Tt5mk" to="tpee:4VkOLwjf83e" resolve="type" />
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="19uTc5NusyN" role="3cqZAp">
+          <node concept="37vLTI" id="19uTc5NusyO" role="3clFbG">
+            <node concept="2c44tf" id="19uTc5NusyP" role="37vLTx">
+              <node concept="Xl_RD" id="19uTc5NusyQ" role="2c44tc" />
+            </node>
+            <node concept="2OqwBi" id="19uTc5NusyR" role="37vLTJ">
+              <node concept="13iPFW" id="19uTc5NusyS" role="2Oq$k0" />
+              <node concept="3TrEf2" id="19uTc5NusyT" role="2OqNvi">
                 <ref role="3Tt5mk" to="tpee:fz3vP1I" resolve="initializer" />
               </node>
             </node>
