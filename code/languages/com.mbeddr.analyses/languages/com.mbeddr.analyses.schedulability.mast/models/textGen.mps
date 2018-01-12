@@ -9,6 +9,7 @@
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="6g7u" ref="r:715e328f-43eb-436e-b2ad-0f572ca1292c(com.mbeddr.analyses.schedulability.mast.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -244,44 +245,17 @@
     <node concept="11bSqf" id="6QMOzQK7zQy" role="11c4hB">
       <node concept="3clFbS" id="6QMOzQK7zQz" role="2VODD2">
         <node concept="lc7rE" id="6QMOzQK7$2X" role="3cqZAp">
-          <node concept="l9hG8" id="6QMOzQK7$3l" role="lcghm">
-            <node concept="2YIFZM" id="6QMOzQK7Baw" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
+          <node concept="l9hG8" id="411U5_Evj_P" role="lcghm">
+            <node concept="2YIFZM" id="411U5_EvsBx" role="lb14g">
+              <ref role="37wK5l" to="wyt6:~String.format(java.lang.String,java.lang.Object...):java.lang.String" resolve="format" />
               <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <node concept="2OqwBi" id="6QMOzQK7BlB" role="37wK5m">
-                <node concept="117lpO" id="6QMOzQK7BbV" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6QMOzQK7Bwr" role="2OqNvi">
-                  <ref role="3TsBF5" to="1a4w:6QMOzQK7aEb" resolve="year" />
-                </node>
+              <node concept="Xl_RD" id="411U5_EvsBB" role="37wK5m">
+                <property role="Xl_RC" value="%tF" />
               </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="6QMOzQK7$Yl" role="lcghm">
-            <property role="lacIc" value="-" />
-          </node>
-          <node concept="l9hG8" id="6QMOzQK7BBd" role="lcghm">
-            <node concept="2YIFZM" id="6QMOzQK7BFS" role="lb14g">
-              <ref role="37wK5l" to="wyt6:~String.valueOf(int):java.lang.String" resolve="valueOf" />
-              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <node concept="2OqwBi" id="6QMOzQK7BQZ" role="37wK5m">
-                <node concept="117lpO" id="6QMOzQK7BHj" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6QMOzQK7C1N" role="2OqNvi">
-                  <ref role="3TsBF5" to="1a4w:6QMOzQK7aEe" resolve="month" />
-                </node>
-              </node>
-            </node>
-          </node>
-          <node concept="la8eA" id="6QMOzQK7C9f" role="lcghm">
-            <property role="lacIc" value="-" />
-          </node>
-          <node concept="l9hG8" id="6QMOzQK7ChJ" role="lcghm">
-            <node concept="2YIFZM" id="6QMOzQK7Cn5" role="lb14g">
-              <ref role="1Pybhc" to="wyt6:~String" resolve="String" />
-              <ref role="37wK5l" to="wyt6:~String.valueOf(java.lang.Object):java.lang.String" resolve="valueOf" />
-              <node concept="2OqwBi" id="6QMOzQK7D0r" role="37wK5m">
-                <node concept="117lpO" id="6QMOzQK7Cow" role="2Oq$k0" />
-                <node concept="3TrcHB" id="6QMOzQK7Dbf" role="2OqNvi">
-                  <ref role="3TsBF5" to="1a4w:6QMOzQK7aEj" resolve="day" />
+              <node concept="2OqwBi" id="411U5_EvsLq" role="37wK5m">
+                <node concept="117lpO" id="411U5_EvsBO" role="2Oq$k0" />
+                <node concept="2qgKlT" id="411U5_EvsSK" role="2OqNvi">
+                  <ref role="37wK5l" to="6g7u:411U5_EvnDU" resolve="toCalendar" />
                 </node>
               </node>
             </node>
