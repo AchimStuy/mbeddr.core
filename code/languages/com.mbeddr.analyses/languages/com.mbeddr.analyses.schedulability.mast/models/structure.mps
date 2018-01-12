@@ -6,8 +6,9 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
+    <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
   </imports>
   <registry>
@@ -81,24 +82,20 @@
     <node concept="PrWs8" id="6QMOzQK8pfw" role="PrDN$">
       <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
     </node>
+    <node concept="PrWs8" id="411U5_EtIEn" role="PrDN$">
+      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
+    </node>
   </node>
   <node concept="1TIwiD" id="7AmTIVETyt8">
     <property role="EcuMT" value="8761444038913435464" />
     <property role="TrG5h" value="MastModel" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />
     <node concept="PrWs8" id="7fBF14d6AhC" role="PzmwI">
       <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
     </node>
     <node concept="PrWs8" id="7UKVONqsUj8" role="PzmwI">
       <ref role="PrY4T" to="vs0r:IviauXabd" resolve="IMbeddrIDERoot" />
-    </node>
-    <node concept="1TJgyj" id="59ngc0aNxzg" role="1TKVEi">
-      <property role="IQ2ns" value="5933282227643095248" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="contents" />
-      <property role="20lbJX" value="0..n" />
-      <ref role="20lvS9" node="59ngc0aNxyp" resolve="IMastModelContent" />
     </node>
     <node concept="1TJgyj" id="6QMOzQK6RMF" role="1TKVEi">
       <property role="IQ2ns" value="7904611458378071211" />
@@ -721,6 +718,9 @@
       <property role="20kJfa" value="eventHandlers" />
       <property role="20lbJX" value="0..n" />
       <ref role="20lvS9" node="4_vK5iDaGhA" resolve="IEventHandler" />
+    </node>
+    <node concept="t5JxF" id="6n_fD0u9CCy" role="lGtFl">
+      <property role="t5JxN" value="A graph of event handlers and events, that represents activities executed in the system which are interrelated." />
     </node>
   </node>
   <node concept="AxPO7" id="4_vK5iD8mQ7">

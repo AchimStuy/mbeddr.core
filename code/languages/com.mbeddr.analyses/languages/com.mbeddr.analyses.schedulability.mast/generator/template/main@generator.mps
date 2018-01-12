@@ -123,6 +123,10 @@
       <concept id="1195500722856" name="jetbrains.mps.lang.generator.structure.MappingScript_CodeBlock" flags="in" index="1pplIY" />
       <concept id="1167756080639" name="jetbrains.mps.lang.generator.structure.PropertyMacro_GetPropertyValue" flags="in" index="3zFVjK" />
       <concept id="1167770111131" name="jetbrains.mps.lang.generator.structure.ReferenceMacro_GetReferent" flags="in" index="3$xsQk" />
+      <concept id="1311078761699563727" name="jetbrains.mps.lang.generator.structure.InsertMacro_CreateNodeQuery" flags="in" index="3_AbJw" />
+      <concept id="1311078761699563726" name="jetbrains.mps.lang.generator.structure.InsertMacro" flags="ln" index="3_AbJx">
+        <child id="1311078761699602381" name="createNodeQuery" index="3_A0Ny" />
+      </concept>
       <concept id="1167951910403" name="jetbrains.mps.lang.generator.structure.SourceSubstituteMacro_SourceNodesQuery" flags="in" index="3JmXsc" />
       <concept id="1118786554307" name="jetbrains.mps.lang.generator.structure.LoopMacro" flags="ln" index="1WS0z7">
         <child id="1167952069335" name="sourceNodesQuery" index="3Jn$fo" />
@@ -142,6 +146,12 @@
         <child id="1216860049632" name="inputNode" index="1iwH7V" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+    </language>
+    <language id="6d11763d-483d-4b2b-8efc-09336c1b0001" name="com.mbeddr.core.modules">
+      <concept id="6437088627575722813" name="com.mbeddr.core.modules.structure.Module" flags="ng" index="N3F4X">
+        <child id="6437088627575722833" name="contents" index="N3F5h" />
+      </concept>
+      <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
@@ -213,7 +223,6 @@
     </language>
     <language id="758b51c6-9c80-4abd-8309-d3b51619c9be" name="com.mbeddr.analyses.schedulability.mast">
       <concept id="8761444038913435464" name="com.mbeddr.analyses.schedulability.mast.structure.MastModel" flags="ng" index="2jsc6A">
-        <child id="5933282227643095248" name="contents" index="1oAlwg" />
         <child id="7904611458378071211" name="date" index="3tEqUm" />
       </concept>
       <concept id="7904611458378526321" name="com.mbeddr.analyses.schedulability.mast.structure.NormalizedExecutionTime" flags="ng" index="3t$bLc">
@@ -366,7 +375,7 @@
         </node>
       </node>
     </node>
-    <node concept="3t$O7y" id="6GCmiwPcxzW" role="1oAlwg">
+    <node concept="3t$O7y" id="6GCmiwPcxzW" role="N3F5h">
       <property role="3t$O7q" value="1.0" />
       <property role="TrG5h" value="ProcessingResource" />
       <node concept="17Uvod" id="6GCmiwPcxOu" role="lGtFl">
@@ -396,7 +405,10 @@
         </node>
       </node>
     </node>
-    <node concept="1u1twm" id="6GCmiwPcN0R" role="1oAlwg">
+    <node concept="2NXPZ9" id="411U5_EuctR" role="N3F5h">
+      <property role="TrG5h" value="empty_1515751825392_47" />
+    </node>
+    <node concept="1u1twm" id="6GCmiwPcN0R" role="N3F5h">
       <property role="TrG5h" value="PrimaryScheduler" />
       <node concept="1u1tzY" id="6GCmiwPcNmm" role="1u1tz9">
         <ref role="1u1tzQ" node="6GCmiwPcxzW" resolve="ProcessingResource" />
@@ -419,7 +431,10 @@
         </node>
       </node>
     </node>
-    <node concept="1u1tzu" id="6GCmiwPdFPv" role="1oAlwg">
+    <node concept="2NXPZ9" id="411U5_Eucx3" role="N3F5h">
+      <property role="TrG5h" value="empty_1515751829640_48" />
+    </node>
+    <node concept="1u1tzu" id="6GCmiwPdFPv" role="N3F5h">
       <property role="TrG5h" value="Server_SchedSpecName" />
       <node concept="1u1tzm" id="6GCmiwPdGb0" role="1u1tGw">
         <ref role="1u1tzn" node="6GCmiwPcN0R" resolve="PrimaryScheduler" />
@@ -458,7 +473,10 @@
         </node>
       </node>
     </node>
-    <node concept="3wvERg" id="4_vK5iDadWe" role="1oAlwg">
+    <node concept="2NXPZ9" id="411U5_Euc$g" role="N3F5h">
+      <property role="TrG5h" value="empty_1515751831902_49" />
+    </node>
+    <node concept="3wvERg" id="4_vK5iDadWe" role="N3F5h">
       <property role="TrG5h" value="ta_SchedSpecName" />
       <node concept="3wvER6" id="4_vK5iDclhe" role="3wvERU">
         <property role="TrG5h" value="cyclic_finished" />
@@ -846,7 +864,10 @@
         </node>
       </node>
     </node>
-    <node concept="3wvERl" id="4_vK5iDeaqP" role="1oAlwg">
+    <node concept="2NXPZ9" id="411U5_EucBu" role="N3F5h">
+      <property role="TrG5h" value="empty_1515751834831_50" />
+    </node>
+    <node concept="3wvERl" id="4_vK5iDeaqP" role="N3F5h">
       <property role="TrG5h" value="Task_Execute" />
       <node concept="3t$pQI" id="4_vK5iDecpS" role="3wuapa">
         <property role="3t$pQD" value="0.0" />
@@ -1103,8 +1124,8 @@
                   <node concept="37vLTw" id="6QMOzQK9ios" role="2Oq$k0">
                     <ref role="3cqZAo" node="7fBF14d7i5z" resolve="mastModel" />
                   </node>
-                  <node concept="3Tsc0h" id="6QMOzQK9iYF" role="2OqNvi">
-                    <ref role="3TtcxE" to="1a4w:59ngc0aNxzg" resolve="contents" />
+                  <node concept="3Tsc0h" id="411U5_EuDMz" role="2OqNvi">
+                    <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" resolve="contents" />
                   </node>
                 </node>
                 <node concept="TSZUe" id="6QMOzQK9ngt" role="2OqNvi">
@@ -1161,7 +1182,7 @@
         </node>
       </node>
     </node>
-    <node concept="3t$O7y" id="7UKVONqtlfR" role="1oAlwg">
+    <node concept="3t$O7y" id="7UKVONqtlfR" role="N3F5h">
       <property role="3t$O7q" value="1.0" />
       <property role="TrG5h" value="OwningModule_Processor" />
       <node concept="17Uvod" id="7UKVONqtlws" role="lGtFl">
@@ -1196,7 +1217,7 @@
         </node>
       </node>
     </node>
-    <node concept="1u1twm" id="7UKVONqtDi2" role="1oAlwg">
+    <node concept="1u1twm" id="7UKVONqtDi2" role="N3F5h">
       <property role="TrG5h" value="SchedSpec_PrimaryScheduler" />
       <node concept="1u1tzY" id="7UKVONqtDFL" role="1u1tz9">
         <ref role="1u1tzQ" node="7UKVONqtlfR" resolve="OwningModule_Processor" />

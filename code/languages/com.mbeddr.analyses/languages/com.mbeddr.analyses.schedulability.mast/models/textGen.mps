@@ -7,6 +7,7 @@
   <imports>
     <import index="1a4w" ref="r:1d11663f-e81a-4001-b9ad-a8e9204ba747(com.mbeddr.analyses.schedulability.mast.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
+    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -219,8 +220,8 @@
           </node>
           <node concept="2OqwBi" id="6QMOzQK9uuO" role="2GsD0m">
             <node concept="117lpO" id="6QMOzQK9uke" role="2Oq$k0" />
-            <node concept="3Tsc0h" id="6QMOzQK9uFj" role="2OqNvi">
-              <ref role="3TtcxE" to="1a4w:59ngc0aNxzg" resolve="contents" />
+            <node concept="3Tsc0h" id="411U5_Eudi7" role="2OqNvi">
+              <ref role="3TtcxE" to="x27k:5_l8w1EmTdh" resolve="contents" />
             </node>
           </node>
           <node concept="3clFbS" id="6QMOzQK9udE" role="2LFqv$">
