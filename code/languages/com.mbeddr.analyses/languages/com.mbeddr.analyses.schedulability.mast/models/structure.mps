@@ -6,7 +6,6 @@
     <devkit ref="78434eb8-b0e5-444b-850d-e7c4ad2da9ab(jetbrains.mps.devkit.aspect.structure)" />
   </languages>
   <imports>
-    <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" implicit="true" />
     <import index="vs0r" ref="r:f7764ca4-8c75-4049-922b-08516400a727(com.mbeddr.core.base.structure)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
@@ -18,6 +17,9 @@
       </concept>
     </language>
     <language id="c72da2b9-7cce-4447-8389-f407dc1158b7" name="jetbrains.mps.lang.structure">
+      <concept id="1224240836180" name="jetbrains.mps.lang.structure.structure.DeprecatedNodeAnnotation" flags="ig" index="asaX9">
+        <property id="1225118933224" name="comment" index="YLQ7P" />
+      </concept>
       <concept id="7862711839422615209" name="jetbrains.mps.lang.structure.structure.DocumentedNodeAnnotation" flags="ng" index="t5JxF">
         <property id="7862711839422615217" name="text" index="t5JxN" />
       </concept>
@@ -82,15 +84,12 @@
     <node concept="PrWs8" id="6QMOzQK8pfw" role="PrDN$">
       <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
     </node>
-    <node concept="PrWs8" id="411U5_EtIEn" role="PrDN$">
-      <ref role="PrY4T" to="x27k:5_l8w1EmTdf" resolve="IModuleContent" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7AmTIVETyt8">
     <property role="EcuMT" value="8761444038913435464" />
     <property role="TrG5h" value="MastModel" />
     <property role="19KtqR" value="true" />
-    <ref role="1TJDcQ" to="x27k:5_l8w1EmTcX" resolve="Module" />
+    <ref role="1TJDcQ" to="vs0r:6clJcrJYOUA" resolve="Chunk" />
     <node concept="PrWs8" id="7fBF14d6AhC" role="PzmwI">
       <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
     </node>
@@ -103,6 +102,13 @@
       <property role="20kJfa" value="date" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6QMOzQK78Uo" resolve="Date" />
+    </node>
+    <node concept="1TJgyj" id="2BE6_MXki6w" role="1TKVEi">
+      <property role="IQ2ns" value="3020255485720863136" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="contents" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="59ngc0aNxyp" resolve="IMastModelContent" />
     </node>
     <node concept="1QGGSu" id="5goxKqRtv54" role="rwd14">
       <property role="1iqoE4" value="/Volumes/Zeusch/achim/Downloads/_Masterarbeit/mast-src-1-5-1-0/docs/mast-logo-peq-med.gif" />
@@ -670,11 +676,8 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
     </node>
-    <node concept="PrWs8" id="4_vK5iD8mQ2" role="PzmwI">
-      <ref role="PrY4T" node="59ngc0aNxyp" resolve="IMastModelContent" />
-    </node>
-    <node concept="PrWs8" id="4_vK5iD9Qol" role="PzmwI">
-      <ref role="PrY4T" node="7AmTIVETwWi" resolve="IIdentifier" />
+    <node concept="PrWs8" id="2BE6_MXkS_H" role="PzmwI">
+      <ref role="PrY4T" node="2BE6_MXkS_A" resolve="IOperation" />
     </node>
     <node concept="1TJgyi" id="4_vK5iD9Qpv" role="1TKVEl">
       <property role="IQ2nx" value="5287155957403969119" />
@@ -1131,6 +1134,63 @@
       <property role="20kJfa" value="BestContextSwitch" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6QMOzQK8ATL" resolve="NormalizedExecutionTime" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Z5Uebl2YIS">
+    <property role="EcuMT" value="5748256560342887352" />
+    <property role="TrG5h" value="Multicast" />
+    <property role="3GE5qa" value="EventHandlers" />
+    <property role="R4oN_" value="generates one event in every one of its outputs ech time an input event arrives" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="4Z5Uebl2YIT" role="PzmwI">
+      <ref role="PrY4T" node="4_vK5iDaGhA" resolve="IEventHandler" />
+    </node>
+    <node concept="1TJgyj" id="4Z5Uebl2YJ3" role="1TKVEi">
+      <property role="IQ2ns" value="5748256560342887363" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inputEvent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
+    </node>
+    <node concept="1TJgyj" id="4Z5Uebl2YJ7" role="1TKVEi">
+      <property role="IQ2ns" value="5748256560342887367" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outputEvents" />
+      <property role="20lbJX" value="1..n" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="4Z5Uebl2YJ0">
+    <property role="EcuMT" value="5748256560342887360" />
+    <property role="TrG5h" value="EventRef" />
+    <property role="3GE5qa" value="Events" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="4Z5Uebl2YJ1" role="1TKVEi">
+      <property role="IQ2ns" value="5748256560342887361" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="event" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4_vK5iDaGhB" resolve="IEvent" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="2BE6_MXkS_A">
+    <property role="EcuMT" value="3020255485721020774" />
+    <property role="TrG5h" value="IOperation" />
+    <property role="3GE5qa" value="Operations" />
+    <node concept="PrWs8" id="2BE6_MXkS_B" role="PrDN$">
+      <ref role="PrY4T" node="59ngc0aNxyp" resolve="IMastModelContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2BE6_MXkS_K">
+    <property role="EcuMT" value="3020255485721020784" />
+    <property role="TrG5h" value="MessageTransmission" />
+    <property role="3GE5qa" value="Operations" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2BE6_MXkS_L" role="PzmwI">
+      <ref role="PrY4T" node="2BE6_MXkS_A" resolve="IOperation" />
+    </node>
+    <node concept="asaX9" id="2BE6_MXkS_N" role="lGtFl">
+      <property role="YLQ7P" value="needs to be implemented" />
     </node>
   </node>
 </model>

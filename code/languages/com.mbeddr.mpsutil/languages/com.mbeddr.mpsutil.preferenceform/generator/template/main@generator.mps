@@ -383,6 +383,10 @@
       </concept>
     </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
+      <concept id="6332851714983831325" name="jetbrains.mps.baseLanguage.logging.structure.MsgStatement" flags="ng" index="2xdQw9">
+        <property id="6332851714983843871" name="severity" index="2xdLsb" />
+        <child id="5721587534047265374" name="message" index="9lYJi" />
+      </concept>
       <concept id="2034914114981261497" name="jetbrains.mps.baseLanguage.logging.structure.LogLowLevelStatement" flags="ng" index="RRSsy">
         <property id="2034914114981261751" name="severity" index="RRSoG" />
         <child id="2034914114981261753" name="message" index="RRSoy" />
@@ -3638,6 +3642,10 @@
                                     </node>
                                   </node>
                                 </node>
+                              </node>
+                              <node concept="2xdQw9" id="7nGbtRHtY5L" role="3cqZAp">
+                                <property role="2xdLsb" value="debug" />
+                                <node concept="Xl_RD" id="7nGbtRHtY5N" role="9lYJi" />
                               </node>
                               <node concept="3clFbJ" id="1Nk4MoL93J5" role="3cqZAp">
                                 <node concept="3clFbS" id="1Nk4MoL93J7" role="3clFbx">

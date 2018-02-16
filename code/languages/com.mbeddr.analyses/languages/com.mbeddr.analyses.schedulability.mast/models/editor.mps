@@ -18,12 +18,12 @@
   <registry>
     <language id="18bc6592-03a6-4e29-a83a-7ff23bde13ba" name="jetbrains.mps.lang.editor">
       <concept id="1071666914219" name="jetbrains.mps.lang.editor.structure.ConceptEditorDeclaration" flags="ig" index="24kQdi" />
-      <concept id="1176897764478" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeFactory" flags="in" index="4$FPG" />
       <concept id="1140524381322" name="jetbrains.mps.lang.editor.structure.CellModel_ListWithRole" flags="ng" index="2czfm3">
+        <property id="1140524450557" name="separatorText" index="2czwfO" />
         <property id="1160590307797" name="usesFolding" index="S$F3r" />
-        <child id="1176897874615" name="nodeFactory" index="4_6I_" />
         <child id="1140524464360" name="cellLayout" index="2czzBx" />
         <child id="1140524464359" name="emptyCellModel" index="2czzBI" />
+        <child id="928328222691832421" name="separatorTextQuery" index="2gpyvW" />
       </concept>
       <concept id="1078308402140" name="jetbrains.mps.lang.editor.structure.CellModel_Custom" flags="sg" stub="8104358048506730068" index="gc7cB">
         <child id="1176795024817" name="cellProvider" index="3YsKMw" />
@@ -33,6 +33,7 @@
       <concept id="1237303669825" name="jetbrains.mps.lang.editor.structure.CellLayout_Indent" flags="nn" index="l2Vlx" />
       <concept id="1237307900041" name="jetbrains.mps.lang.editor.structure.IndentLayoutIndentStyleClassItem" flags="ln" index="lj46D" />
       <concept id="1237308012275" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineStyleClassItem" flags="ln" index="ljvvj" />
+      <concept id="709996738298806197" name="jetbrains.mps.lang.editor.structure.QueryFunction_SeparatorText" flags="in" index="2o9xnK" />
       <concept id="1237375020029" name="jetbrains.mps.lang.editor.structure.IndentLayoutNewLineChildrenStyleClassItem" flags="ln" index="pj6Ft" />
       <concept id="1142886221719" name="jetbrains.mps.lang.editor.structure.QueryFunction_NodeCondition" flags="in" index="pkWqt" />
       <concept id="1142886811589" name="jetbrains.mps.lang.editor.structure.ConceptFunctionParameter_node" flags="nn" index="pncrf" />
@@ -99,6 +100,7 @@
       <concept id="1137021947720" name="jetbrains.mps.baseLanguage.structure.ConceptFunction" flags="in" index="2VMwT0">
         <child id="1137022507850" name="body" index="2VODD2" />
       </concept>
+      <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD" />
       <concept id="1070533707846" name="jetbrains.mps.baseLanguage.structure.StaticFieldReference" flags="nn" index="10M0yZ">
         <reference id="1144433057691" name="classifier" index="1PxDUh" />
       </concept>
@@ -141,12 +143,6 @@
       </concept>
       <concept id="1146171026731" name="jetbrains.mps.lang.smodel.structure.Property_HasValue_Enum" flags="nn" index="3t7uKx">
         <child id="1146171026732" name="value" index="3t7uKA" />
-      </concept>
-      <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
-        <child id="1180636770616" name="createdType" index="3zrR0E" />
-      </concept>
-      <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
-        <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
       <concept id="1138056022639" name="jetbrains.mps.lang.smodel.structure.SPropertyAccess" flags="nn" index="3TrcHB">
         <reference id="1138056395725" name="property" index="3TsBF5" />
@@ -251,8 +247,8 @@
         </node>
       </node>
       <node concept="3F2HdR" id="5_l8w1EmTdN" role="3EZMnx">
-        <ref role="1NtTu8" to="x27k:5_l8w1EmTdh" resolve="contents" />
         <ref role="APP_o" to="r4b4:$hL4249ROO" resolve="deleteEmptyStuffInCollection" />
+        <ref role="1NtTu8" to="1a4w:2BE6_MXki6w" resolve="contents" />
         <node concept="2iRkQZ" id="1Fd_UL3AQRY" role="2czzBx" />
         <node concept="ljvvj" id="7apEgWbIFgv" role="3F10Kt">
           <property role="VOm3f" value="true" />
@@ -260,23 +256,17 @@
         <node concept="pVoyu" id="7apEgWbIHBM" role="3F10Kt">
           <property role="VOm3f" value="true" />
         </node>
-        <node concept="4$FPG" id="7JWieF82LsV" role="4_6I_">
-          <node concept="3clFbS" id="7JWieF82LsW" role="2VODD2">
-            <node concept="3clFbF" id="7JWieF82LsX" role="3cqZAp">
-              <node concept="2ShNRf" id="7JWieF82LsY" role="3clFbG">
-                <node concept="3zrR0B" id="7JWieF82Lt0" role="2ShVmc">
-                  <node concept="3Tqbb2" id="7JWieF82Lt1" role="3zrR0E">
-                    <ref role="ehGHo" to="x27k:7JWieF82Lsz" resolve="EmptyModuleContent" />
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
         <node concept="3F0ifn" id="4usdeMNVnYj" role="2czzBI">
           <property role="3F0ifm" value="" />
           <node concept="VPxyj" id="4usdeMNVnYk" role="3F10Kt">
             <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="2o9xnK" id="z$A9ZjoEdF" role="2gpyvW">
+          <node concept="3clFbS" id="z$A9ZjoEdG" role="2VODD2">
+            <node concept="3clFbF" id="z$A9ZjoEm5" role="3cqZAp">
+              <node concept="Xl_RD" id="z$A9ZjoEm4" role="3clFbG" />
+            </node>
           </node>
         </node>
       </node>
@@ -1886,6 +1876,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="4_vK5iDaGhW">
+    <property role="3GE5qa" value="EventHandlers" />
     <ref role="1XX52x" to="1a4w:4_vK5iDaGhQ" resolve="Activity" />
     <node concept="3EZMnI" id="4_vK5iDaGii" role="2wV5jI">
       <node concept="3F0ifn" id="4_vK5iDaGip" role="3EZMnx">
@@ -2183,6 +2174,95 @@
       <node concept="pj6Ft" id="Lf_sVIXvWP" role="3F10Kt">
         <property role="VOm3f" value="true" />
       </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Z5Uebl2YJe">
+    <property role="3GE5qa" value="Events" />
+    <ref role="1XX52x" to="1a4w:4Z5Uebl2YJ0" resolve="EventRef" />
+    <node concept="1iCGBv" id="4Z5Uebl2YJg" role="2wV5jI">
+      <ref role="1NtTu8" to="1a4w:4Z5Uebl2YJ1" resolve="event" />
+      <node concept="1sVBvm" id="4Z5Uebl2YJi" role="1sWHZn">
+        <node concept="3F0A7n" id="4Z5Uebl2YJp" role="2wV5jI">
+          <property role="1Intyy" value="true" />
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="4Z5Uebl2Zuw">
+    <property role="3GE5qa" value="EventHandlers" />
+    <ref role="1XX52x" to="1a4w:4Z5Uebl2YIS" resolve="Multicast" />
+    <node concept="3EZMnI" id="4Z5Uebl2Zuy" role="2wV5jI">
+      <node concept="3F0ifn" id="4Z5Uebl2Zuz" role="3EZMnx">
+        <property role="3F0ifm" value="Event Handler:" />
+      </node>
+      <node concept="3EZMnI" id="4Z5Uebl2Zu$" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="VPM3Z" id="4Z5Uebl2Zu_" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="pj6Ft" id="4Z5Uebl2ZuA" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="4Z5Uebl2ZuB" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+          <node concept="VPM3Z" id="4Z5Uebl2ZuC" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="4Z5Uebl2ZuD" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="4Z5Uebl2ZuE" role="3EZMnx">
+          <node concept="VPM3Z" id="4Z5Uebl2ZuF" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="4Z5Uebl2ZuG" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="4Z5Uebl2ZuH" role="3EZMnx">
+            <property role="3F0ifm" value="Type          =&gt; Multicast" />
+          </node>
+          <node concept="2iRfu4" id="4Z5Uebl2ZuI" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="4Z5Uebl2ZuJ" role="3EZMnx">
+          <node concept="VPM3Z" id="4Z5Uebl2ZuK" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="4Z5Uebl2ZuL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="4Z5Uebl2ZuM" role="3EZMnx">
+            <property role="3F0ifm" value="Input Event   =&gt;" />
+          </node>
+          <node concept="3F1sOY" id="4Z5Uebl2ZwZ" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:4Z5Uebl2YJ3" resolve="inputEvent" />
+          </node>
+          <node concept="2iRfu4" id="4Z5Uebl2ZuQ" role="2iSdaV" />
+        </node>
+        <node concept="l2Vlx" id="4Z5Uebl2ZuR" role="2iSdaV" />
+        <node concept="3EZMnI" id="4Z5Uebl2ZuS" role="3EZMnx">
+          <node concept="VPM3Z" id="4Z5Uebl2ZuT" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="pVoyu" id="4Z5Uebl2ZuU" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="4Z5Uebl2ZuV" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="4Z5Uebl2ZuW" role="3EZMnx">
+            <property role="3F0ifm" value="Output Events =&gt;" />
+          </node>
+          <node concept="3F2HdR" id="4Z5Uebl2ZwP" role="3EZMnx">
+            <property role="2czwfO" value="," />
+            <ref role="1NtTu8" to="1a4w:4Z5Uebl2YJ7" resolve="outputEvents" />
+            <node concept="2iRfu4" id="4Z5Uebl2ZwR" role="2czzBx" />
+          </node>
+          <node concept="2iRfu4" id="4Z5Uebl2Zv0" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="4Z5Uebl2Zvj" role="2iSdaV" />
     </node>
   </node>
 </model>
