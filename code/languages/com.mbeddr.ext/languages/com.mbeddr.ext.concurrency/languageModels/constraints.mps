@@ -73,7 +73,6 @@
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
         <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
-      <concept id="1212685548494" name="jetbrains.mps.baseLanguage.structure.ClassCreator" flags="nn" index="1pGfFk" />
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
@@ -126,6 +125,9 @@
         <child id="1145567471833" name="createdType" index="2T96Bj" />
       </concept>
       <concept id="1171407110247" name="jetbrains.mps.lang.smodel.structure.Node_GetAncestorOperation" flags="nn" index="2Xjw5R" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -801,34 +803,22 @@
       <ref role="1N5Vy1" to="5wll:3qlQk_gySUH" resolve="task" />
       <node concept="3dgokm" id="7tWSY$OBBEs" role="1N6uqs">
         <node concept="3clFbS" id="5CkU_dHirpV" role="2VODD2">
-          <node concept="3clFbF" id="5CkU_dHirpW" role="3cqZAp">
-            <node concept="2ShNRf" id="5CkU_dHirpX" role="3clFbG">
-              <node concept="1pGfFk" id="5CkU_dHirpY" role="2ShVmc">
-                <ref role="37wK5l" to="6xgk:7lHSllLpTWM" resolve="NamedElementsScope" />
-                <node concept="2OqwBi" id="5CkU_dHirpZ" role="37wK5m">
-                  <node concept="2OqwBi" id="5CkU_dHirq0" role="2Oq$k0">
-                    <node concept="2OqwBi" id="5CkU_dHirq1" role="2Oq$k0">
-                      <node concept="2rP1CM" id="5CkU_dHirqa" role="2Oq$k0" />
-                      <node concept="2Xjw5R" id="5CkU_dHirq3" role="2OqNvi">
-                        <node concept="1xMEDy" id="5CkU_dHirq4" role="1xVPHs">
-                          <node concept="chp4Y" id="5CkU_dHirq5" role="ri$Ld">
-                            <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                    <node concept="2qgKlT" id="5CkU_dHirq6" role="2OqNvi">
-                      <ref role="37wK5l" to="hwgx:6clJcrJXo2_" resolve="visibleContentsOfType" />
-                      <node concept="3TUQnm" id="5CkU_dHirq7" role="37wK5m">
-                        <ref role="3TV0OU" to="5wll:73Jrkgytd$o" resolve="Task" />
-                      </node>
+          <node concept="3clFbF" id="6n_fD0ubgfV" role="3cqZAp">
+            <node concept="2OqwBi" id="5CkU_dHirq0" role="3clFbG">
+              <node concept="2OqwBi" id="5CkU_dHirq1" role="2Oq$k0">
+                <node concept="2rP1CM" id="5CkU_dHirqa" role="2Oq$k0" />
+                <node concept="2Xjw5R" id="5CkU_dHirq3" role="2OqNvi">
+                  <node concept="1xMEDy" id="5CkU_dHirq4" role="1xVPHs">
+                    <node concept="chp4Y" id="5CkU_dHirq5" role="ri$Ld">
+                      <ref role="cht4Q" to="vs0r:6clJcrJXo2z" resolve="IVisibleElementProvider" />
                     </node>
                   </node>
-                  <node concept="v3k3i" id="5CkU_dHirq8" role="2OqNvi">
-                    <node concept="chp4Y" id="5CkU_dHirq9" role="v3oSu">
-                      <ref role="cht4Q" to="5wll:73Jrkgytd$o" resolve="Task" />
-                    </node>
-                  </node>
+                </node>
+              </node>
+              <node concept="2qgKlT" id="5CkU_dHirq6" role="2OqNvi">
+                <ref role="37wK5l" to="hwgx:79$zShlSHxZ" resolve="visibleContentsOfType" />
+                <node concept="35c_gC" id="6n_fD0ubg$e" role="37wK5m">
+                  <ref role="35c_gD" to="5wll:73Jrkgytd$o" resolve="Task" />
                 </node>
               </node>
             </node>
