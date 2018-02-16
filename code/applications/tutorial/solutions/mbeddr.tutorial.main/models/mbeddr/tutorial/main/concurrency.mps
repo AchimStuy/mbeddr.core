@@ -8,6 +8,7 @@
     <use id="758b51c6-9c80-4abd-8309-d3b51619c9be" name="com.mbeddr.analyses.schedulability.mast" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
+    <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
   </languages>
   <imports />
   <registry>
@@ -456,7 +457,7 @@
       <node concept="1NlFWL" id="4_vK5iD8khk" role="6qQK8">
         <node concept="6VUUj" id="4_vK5iD8khm" role="6GRza">
           <node concept="3TlMh9" id="4_vK5iD8khF" role="6VY68">
-            <property role="2hmy$m" value="100" />
+            <property role="2hmy$m" value="200" />
           </node>
         </node>
         <node concept="1A7_vw" id="4_vK5iD8kjS" role="1A7$0i">
@@ -466,7 +467,7 @@
       <node concept="1NlFWL" id="4_vK5iDaFWm" role="6qQK8">
         <node concept="6VUUj" id="4_vK5iDaFWo" role="6GRza">
           <node concept="3TlMh9" id="4_vK5iDe6Xc" role="6VY68">
-            <property role="2hmy$m" value="100" />
+            <property role="2hmy$m" value="200" />
           </node>
         </node>
         <node concept="1A7_vw" id="4_vK5iDaFWI" role="1A7$0i">
