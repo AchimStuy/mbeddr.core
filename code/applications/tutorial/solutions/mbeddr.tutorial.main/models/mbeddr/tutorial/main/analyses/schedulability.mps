@@ -1502,34 +1502,6 @@
     <node concept="2NXPZ9" id="z$A9ZjprMr" role="N3F5h">
       <property role="TrG5h" value="empty_1515948237085_8" />
     </node>
-    <node concept="1S7NMz" id="z$A9ZjprMs" role="N3F5h">
-      <property role="TrG5h" value="evenNumbers" />
-      <node concept="26Vqp1" id="z$A9ZjprMt" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="6bTlU" id="z$A9ZjprMu" role="lGtFl" />
-    </node>
-    <node concept="1S7NMz" id="z$A9ZjprMv" role="N3F5h">
-      <property role="TrG5h" value="oddNumbers" />
-      <node concept="26Vqp1" id="z$A9ZjprMw" role="2C2TGm">
-        <property role="2caQfQ" value="false" />
-        <property role="2c7vTL" value="false" />
-      </node>
-      <node concept="6bTlU" id="z$A9ZjprMx" role="lGtFl" />
-    </node>
-    <node concept="2NXPZ9" id="z$A9ZjprMy" role="N3F5h">
-      <property role="TrG5h" value="empty_1515948105494_6" />
-    </node>
-    <node concept="3JZTaJ" id="z$A9ZjprMz" role="N3F5h">
-      <property role="TrG5h" value="measuredOdd" />
-    </node>
-    <node concept="3JZTaJ" id="z$A9ZjprM$" role="N3F5h">
-      <property role="TrG5h" value="measuredEven" />
-    </node>
-    <node concept="2NXPZ9" id="z$A9ZjprM_" role="N3F5h">
-      <property role="TrG5h" value="empty_1517328166642_25" />
-    </node>
     <node concept="1iAVhs" id="z$A9ZjprMA" role="N3F5h">
       <property role="2OOxQR" value="false" />
       <property role="TrG5h" value="measureOdd" />
