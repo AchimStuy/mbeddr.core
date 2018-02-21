@@ -359,6 +359,9 @@
       <concept id="1116615150612" name="jetbrains.mps.baseLanguage.structure.ClassifierClassExpression" flags="nn" index="3VsKOn">
         <reference id="1116615189566" name="classifier" index="3VsUkX" />
       </concept>
+      <concept id="1200397529627" name="jetbrains.mps.baseLanguage.structure.CharConstant" flags="nn" index="1Xhbcc">
+        <property id="1200397540847" name="charConstant" index="1XhdNS" />
+      </concept>
       <concept id="1170345865475" name="jetbrains.mps.baseLanguage.structure.AnonymousClass" flags="ig" index="1Y3b0j">
         <reference id="1170346070688" name="classifier" index="1Y3XeK" />
       </concept>
@@ -5307,12 +5310,23 @@
                     <node concept="Xl_RD" id="6n_fD0ui3Ji" role="3uHU7w">
                       <property role="Xl_RC" value=".txt" />
                     </node>
-                    <node concept="2OqwBi" id="6n_fD0ui3Jj" role="3uHU7B">
-                      <node concept="37vLTw" id="6n_fD0ui3Jk" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6n_fD0uhWCw" resolve="analysedScheduleSpec" />
+                    <node concept="2OqwBi" id="$EVjcJ43DT" role="3uHU7B">
+                      <node concept="2OqwBi" id="6n_fD0ui3Jj" role="2Oq$k0">
+                        <node concept="37vLTw" id="6n_fD0ui3Jk" role="2Oq$k0">
+                          <ref role="3cqZAo" node="6n_fD0uhWCw" resolve="analysedScheduleSpec" />
+                        </node>
+                        <node concept="2qgKlT" id="6n_fD0ui3Jl" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:4JF77iuPCMH" resolve="qualifiedName" />
+                        </node>
                       </node>
-                      <node concept="2qgKlT" id="6n_fD0ui3Jl" role="2OqNvi">
-                        <ref role="37wK5l" to="hwgx:4JF77iuPCMH" resolve="qualifiedName" />
+                      <node concept="liA8E" id="$EVjcJ44hq" role="2OqNvi">
+                        <ref role="37wK5l" to="wyt6:~String.replace(char,char):java.lang.String" resolve="replace" />
+                        <node concept="1Xhbcc" id="$EVjcJ4dBU" role="37wK5m">
+                          <property role="1XhdNS" value="." />
+                        </node>
+                        <node concept="1Xhbcc" id="$EVjcJ4esl" role="37wK5m">
+                          <property role="1XhdNS" value="_" />
+                        </node>
                       </node>
                     </node>
                   </node>
