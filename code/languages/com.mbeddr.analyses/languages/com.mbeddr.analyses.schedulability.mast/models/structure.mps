@@ -1048,20 +1048,6 @@
     <node concept="PrWs8" id="4_vK5iDaGhT" role="PzmwI">
       <ref role="PrY4T" node="4_vK5iDaGhA" resolve="IEventHandler" />
     </node>
-    <node concept="1TJgyj" id="4_vK5iDaGhY" role="1TKVEi">
-      <property role="IQ2ns" value="5287155957404189822" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="InputEvent" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4_vK5iDaGhB" resolve="IEvent" />
-    </node>
-    <node concept="1TJgyj" id="4_vK5iDaGi0" role="1TKVEi">
-      <property role="IQ2ns" value="5287155957404189824" />
-      <property role="20lmBu" value="reference" />
-      <property role="20kJfa" value="OutputEvent" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="4_vK5iDaGhB" resolve="IEvent" />
-    </node>
     <node concept="1TJgyj" id="4_vK5iDaGi9" role="1TKVEi">
       <property role="IQ2ns" value="5287155957404189833" />
       <property role="20lmBu" value="reference" />
@@ -1075,6 +1061,20 @@
       <property role="20kJfa" value="Server" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6GCmiwPbo7Q" resolve="SchedulingServer" />
+    </node>
+    <node concept="1TJgyj" id="6hrazSUJ2Qi" role="1TKVEi">
+      <property role="IQ2ns" value="7231420073435213202" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="InputEvent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
+    </node>
+    <node concept="1TJgyj" id="6hrazSUJ2Qo" role="1TKVEi">
+      <property role="IQ2ns" value="7231420073435213208" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="OutputEvent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
     </node>
   </node>
   <node concept="AxPO7" id="6YAfmNfZuUW">
@@ -1191,6 +1191,43 @@
     </node>
     <node concept="asaX9" id="2BE6_MXkS_N" role="lGtFl">
       <property role="YLQ7P" value="needs to be implemented" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="2Z6adPspEM8">
+    <property role="EcuMT" value="3442483896374439048" />
+    <property role="TrG5h" value="Delay" />
+    <property role="3GE5qa" value="EventHandlers" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="2Z6adPspEM9" role="PzmwI">
+      <ref role="PrY4T" node="4_vK5iDaGhA" resolve="IEventHandler" />
+    </node>
+    <node concept="1TJgyj" id="2Z6adPspEMb" role="1TKVEi">
+      <property role="IQ2ns" value="3442483896374439051" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="inputEvent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
+    </node>
+    <node concept="1TJgyj" id="2Z6adPspEMd" role="1TKVEi">
+      <property role="IQ2ns" value="3442483896374439053" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="outputEvent" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
+    </node>
+    <node concept="1TJgyj" id="2Z6adPspEMg" role="1TKVEi">
+      <property role="IQ2ns" value="3442483896374439056" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="delayMaxInterval" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
+    </node>
+    <node concept="1TJgyj" id="2Z6adPspEMk" role="1TKVEi">
+      <property role="IQ2ns" value="3442483896374439060" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="delayMinInterval" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
     </node>
   </node>
 </model>

@@ -1921,14 +1921,8 @@
           <node concept="3F0ifn" id="4_vK5iDaGk$" role="3EZMnx">
             <property role="3F0ifm" value="Input Event  =&gt;" />
           </node>
-          <node concept="1iCGBv" id="4_vK5iDaGkE" role="3EZMnx">
-            <ref role="1NtTu8" to="1a4w:4_vK5iDaGhY" resolve="InputEvent" />
-            <node concept="1sVBvm" id="4_vK5iDaGkG" role="1sWHZn">
-              <node concept="3F0A7n" id="4_vK5iDaGkS" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
+          <node concept="3F1sOY" id="6hrazSUJeIT" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:6hrazSUJ2Qi" resolve="InputEvent" />
           </node>
           <node concept="2iRfu4" id="4_vK5iDaGkr" role="2iSdaV" />
         </node>
@@ -1946,14 +1940,8 @@
           <node concept="3F0ifn" id="4_vK5iDaGla" role="3EZMnx">
             <property role="3F0ifm" value="Output Event =&gt;" />
           </node>
-          <node concept="1iCGBv" id="4_vK5iDaGlb" role="3EZMnx">
-            <ref role="1NtTu8" to="1a4w:4_vK5iDaGi0" resolve="OutputEvent" />
-            <node concept="1sVBvm" id="4_vK5iDaGlc" role="1sWHZn">
-              <node concept="3F0A7n" id="4_vK5iDaGld" role="2wV5jI">
-                <property role="1Intyy" value="true" />
-                <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-              </node>
-            </node>
+          <node concept="3F1sOY" id="6hrazSUJeIH" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:6hrazSUJ2Qo" resolve="OutputEvent" />
           </node>
           <node concept="2iRfu4" id="4_vK5iDaGle" role="2iSdaV" />
         </node>
@@ -2263,6 +2251,116 @@
         </node>
       </node>
       <node concept="l2Vlx" id="4Z5Uebl2Zvj" role="2iSdaV" />
+    </node>
+  </node>
+  <node concept="24kQdi" id="2Z6adPspEMp">
+    <property role="3GE5qa" value="EventHandlers" />
+    <ref role="1XX52x" to="1a4w:2Z6adPspEM8" resolve="Delay" />
+    <node concept="3EZMnI" id="2Z6adPspLDr" role="2wV5jI">
+      <node concept="3F0ifn" id="2Z6adPspLDs" role="3EZMnx">
+        <property role="3F0ifm" value="Event Handler:" />
+      </node>
+      <node concept="3EZMnI" id="2Z6adPspLDt" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="VPM3Z" id="2Z6adPspLDu" role="3F10Kt">
+          <property role="VOm3f" value="false" />
+        </node>
+        <node concept="pj6Ft" id="2Z6adPspLDv" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="3F0ifn" id="2Z6adPspLDw" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+          <node concept="VPM3Z" id="2Z6adPspLDx" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="2Z6adPspLDy" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3EZMnI" id="2Z6adPspLDz" role="3EZMnx">
+          <node concept="VPM3Z" id="2Z6adPspLD$" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="2Z6adPspLD_" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2Z6adPspLDA" role="3EZMnx">
+            <property role="3F0ifm" value="Type               =&gt; Delay" />
+          </node>
+          <node concept="2iRfu4" id="2Z6adPspLDB" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="2Z6adPspLDC" role="3EZMnx">
+          <node concept="VPM3Z" id="2Z6adPspLDD" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="lj46D" id="2Z6adPspLDE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2Z6adPspLDF" role="3EZMnx">
+            <property role="3F0ifm" value="Input Event        =&gt;" />
+          </node>
+          <node concept="3F1sOY" id="2Z6adPspLDG" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:2Z6adPspEMb" resolve="inputEvent" />
+          </node>
+          <node concept="2iRfu4" id="2Z6adPspLDH" role="2iSdaV" />
+        </node>
+        <node concept="l2Vlx" id="2Z6adPspLDI" role="2iSdaV" />
+        <node concept="3EZMnI" id="2Z6adPspLDJ" role="3EZMnx">
+          <node concept="VPM3Z" id="2Z6adPspLDK" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="pVoyu" id="2Z6adPspLDL" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="2Z6adPspLDM" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2Z6adPspLDN" role="3EZMnx">
+            <property role="3F0ifm" value="Output Event       =&gt;" />
+          </node>
+          <node concept="3F1sOY" id="2Z6adPspLDO" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:2Z6adPspEMd" resolve="outputEvent" />
+          </node>
+          <node concept="2iRfu4" id="2Z6adPspLDP" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="2Z6adPspLDQ" role="3EZMnx">
+          <node concept="VPM3Z" id="2Z6adPspLDR" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="pVoyu" id="2Z6adPspLDS" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="2Z6adPspLDT" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2Z6adPspLDU" role="3EZMnx">
+            <property role="3F0ifm" value="Delay Min Interval =&gt;" />
+          </node>
+          <node concept="3F1sOY" id="2Z6adPspLEV" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:2Z6adPspEMk" resolve="delayMinInterval" />
+          </node>
+          <node concept="2iRfu4" id="2Z6adPspLDY" role="2iSdaV" />
+        </node>
+        <node concept="3EZMnI" id="2Z6adPspLDZ" role="3EZMnx">
+          <node concept="VPM3Z" id="2Z6adPspLE0" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+          <node concept="pVoyu" id="2Z6adPspLE1" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="lj46D" id="2Z6adPspLE2" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="3F0ifn" id="2Z6adPspLE3" role="3EZMnx">
+            <property role="3F0ifm" value="Delay Max Interval =&gt;" />
+          </node>
+          <node concept="3F1sOY" id="2Z6adPspLF3" role="3EZMnx">
+            <ref role="1NtTu8" to="1a4w:2Z6adPspEMg" resolve="delayMaxInterval" />
+          </node>
+          <node concept="2iRfu4" id="2Z6adPspLE7" role="2iSdaV" />
+        </node>
+      </node>
+      <node concept="l2Vlx" id="2Z6adPspLE8" role="2iSdaV" />
     </node>
   </node>
 </model>

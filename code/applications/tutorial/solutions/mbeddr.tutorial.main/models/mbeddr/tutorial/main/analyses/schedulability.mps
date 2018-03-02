@@ -507,7 +507,7 @@
         </node>
         <node concept="6VUUj" id="4Z5Uebl1zqw" role="3ziRRr">
           <node concept="3TlMh9" id="4Z5Uebl1zqC" role="6VY68">
-            <property role="2hmy$m" value="60" />
+            <property role="2hmy$m" value="20" />
           </node>
         </node>
       </node>
