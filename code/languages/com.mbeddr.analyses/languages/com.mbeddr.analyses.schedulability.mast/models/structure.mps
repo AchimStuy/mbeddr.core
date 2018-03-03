@@ -678,6 +678,13 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
     </node>
+    <node concept="1TJgyj" id="6mpqQDsYJK_" role="1TKVEi">
+      <property role="IQ2ns" value="7321000773838109733" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="sharedResources" />
+      <property role="20lbJX" value="0..n" />
+      <ref role="20lvS9" node="6mpqQDsYJKy" resolve="SharedResourceRef" />
+    </node>
     <node concept="PrWs8" id="2BE6_MXkS_H" role="PzmwI">
       <ref role="PrY4T" node="2BE6_MXkS_A" resolve="IOperation" />
     </node>
@@ -844,7 +851,7 @@
   <node concept="1TIwiD" id="4_vK5iD8mQN">
     <property role="EcuMT" value="5287155957403577779" />
     <property role="TrG5h" value="EventHandler" />
-    <property role="3GE5qa" value="Events" />
+    <property role="3GE5qa" value="EventHandlers" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
   </node>
   <node concept="AxPO7" id="4_vK5iD8n8e">
@@ -1213,6 +1220,37 @@
       <property role="20kJfa" value="delayMinInterval" />
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mpqQDsX2Yq">
+    <property role="EcuMT" value="7321000773837664154" />
+    <property role="TrG5h" value="SharedResource" />
+    <property role="R5$K7" value="true" />
+    <property role="R5$K2" value="false" />
+    <property role="3GE5qa" value="SharedResources" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="PrWs8" id="6mpqQDsX7gH" role="PzmwI">
+      <ref role="PrY4T" node="59ngc0aNxyp" resolve="IMastModelContent" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6mpqQDsX2Yt">
+    <property role="EcuMT" value="7321000773837664157" />
+    <property role="3GE5qa" value="SharedResources" />
+    <property role="TrG5h" value="PriorityInheritanceResource" />
+    <property role="R4oN_" value="Uses the basic priority inheritance protocol." />
+    <ref role="1TJDcQ" node="6mpqQDsX2Yq" resolve="SharedResource" />
+  </node>
+  <node concept="1TIwiD" id="6mpqQDsYJKy">
+    <property role="EcuMT" value="7321000773838109730" />
+    <property role="3GE5qa" value="SharedResources" />
+    <property role="TrG5h" value="SharedResourceRef" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6mpqQDsYJKz" role="1TKVEi">
+      <property role="IQ2ns" value="7321000773838109731" />
+      <property role="20lmBu" value="reference" />
+      <property role="20kJfa" value="resource" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" node="6mpqQDsX2Yq" resolve="SharedResource" />
     </node>
   </node>
 </model>

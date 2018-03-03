@@ -1147,7 +1147,30 @@
                   </node>
                 </node>
               </node>
+              <node concept="la8eA" id="6mpqQDsZwfI" role="lcghm">
+                <property role="lacIc" value="," />
+              </node>
               <node concept="l8MVK" id="4_vK5iDdJpn" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="6mpqQDsZwpT" role="3cqZAp">
+              <node concept="2BGw6n" id="6mpqQDsZwvf" role="lcghm" />
+              <node concept="la8eA" id="6mpqQDsZwvT" role="lcghm">
+                <property role="lacIc" value="Shared_Resources_List =&gt; (" />
+              </node>
+              <node concept="l9S2W" id="6mpqQDsZw$l" role="lcghm">
+                <property role="XA4eZ" value="true" />
+                <property role="lbP0B" value=", " />
+                <node concept="2OqwBi" id="6mpqQDsZwGK" role="lbANJ">
+                  <node concept="117lpO" id="6mpqQDsZw$Y" role="2Oq$k0" />
+                  <node concept="3Tsc0h" id="6mpqQDsZwRO" role="2OqNvi">
+                    <ref role="3TtcxE" to="1a4w:6mpqQDsYJK_" resolve="sharedResources" />
+                  </node>
+                </node>
+              </node>
+              <node concept="la8eA" id="6mpqQDsZymL" role="lcghm">
+                <property role="lacIc" value=")" />
+              </node>
+              <node concept="l8MVK" id="6mpqQDsZysF" role="lcghm" />
             </node>
           </node>
         </node>
@@ -2546,6 +2569,75 @@
           <node concept="2BGw6n" id="2Z6adPsspsK" role="lcghm" />
           <node concept="la8eA" id="2Z6adPsspsL" role="lcghm">
             <property role="lacIc" value=")" />
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6mpqQDsZvPq">
+    <property role="3GE5qa" value="SharedResources" />
+    <ref role="WuzLi" to="1a4w:6mpqQDsX2Yt" resolve="PriorityInheritanceResource" />
+    <node concept="11bSqf" id="6mpqQDsZvPr" role="11c4hB">
+      <node concept="3clFbS" id="6mpqQDsZvPs" role="2VODD2">
+        <node concept="lc7rE" id="6mpqQDsZvQj" role="3cqZAp">
+          <node concept="la8eA" id="6mpqQDsZvQk" role="lcghm">
+            <property role="lacIc" value="Shared_Resource (" />
+          </node>
+          <node concept="l8MVK" id="6mpqQDsZvQl" role="lcghm" />
+        </node>
+        <node concept="3izx1p" id="6mpqQDsZvQm" role="3cqZAp">
+          <node concept="3clFbS" id="6mpqQDsZvQn" role="3izTki">
+            <node concept="lc7rE" id="6mpqQDsZvQo" role="3cqZAp">
+              <node concept="2BGw6n" id="6mpqQDsZvQp" role="lcghm" />
+              <node concept="la8eA" id="6mpqQDsZvQq" role="lcghm">
+                <property role="lacIc" value="Type =&gt; Priority_Inheritance_Resource," />
+              </node>
+              <node concept="l8MVK" id="6mpqQDsZvQr" role="lcghm" />
+            </node>
+            <node concept="lc7rE" id="6mpqQDsZvQs" role="3cqZAp">
+              <node concept="2BGw6n" id="6mpqQDsZvQt" role="lcghm" />
+              <node concept="la8eA" id="6mpqQDsZvQu" role="lcghm">
+                <property role="lacIc" value="Name =&gt; " />
+              </node>
+              <node concept="l9hG8" id="6mpqQDsZvQv" role="lcghm">
+                <node concept="2OqwBi" id="6mpqQDsZvQw" role="lb14g">
+                  <node concept="117lpO" id="6mpqQDsZvQx" role="2Oq$k0" />
+                  <node concept="3TrcHB" id="6mpqQDsZvQy" role="2OqNvi">
+                    <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                  </node>
+                </node>
+              </node>
+              <node concept="l8MVK" id="6mpqQDsZvQ$" role="lcghm" />
+            </node>
+          </node>
+        </node>
+        <node concept="lc7rE" id="6mpqQDsZvQH" role="3cqZAp">
+          <node concept="la8eA" id="6mpqQDsZvQI" role="lcghm">
+            <property role="lacIc" value=");" />
+          </node>
+          <node concept="l8MVK" id="6mpqQDsZvQJ" role="lcghm" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="WtQ9Q" id="6mpqQDsZU7t">
+    <property role="3GE5qa" value="SharedResources" />
+    <ref role="WuzLi" to="1a4w:6mpqQDsYJKy" resolve="SharedResourceRef" />
+    <node concept="11bSqf" id="6mpqQDsZU7u" role="11c4hB">
+      <node concept="3clFbS" id="6mpqQDsZU7v" role="2VODD2">
+        <node concept="lc7rE" id="6mpqQDsZU7N" role="3cqZAp">
+          <node concept="l9hG8" id="6mpqQDsZU89" role="lcghm">
+            <node concept="2OqwBi" id="6mpqQDsZUCm" role="lb14g">
+              <node concept="2OqwBi" id="6mpqQDsZUgp" role="2Oq$k0">
+                <node concept="117lpO" id="6mpqQDsZU91" role="2Oq$k0" />
+                <node concept="3TrEf2" id="6mpqQDsZUnh" role="2OqNvi">
+                  <ref role="3Tt5mk" to="1a4w:6mpqQDsYJKz" resolve="resource" />
+                </node>
+              </node>
+              <node concept="3TrcHB" id="6mpqQDsZV19" role="2OqNvi">
+                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+              </node>
+            </node>
           </node>
         </node>
       </node>
