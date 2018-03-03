@@ -30,7 +30,6 @@
         <reference id="1083241965437" name="defaultMember" index="Qgau1" />
         <child id="1083172003582" name="member" index="M5hS2" />
       </concept>
-      <concept id="1082978499127" name="jetbrains.mps.lang.structure.structure.ConstrainedDataTypeDeclaration" flags="ng" index="Az7Fb" />
       <concept id="1083171877298" name="jetbrains.mps.lang.structure.structure.EnumerationMemberDeclaration" flags="ig" index="M4N5e">
         <property id="1083923523172" name="externalValue" index="1uS6qo" />
         <property id="1083923523171" name="internalValue" index="1uS6qv" />
@@ -639,6 +638,9 @@
       <property role="TrG5h" value="value" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="t5JxF" id="6mpqQDsPh$d" role="lGtFl">
+      <property role="t5JxN" value="Integer positive number (excluding zero)." />
+    </node>
   </node>
   <node concept="AxPO7" id="4_vK5iD8jlf">
     <property role="TrG5h" value="EDFSchedulingParametersType" />
@@ -1092,24 +1094,6 @@
       <property role="1uS6qv" value="Local" />
     </node>
   </node>
-  <node concept="Az7Fb" id="6YAfmNfZFLJ">
-    <property role="3GE5qa" value="SimpleTypes" />
-  </node>
-  <node concept="1TIwiD" id="Lf_sVIVjEu">
-    <property role="EcuMT" value="887092367619603102" />
-    <property role="TrG5h" value="Foo" />
-    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyj" id="7UKVONqu742" role="1TKVEi">
-      <property role="IQ2ns" value="9129059558041874690" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="scheduler" />
-      <property role="20lbJX" value="1" />
-      <ref role="20lvS9" node="6GCmiwPbo7Y" resolve="SchedulerRef" />
-    </node>
-    <node concept="PrWs8" id="7UKVONqua9w" role="PzmwI">
-      <ref role="PrY4T" node="59ngc0aNxyp" resolve="IMastModelContent" />
-    </node>
-  </node>
   <node concept="PlHQZ" id="Lf_sVJ7bmk">
     <property role="EcuMT" value="887092367622714772" />
     <property role="3GE5qa" value="SchedulingPolicies" />
@@ -1197,6 +1181,7 @@
     <property role="EcuMT" value="3442483896374439048" />
     <property role="TrG5h" value="Delay" />
     <property role="3GE5qa" value="EventHandlers" />
+    <property role="R4oN_" value="generates its output event after a time interval has elapsed from the arrival of the input event." />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="2Z6adPspEM9" role="PzmwI">
       <ref role="PrY4T" node="4_vK5iDaGhA" resolve="IEventHandler" />

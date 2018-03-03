@@ -2251,23 +2251,6 @@
       </node>
     </node>
   </node>
-  <node concept="WtQ9Q" id="7UKVONquDV9">
-    <ref role="WuzLi" to="1a4w:Lf_sVIVjEu" resolve="Foo" />
-    <node concept="11bSqf" id="7UKVONquDVc" role="11c4hB">
-      <node concept="3clFbS" id="7UKVONquDVd" role="2VODD2">
-        <node concept="lc7rE" id="7UKVONquDVz" role="3cqZAp">
-          <node concept="l9hG8" id="7UKVONquDVT" role="lcghm">
-            <node concept="2OqwBi" id="7UKVONquE6n" role="lb14g">
-              <node concept="117lpO" id="7UKVONquDWL" role="2Oq$k0" />
-              <node concept="3TrEf2" id="7UKVONquEgN" role="2OqNvi">
-                <ref role="3Tt5mk" to="1a4w:7UKVONqu742" resolve="scheduler" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="WtQ9Q" id="6n_fD0uc7xC">
     <property role="3GE5qa" value="TimingRequirements" />
     <ref role="WuzLi" to="1a4w:4_vK5iD99$v" resolve="Deadline" />
