@@ -159,6 +159,9 @@
         <child id="1144104376918" name="parameter" index="1xVPHs" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="4693937538533521280" name="jetbrains.mps.lang.smodel.structure.OfConceptOperation" flags="ng" index="v3k3i">
+        <child id="4693937538533538124" name="requestedConcept" index="v3oSu" />
+      </concept>
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -331,24 +334,31 @@
           <property role="TrG5h" value="same" />
           <node concept="A3Dl8" id="66UaKxBx$1W" role="1tU5fm">
             <node concept="3Tqbb2" id="66UaKxBx$1Z" role="A3Ik2">
-              <ref role="ehGHo" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
+              <ref role="ehGHo" to="5wll:6u_410TBNaj" resolve="AccessSpecifier" />
             </node>
           </node>
           <node concept="2OqwBi" id="66UaKxBx$2q" role="33vP2m">
-            <node concept="2OqwBi" id="66UaKxBx$2r" role="2Oq$k0">
-              <node concept="1PxgMI" id="66UaKxBx$2s" role="2Oq$k0">
-                <node concept="2OqwBi" id="66UaKxBx$2t" role="1m5AlR">
-                  <node concept="1YBJjd" id="66UaKxBx$2u" role="2Oq$k0">
-                    <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
+            <node concept="2OqwBi" id="7VBaBNh5H7m" role="2Oq$k0">
+              <node concept="2OqwBi" id="66UaKxBx$2r" role="2Oq$k0">
+                <node concept="1PxgMI" id="66UaKxBx$2s" role="2Oq$k0">
+                  <node concept="2OqwBi" id="66UaKxBx$2t" role="1m5AlR">
+                    <node concept="1YBJjd" id="66UaKxBx$2u" role="2Oq$k0">
+                      <ref role="1YBMHb" node="66UaKxBwIva" resolve="as" />
+                    </node>
+                    <node concept="1mfA1w" id="66UaKxBx$2v" role="2OqNvi" />
                   </node>
-                  <node concept="1mfA1w" id="66UaKxBx$2v" role="2OqNvi" />
+                  <node concept="chp4Y" id="79i$vAY7avB" role="3oSUPX">
+                    <ref role="cht4Q" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+                  </node>
                 </node>
-                <node concept="chp4Y" id="79i$vAY7avB" role="3oSUPX">
-                  <ref role="cht4Q" to="5wll:vg5qBCdJwc" resolve="AtomicStatement" />
+                <node concept="3Tsc0h" id="66UaKxBx$2w" role="2OqNvi">
+                  <ref role="3TtcxE" to="5wll:vg5qBCe_S8" resolve="specifiers" />
                 </node>
               </node>
-              <node concept="3Tsc0h" id="66UaKxBx$2w" role="2OqNvi">
-                <ref role="3TtcxE" to="5wll:vg5qBCe_S8" resolve="specifiers" />
+              <node concept="v3k3i" id="7VBaBNh5IRh" role="2OqNvi">
+                <node concept="chp4Y" id="7VBaBNh5JhT" role="v3oSu">
+                  <ref role="cht4Q" to="5wll:vg5qBCdLAj" resolve="GlobalVarAccessSpecifier" />
+                </node>
               </node>
             </node>
             <node concept="3zZkjj" id="66UaKxBx$2x" role="2OqNvi">
@@ -760,7 +770,7 @@
         <node concept="3clFbS" id="4hMIGYxmYcF" role="3clFbx">
           <node concept="2MkqsV" id="4hMIGYxmYcG" role="3cqZAp">
             <node concept="Xl_RD" id="4hMIGYxmYcH" role="2MkJ7o">
-              <property role="Xl_RC" value="only blocking tasks can be scheduled cyclicly" />
+              <property role="Xl_RC" value="blocking tasks can only be scheduled blocking" />
             </node>
             <node concept="1YBJjd" id="74RuH7aiOC9" role="2OEOjV">
               <ref role="1YBMHb" node="4hMIGYxmY7N" resolve="bc" />
