@@ -1098,7 +1098,7 @@
                   <property role="3cmrfH" value="160" />
                 </node>
                 <node concept="3cmrfG" id="12_6gPsYnoU" role="37wK5m">
-                  <property role="3cmrfH" value="580" />
+                  <property role="3cmrfH" value="80" />
                 </node>
               </node>
             </node>
@@ -1157,7 +1157,7 @@
                   <property role="3cmrfH" value="160" />
                 </node>
                 <node concept="3cmrfG" id="12_6gPsYnpg" role="37wK5m">
-                  <property role="3cmrfH" value="580" />
+                  <property role="3cmrfH" value="80" />
                 </node>
               </node>
             </node>
@@ -1216,7 +1216,7 @@
                   <property role="3cmrfH" value="160" />
                 </node>
                 <node concept="3cmrfG" id="12_6gPsYnpA" role="37wK5m">
-                  <property role="3cmrfH" value="580" />
+                  <property role="3cmrfH" value="80" />
                 </node>
               </node>
             </node>
