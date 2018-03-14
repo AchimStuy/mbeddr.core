@@ -1086,6 +1086,43 @@
         </node>
       </node>
     </node>
+    <node concept="13i0hz" id="7VBaBNh4O5o" role="13h7CS">
+      <property role="TrG5h" value="awaitsExternalEvent" />
+      <node concept="3Tm1VV" id="7VBaBNh4O5p" role="1B3o_S" />
+      <node concept="10P_77" id="7VBaBNh4PsG" role="3clF45" />
+      <node concept="3clFbS" id="7VBaBNh4O5r" role="3clF47">
+        <node concept="3clFbF" id="7VBaBNh4PtC" role="3cqZAp">
+          <node concept="2OqwBi" id="7VBaBNh4Qiy" role="3clFbG">
+            <node concept="2OqwBi" id="7VBaBNh4PHe" role="2Oq$k0">
+              <node concept="13iPFW" id="7VBaBNh4PtB" role="2Oq$k0" />
+              <node concept="2qgKlT" id="7VBaBNh4PYZ" role="2OqNvi">
+                <ref role="37wK5l" node="6zcb4tIDdKf" resolve="awaitedEvents" />
+              </node>
+            </node>
+            <node concept="2HwmR7" id="7VBaBNh4QCK" role="2OqNvi">
+              <node concept="1bVj0M" id="7VBaBNh4QCM" role="23t8la">
+                <node concept="3clFbS" id="7VBaBNh4QCN" role="1bW5cS">
+                  <node concept="3clFbF" id="7VBaBNh4Rbb" role="3cqZAp">
+                    <node concept="2OqwBi" id="7VBaBNh4RtR" role="3clFbG">
+                      <node concept="37vLTw" id="7VBaBNh4Rba" role="2Oq$k0">
+                        <ref role="3cqZAo" node="7VBaBNh4QCO" resolve="e" />
+                      </node>
+                      <node concept="3TrcHB" id="7VBaBNh4RRR" role="2OqNvi">
+                        <ref role="3TsBF5" to="x27k:19a6$uAA0vK" resolve="exported" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="Rh6nW" id="7VBaBNh4QCO" role="1bW2Oz">
+                  <property role="TrG5h" value="e" />
+                  <node concept="2jxLKc" id="7VBaBNh4QCP" role="1tU5fm" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
   </node>
   <node concept="13h7C7" id="vg5qBCchBv">
     <property role="3GE5qa" value="events" />
