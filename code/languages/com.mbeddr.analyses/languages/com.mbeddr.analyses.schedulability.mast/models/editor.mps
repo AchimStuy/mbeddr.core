@@ -1811,11 +1811,18 @@
     <property role="3GE5qa" value="Transactions" />
     <ref role="1XX52x" to="1a4w:4_vK5iD8mQ4" resolve="Transaction" />
     <node concept="3EZMnI" id="4_vK5iDa6$$" role="2wV5jI">
-      <node concept="2iRkQZ" id="4_vK5iDa6$_" role="2iSdaV" />
+      <node concept="l2Vlx" id="32QaRNYGmUe" role="2iSdaV" />
       <node concept="3F0ifn" id="4_vK5iDa6$A" role="3EZMnx">
-        <property role="3F0ifm" value="Transaction (" />
+        <property role="3F0ifm" value="Transaction:" />
       </node>
       <node concept="3EZMnI" id="4_vK5iDa6$B" role="3EZMnx">
+        <property role="S$Qs1" value="true" />
+        <node concept="3F0ifn" id="32QaRNYGmVx" role="3EZMnx">
+          <property role="3F0ifm" value="" />
+          <node concept="VPM3Z" id="32QaRNYGmW8" role="3F10Kt">
+            <property role="VOm3f" value="false" />
+          </node>
+        </node>
         <node concept="VPM3Z" id="4_vK5iDa6$C" role="3F10Kt">
           <property role="VOm3f" value="false" />
         </node>
@@ -1835,9 +1842,6 @@
           <node concept="3F0A7n" id="4_vK5iDa6$I" role="3EZMnx">
             <ref role="1NtTu8" to="1a4w:4_vK5iD8mQ9" resolve="Type" />
           </node>
-          <node concept="3F0ifn" id="4_vK5iDa6$J" role="3EZMnx">
-            <property role="3F0ifm" value="," />
-          </node>
           <node concept="2iRfu4" id="4_vK5iDa6$K" role="2iSdaV" />
         </node>
         <node concept="3EZMnI" id="4_vK5iDa6$L" role="3EZMnx">
@@ -1849,9 +1853,6 @@
           </node>
           <node concept="3F0A7n" id="4_vK5iDa6$O" role="3EZMnx">
             <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-          <node concept="3F0ifn" id="4_vK5iDa6$P" role="3EZMnx">
-            <property role="3F0ifm" value="," />
           </node>
           <node concept="2iRfu4" id="4_vK5iDa6$Q" role="2iSdaV" />
         </node>
@@ -1914,9 +1915,9 @@
           <node concept="l2Vlx" id="6YAfmNfZdBj" role="2iSdaV" />
         </node>
         <node concept="l2Vlx" id="4_vK5iDa6_2" role="2iSdaV" />
-      </node>
-      <node concept="3F0ifn" id="4_vK5iDa6_3" role="3EZMnx">
-        <property role="3F0ifm" value=");" />
+        <node concept="3F0A7n" id="32QaRNYGmWi" role="AHCbl">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
       </node>
     </node>
   </node>
