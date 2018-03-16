@@ -808,6 +808,13 @@
       <node concept="3F0A7n" id="4hMIGYxhuPf" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="taskID" />
       </node>
+      <node concept="3F0ifn" id="5szk1ck7gNo" role="3EZMnx">
+        <property role="3F0ifm" value="priority" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0A7n" id="5szk1ck7gNp" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:5szk1ck7fqw" resolve="priority" />
+      </node>
       <node concept="3F0ifn" id="12_KeTzTFPI" role="3EZMnx">
         <property role="3F0ifm" value="period" />
         <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
@@ -1125,6 +1132,13 @@
       </node>
       <node concept="3F0A7n" id="4hMIGYxmXF$" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:4hMIGYxhuKH" resolve="taskID" />
+      </node>
+      <node concept="3F0ifn" id="5szk1ck7fDW" role="3EZMnx">
+        <property role="3F0ifm" value="priority" />
+        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
+      </node>
+      <node concept="3F0A7n" id="5szk1ck7g7k" role="3EZMnx">
+        <ref role="1NtTu8" to="5wll:5szk1ck7fqw" resolve="priority" />
       </node>
       <node concept="3F0ifn" id="Lf_sVJ1ve2" role="3EZMnx">
         <property role="3F0ifm" value="with wcet" />

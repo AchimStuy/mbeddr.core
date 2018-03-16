@@ -122,7 +122,11 @@
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
       </concept>
+      <concept id="8866923313515890008" name="jetbrains.mps.lang.smodel.structure.AsNodeOperation" flags="nn" index="FGMqu" />
       <concept id="1171305280644" name="jetbrains.mps.lang.smodel.structure.Node_GetDescendantsOperation" flags="nn" index="2Rf3mk" />
+      <concept id="2644386474300074836" name="jetbrains.mps.lang.smodel.structure.ConceptIdRefExpression" flags="nn" index="35c_gC">
+        <reference id="2644386474300074837" name="conceptDeclaration" index="35c_gD" />
+      </concept>
       <concept id="1144101972840" name="jetbrains.mps.lang.smodel.structure.OperationParm_Concept" flags="ng" index="1xMEDy">
         <child id="1207343664468" name="conceptArgument" index="ri$Ld" />
       </concept>
@@ -135,9 +139,6 @@
       </concept>
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
-      </concept>
-      <concept id="1172424058054" name="jetbrains.mps.lang.smodel.structure.ConceptRefExpression" flags="nn" index="3TUQnm">
-        <reference id="1172424100906" name="conceptDeclaration" index="3TV0OU" />
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
@@ -363,8 +364,11 @@
               <node concept="Xl_RD" id="4hMIGYxkfr9" role="37wK5m">
                 <property role="Xl_RC" value="com.mbeddr.ext.concurrency.pthreads/main.main" />
               </node>
-              <node concept="3TUQnm" id="4hMIGYxkfra" role="37wK5m">
-                <ref role="3TV0OU" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+              <node concept="2OqwBi" id="4$iFLs5dr$v" role="37wK5m">
+                <node concept="35c_gC" id="4$iFLs5dpAk" role="2Oq$k0">
+                  <ref role="35c_gD" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                </node>
+                <node concept="FGMqu" id="4$iFLs5dsQX" role="2OqNvi" />
               </node>
             </node>
           </node>

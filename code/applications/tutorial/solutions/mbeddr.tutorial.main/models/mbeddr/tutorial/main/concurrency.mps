@@ -230,6 +230,7 @@
         <child id="562973772910397408" name="kind" index="3JZT99" />
       </concept>
       <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
+        <property id="6278950348356646560" name="priority" index="13fUqN" />
         <property id="4932209942850825261" name="taskID" index="3_dPry" />
         <child id="887092367621154837" name="wcet" index="3ziRRr" />
       </concept>
@@ -433,6 +434,7 @@
       <property role="TrG5h" value="sched" />
       <node concept="1NgRL0" id="1zeZsIba3xO" role="6qQK8">
         <property role="3_dPry" value="1" />
+        <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="1zeZsIba3x3" resolve="measure" />
         <node concept="6VUUj" id="6zcb4tIu9ms" role="6EqoZ">
           <node concept="3TlMh9" id="6zcb4tIu9mA" role="6VY68">
@@ -447,6 +449,7 @@
       </node>
       <node concept="3_amfM" id="1zeZsIba810" role="6qQK8">
         <property role="3_dPry" value="2" />
+        <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="1zeZsIba3xp" resolve="sumUp" />
         <node concept="6VUUj" id="7S1sqCuF84s" role="3ziRRr">
           <node concept="3TlMh9" id="7S1sqCuF84E" role="6VY68">
@@ -528,14 +531,14 @@
   <node concept="2v9HqL" id="73GSrjduqIQ">
     <property role="TrG5h" value="dummy" />
     <node concept="1NkVLJ" id="73GSrjdvOxd" role="2Q9xDr">
+      <node concept="1PVdNI" id="5G6Lb_PZWLY" role="1NkNSE">
+        <property role="3_8Cc9" value="true" />
+      </node>
       <node concept="1OId_O" id="73GSrjdvOxD" role="1OIqLV">
         <ref role="1OIdAa" node="1zeZsIba3xN" resolve="sched" />
       </node>
       <node concept="1OId_O" id="73GSrjdvOxL" role="1OIqLV">
         <ref role="1OIdAa" node="4hMIGYxmNE2" resolve="sched" />
-      </node>
-      <node concept="1PVdNI" id="5G6Lb_PZWLY" role="1NkNSE">
-        <property role="3_8Cc9" value="true" />
       </node>
     </node>
     <node concept="3_UEaq" id="73GSrjduqIR" role="2Q9xDr">
@@ -864,6 +867,7 @@
       <property role="TrG5h" value="sched" />
       <node concept="3_amfM" id="22CI9oafbHN" role="6qQK8">
         <property role="3_dPry" value="1" />
+        <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="4hMIGYxmNDe" resolve="measure" />
         <node concept="6VUUj" id="7S1sqCuF8KF" role="3ziRRr">
           <node concept="3TlMh9" id="7S1sqCuF8KT" role="6VY68">
@@ -873,6 +877,7 @@
       </node>
       <node concept="3_amfM" id="22CI9oafbHS" role="6qQK8">
         <property role="3_dPry" value="2" />
+        <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="4hMIGYxmNDv" resolve="summer" />
         <node concept="6VUUj" id="7S1sqCuF8N6" role="3ziRRr">
           <node concept="3TlMh9" id="7S1sqCuF8Nk" role="6VY68">

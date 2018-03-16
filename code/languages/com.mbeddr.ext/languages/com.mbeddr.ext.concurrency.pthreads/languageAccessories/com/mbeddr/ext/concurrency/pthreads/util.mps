@@ -2,11 +2,10 @@
 <model ref="r:db3de8e3-03eb-4b65-ac3c-d199e56b93bc(com.mbeddr.ext.concurrency.pthreads.util)" doNotGenerate="true">
   <persistence version="9" />
   <languages>
-    <devkit ref="fbc25dd2-5da4-483a-8b19-70928e1b62d7(jetbrains.mps.devkit.general-purpose)" />
+    <use id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions" version="3" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
   </languages>
   <imports>
-    <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
     <import index="b609" ref="r:efe52142-2859-43ed-9ac0-75009c205686(com.mbeddr.core.posix)" />
     <import index="3y0n" ref="r:d4d16117-20fb-4ba8-a1b2-1598e121e1d0(com.mbeddr.core.stdlib)" />
   </imports>
@@ -27,6 +26,9 @@
       </concept>
       <concept id="7763322639126652757" name="com.mbeddr.core.statements.structure.ITypeContainingType" flags="ng" index="2umbIr">
         <child id="7763322639126652758" name="baseType" index="2umbIo" />
+      </concept>
+      <concept id="8850915533694634145" name="com.mbeddr.core.statements.structure.InitExpression" flags="ng" index="3o3WLD">
+        <child id="8850915533694634146" name="elements" index="3o3WLE" />
       </concept>
       <concept id="7254843406768833938" name="com.mbeddr.core.statements.structure.ExpressionStatement" flags="ng" index="1_9egQ">
         <child id="7254843406768833939" name="expr" index="1_9egR" />
@@ -55,6 +57,7 @@
     </language>
     <language id="3bf5377a-e904-4ded-9754-5a516023bfaa" name="com.mbeddr.core.pointers">
       <concept id="5308710777891643206" name="com.mbeddr.core.pointers.structure.NullExpression" flags="ng" index="Ea8Gl" />
+      <concept id="6113173064526131575" name="com.mbeddr.core.pointers.structure.StringLiteral" flags="ng" index="PhEJO" />
       <concept id="1595838349830846141" name="com.mbeddr.core.pointers.structure.ReferenceExpr" flags="ng" index="YInwV" />
       <concept id="279446265608459824" name="com.mbeddr.core.pointers.structure.PointerType" flags="ng" index="3wxxNl" />
     </language>
@@ -152,6 +155,7 @@
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
+      <concept id="8463282783691618440" name="com.mbeddr.core.expressions.structure.Int32tType" flags="ng" index="26Vqph" />
       <concept id="8463282783691618466" name="com.mbeddr.core.expressions.structure.UnsignedInt16tType" flags="ng" index="26VqpV" />
       <concept id="8463282783691618426" name="com.mbeddr.core.expressions.structure.Int8tType" flags="ng" index="26Vqqz" />
       <concept id="3005510381523579442" name="com.mbeddr.core.expressions.structure.UnaryExpression" flags="ng" index="2aKSnQ">
@@ -179,6 +183,7 @@
       <concept id="22102029902365709" name="com.mbeddr.core.expressions.structure.AssignmentExpr" flags="ng" index="3pqW6w" />
       <concept id="8860443239512147449" name="com.mbeddr.core.expressions.structure.LessExpression" flags="ng" index="3Tl9Jn" />
       <concept id="8860443239512147445" name="com.mbeddr.core.expressions.structure.GreaterExpression" flags="ng" index="3Tl9Jr" />
+      <concept id="8860443239512129322" name="com.mbeddr.core.expressions.structure.EqualsExpression" flags="ng" index="3TlM44" />
       <concept id="8860443239512128058" name="com.mbeddr.core.expressions.structure.BooleanType" flags="ng" index="3TlMgk" />
       <concept id="8860443239512128054" name="com.mbeddr.core.expressions.structure.Type" flags="ng" index="3TlMgo">
         <property id="2941277002445651368" name="const" index="2c7vTL" />
@@ -1696,8 +1701,113 @@
     <node concept="2NXPZ9" id="7YbLqLw$NAW" role="N3F5h">
       <property role="TrG5h" value="empty_1439557859629_1" />
     </node>
-    <node concept="2NXPZ9" id="7YbLqLw$OpG" role="N3F5h">
-      <property role="TrG5h" value="empty_1439557860052_2" />
+    <node concept="N3Fnx" id="4$iFLs582ho" role="N3F5h">
+      <property role="2OOxQR" value="true" />
+      <property role="TrG5h" value="setPrio" />
+      <node concept="3XIRFW" id="4$iFLs582hq" role="3XIRFX">
+        <node concept="3XIRlf" id="4$iFLs582qN" role="3XIRFZ">
+          <property role="TrG5h" value="policy" />
+          <node concept="26Vqph" id="4$iFLs583oF" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+          </node>
+          <node concept="3TlMh9" id="4$iFLs58PRm" role="3XIe9u">
+            <property role="2hmy$m" value="0" />
+          </node>
+        </node>
+        <node concept="3XIRlf" id="4$iFLs582rz" role="3XIRFZ">
+          <property role="TrG5h" value="schedParam" />
+          <node concept="1sgJKr" id="4$iFLs582ry" role="2C2TGm">
+            <property role="2caQfQ" value="false" />
+            <property role="2c7vTL" value="false" />
+            <ref role="1sgJKq" to="b609:5ZBezCNei2t" resolve="sched_param" />
+          </node>
+          <node concept="3o3WLD" id="4$iFLs58QXh" role="3XIe9u">
+            <node concept="3TlMh9" id="4$iFLs58Rbi" role="3o3WLE">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="PhEJO" id="4$iFLs58RBM" role="3o3WLE" />
+          </node>
+        </node>
+        <node concept="c0U19" id="4$iFLs58Nwr" role="3XIRFZ">
+          <node concept="3XIRFW" id="4$iFLs58Nws" role="c0U17">
+            <node concept="1_9egQ" id="4$iFLs58Q52" role="3XIRFZ">
+              <node concept="3pqW6w" id="4$iFLs58Qja" role="1_9egR">
+                <node concept="3ZUYvv" id="4$iFLs58Qxd" role="3TlMhJ">
+                  <ref role="3ZUYvu" node="4$iFLs582pS" resolve="prio" />
+                </node>
+                <node concept="2qmXGp" id="4$iFLs58Q5b" role="3TlMhI">
+                  <node concept="1E4Tgc" id="4$iFLs58QiW" role="1ESnxz">
+                    <ref role="1E4Tge" to="b609:5ZBezCNei2A" resolve="sched_priority" />
+                  </node>
+                  <node concept="3ZVu4v" id="4$iFLs58Q51" role="1_9fRO">
+                    <ref role="3ZVs_2" node="4$iFLs582rz" resolve="schedParam" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="1_9egQ" id="4$iFLs58RQi" role="3XIRFZ">
+              <node concept="3O_q_g" id="4$iFLs58RQg" role="1_9egR">
+                <ref role="3O_q_h" to="b609:41BTkV3WhUb" resolve="pthread_setschedparam" />
+                <node concept="3ZUYvv" id="4$iFLs58RQA" role="3O_q_j">
+                  <ref role="3ZUYvu" node="4$iFLs583eL" resolve="thread" />
+                </node>
+                <node concept="3ZVu4v" id="4$iFLs58RRb" role="3O_q_j">
+                  <ref role="3ZVs_2" node="4$iFLs582qN" resolve="policy" />
+                </node>
+                <node concept="YInwV" id="4$iFLs58RT2" role="3O_q_j">
+                  <node concept="3ZVu4v" id="4$iFLs58S9l" role="1_9fRO">
+                    <ref role="3ZVs_2" node="4$iFLs582rz" resolve="schedParam" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3TlM44" id="4$iFLs58Pwo" role="c0U16">
+            <node concept="3TlMh9" id="4$iFLs58PE5" role="3TlMhJ">
+              <property role="2hmy$m" value="0" />
+            </node>
+            <node concept="3O_q_g" id="4$iFLs58Nx1" role="3TlMhI">
+              <ref role="3O_q_h" to="b609:41BTkV3WhUs" resolve="pthread_getschedparam" />
+              <node concept="3ZUYvv" id="4$iFLs58Nxe" role="3O_q_j">
+                <ref role="3ZUYvu" node="4$iFLs583eL" resolve="thread" />
+              </node>
+              <node concept="YInwV" id="4$iFLs58NxY" role="3O_q_j">
+                <node concept="3ZVu4v" id="4$iFLs58NFk" role="1_9fRO">
+                  <ref role="3ZVs_2" node="4$iFLs582qN" resolve="policy" />
+                </node>
+              </node>
+              <node concept="YInwV" id="4$iFLs58NQ6" role="3O_q_j">
+                <node concept="3ZVu4v" id="4$iFLs58NZb" role="1_9fRO">
+                  <ref role="3ZVs_2" node="4$iFLs582rz" resolve="schedParam" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="19Rifw" id="4$iFLs5828L" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
+      </node>
+      <node concept="19RgSI" id="4$iFLs583eL" role="1UOdpc">
+        <property role="TrG5h" value="thread" />
+        <node concept="rcJHQ" id="4$iFLs583eJ" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+          <ref role="rcJHT" to="b609:41BTkV3WhK1" resolve="pthread_t" />
+        </node>
+      </node>
+      <node concept="19RgSI" id="4$iFLs582pS" role="1UOdpc">
+        <property role="TrG5h" value="prio" />
+        <node concept="26Vqph" id="4$iFLs583Bl" role="2C2TGm">
+          <property role="2caQfQ" value="false" />
+          <property role="2c7vTL" value="false" />
+        </node>
+      </node>
+    </node>
+    <node concept="2NXPZ9" id="4$iFLs583KO" role="N3F5h">
+      <property role="TrG5h" value="empty_1521196575074_3" />
     </node>
     <node concept="N3Fnx" id="7YbLqLw$QCv" role="N3F5h">
       <property role="TrG5h" value="yieldTask" />
@@ -1737,6 +1847,9 @@
     </node>
     <node concept="3GEVxB" id="1o$bJoOURP7" role="2OODSX">
       <ref role="3GEb4d" to="3y0n:1o$bJoOV23_" resolve="errno" />
+    </node>
+    <node concept="3GEVxB" id="4$iFLs57v64" role="2OODSX">
+      <ref role="3GEb4d" to="b609:5ZBezCNei2g" resolve="sched" />
     </node>
   </node>
 </model>

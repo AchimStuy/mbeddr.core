@@ -53,6 +53,9 @@
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
+      <concept id="1207055528241" name="jetbrains.mps.lang.typesystem.structure.WarningStatement" flags="nn" index="a7r0C">
+        <child id="1207055552304" name="warningText" index="a7wSD" />
+      </concept>
       <concept id="1185788614172" name="jetbrains.mps.lang.typesystem.structure.NormalTypeClause" flags="ng" index="mw_s8">
         <child id="1185788644032" name="normalType" index="mwGJk" />
       </concept>
@@ -209,6 +212,37 @@
     <node concept="1YaCAy" id="42ri$nYm6vK" role="1YuTPh">
       <property role="TrG5h" value="node" />
       <ref role="1YaFvo" to="izv8:42ri$nYm5NG" resolve="TaskDataPointerExpression" />
+    </node>
+  </node>
+  <node concept="18kY7G" id="4$iFLs5doy5">
+    <property role="TrG5h" value="warnNoPriority" />
+    <node concept="3clFbS" id="4$iFLs5doy6" role="18ibNy">
+      <node concept="3clFbJ" id="4$iFLs5dYFc" role="3cqZAp">
+        <node concept="3clFbS" id="4$iFLs5dYFd" role="3clFbx">
+          <node concept="a7r0C" id="4$iFLs5doyh" role="3cqZAp">
+            <node concept="Xl_RD" id="4$iFLs5doz2" role="a7wSD">
+              <property role="Xl_RC" value="PlainCStrategy ignores Priorities." />
+            </node>
+            <node concept="1YBJjd" id="4$iFLs5dtfM" role="2OEOjV">
+              <ref role="1YBMHb" node="4$iFLs5doy8" resolve="iDeclaresTask" />
+            </node>
+          </node>
+        </node>
+        <node concept="2YIFZM" id="4$iFLs5dYFn" role="3clFbw">
+          <ref role="1Pybhc" to="wavu:6_bq3OpcT4B" resolve="ConcurrencyPlainCUtil" />
+          <ref role="37wK5l" to="wavu:6_bq3OpcVq3" resolve="isEnabled" />
+          <node concept="2OqwBi" id="4$iFLs5dYFo" role="37wK5m">
+            <node concept="1YBJjd" id="4$iFLs5dYLg" role="2Oq$k0">
+              <ref role="1YBMHb" node="4$iFLs5doy8" resolve="iDeclaresTask" />
+            </node>
+            <node concept="I4A8Y" id="4$iFLs5dYFq" role="2OqNvi" />
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="4$iFLs5doy8" role="1YuTPh">
+      <property role="TrG5h" value="iDeclaresTask" />
+      <ref role="1YaFvo" to="5wll:2ajpxDX4JWB" resolve="IDeclaresTask" />
     </node>
   </node>
 </model>
