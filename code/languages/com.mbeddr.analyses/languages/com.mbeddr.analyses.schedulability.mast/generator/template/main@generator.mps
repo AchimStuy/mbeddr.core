@@ -14,9 +14,10 @@
     <import index="qd6m" ref="r:c4c3f7d3-0acf-4671-a134-5fab66c4e637(com.mbeddr.core.modules.behavior)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="qozy" ref="r:38fcb48b-92c2-41af-9039-dc087bb8b822(com.mbeddr.ext.concurrency.behavior)" implicit="true" />
-    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
-    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="hwgx" ref="r:fd2980c8-676c-4b19-b524-18c70e02f8b7(com.mbeddr.core.base.behavior)" implicit="true" />
+    <import index="c17a" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.language(MPS.OpenAPI/)" implicit="true" />
+    <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
+    <import index="ywuz" ref="r:c6ce92e7-5a98-4a6f-866a-ec8b9e945dd8(com.mbeddr.core.expressions.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -179,12 +180,21 @@
         <child id="1216860049632" name="inputNode" index="1iwH7V" />
       </concept>
       <concept id="1216860049635" name="jetbrains.mps.lang.generator.generationContext.structure.TemplateFunctionParameter_generationContext" flags="nn" index="1iwH7S" />
+      <concept id="1217026863835" name="jetbrains.mps.lang.generator.generationContext.structure.GenerationContextOp_GetOriginalInputModel" flags="nn" index="1st3f0" />
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
       <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
+      <concept id="7453996997717780434" name="jetbrains.mps.lang.smodel.structure.Node_GetSConceptOperation" flags="nn" index="2yIwOk" />
+      <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
+        <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
+        <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
+      </concept>
+      <concept id="1171315804604" name="jetbrains.mps.lang.smodel.structure.Model_RootsOperation" flags="nn" index="2RRcyG">
+        <reference id="1171315804605" name="concept" index="2RRcyH" />
+      </concept>
       <concept id="1139621453865" name="jetbrains.mps.lang.smodel.structure.Node_IsInstanceOfOperation" flags="nn" index="1mIQ4w">
         <child id="1177027386292" name="conceptArgument" index="cj9EA" />
       </concept>
@@ -192,6 +202,10 @@
       <concept id="1180636770613" name="jetbrains.mps.lang.smodel.structure.SNodeCreator" flags="nn" index="3zrR0B">
         <child id="1180636770616" name="createdType" index="3zrR0E" />
       </concept>
+      <concept id="1219352745532" name="jetbrains.mps.lang.smodel.structure.NodeRefExpression" flags="nn" index="3B5_sB">
+        <reference id="1219352800908" name="referentNode" index="3B5MYn" />
+      </concept>
+      <concept id="1140137987495" name="jetbrains.mps.lang.smodel.structure.SNodeTypeCastExpression" flags="nn" index="1PxgMI" />
       <concept id="1138055754698" name="jetbrains.mps.lang.smodel.structure.SNodeType" flags="in" index="3Tqbb2">
         <reference id="1138405853777" name="concept" index="ehGHo" />
       </concept>
@@ -501,6 +515,68 @@
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1W57fq" id="40QtTSTEjX9" role="lGtFl">
+          <node concept="3IZrLx" id="40QtTSTEjXb" role="3IZSJc">
+            <node concept="3clFbS" id="40QtTSTEjXd" role="2VODD2">
+              <node concept="3clFbF" id="40QtTSTElGl" role="3cqZAp">
+                <node concept="2OqwBi" id="40QtTSTEknM" role="3clFbG">
+                  <node concept="2OqwBi" id="40QtTSTEknN" role="2Oq$k0">
+                    <node concept="2OqwBi" id="40QtTSTEknO" role="2Oq$k0">
+                      <node concept="2OqwBi" id="40QtTSTEknP" role="2Oq$k0">
+                        <node concept="1PxgMI" id="40QtTSTEknQ" role="2Oq$k0">
+                          <node concept="chp4Y" id="40QtTSTEknR" role="3oSUPX">
+                            <ref role="cht4Q" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                          </node>
+                          <node concept="2OqwBi" id="40QtTSTEknS" role="1m5AlR">
+                            <node concept="2OqwBi" id="40QtTSTEknT" role="2Oq$k0">
+                              <node concept="2OqwBi" id="40QtTSTEknU" role="2Oq$k0">
+                                <node concept="2OqwBi" id="40QtTSTEknV" role="2Oq$k0">
+                                  <node concept="1iwH7S" id="40QtTSTEknW" role="2Oq$k0" />
+                                  <node concept="1st3f0" id="40QtTSTEknX" role="2OqNvi" />
+                                </node>
+                                <node concept="2RRcyG" id="40QtTSTEknY" role="2OqNvi">
+                                  <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                                </node>
+                              </node>
+                              <node concept="1uHKPH" id="40QtTSTEknZ" role="2OqNvi" />
+                            </node>
+                            <node concept="2qgKlT" id="40QtTSTEko0" role="2OqNvi">
+                              <ref role="37wK5l" to="hwgx:3R$6B6bL1DB" resolve="findItemOfType" />
+                              <node concept="3B5_sB" id="40QtTSTEko1" role="37wK5m">
+                                <ref role="3B5MYn" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3TrEf2" id="40QtTSTEko2" role="2OqNvi">
+                          <ref role="3Tt5mk" to="5wll:12_KeTzXJV4" resolve="genStrategy" />
+                        </node>
+                      </node>
+                      <node concept="2yIwOk" id="40QtTSTEko3" role="2OqNvi" />
+                    </node>
+                    <node concept="liA8E" id="40QtTSTEko4" role="2OqNvi">
+                      <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                    </node>
+                  </node>
+                  <node concept="liA8E" id="40QtTSTEko5" role="2OqNvi">
+                    <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                    <node concept="Xl_RD" id="40QtTSTEko6" role="37wK5m">
+                      <property role="Xl_RC" value="PThreadsStrategy" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="gft3U" id="40QtTSTESwi" role="UU_$l">
+            <node concept="3RHq93" id="40QtTSTEmAw" role="gfFT$">
+              <property role="3RHqzv" value="true" />
+              <node concept="3t$O7h" id="40QtTSTEmA_" role="3RHqzt">
+                <property role="3t$O7g" value="1" />
               </node>
             </node>
           </node>
@@ -2361,6 +2437,78 @@
                 <node concept="3zrR0B" id="1ACOFG6p874" role="2ShVmc">
                   <node concept="3Tqbb2" id="1ACOFG6p876" role="3zrR0E">
                     <ref role="ehGHo" to="1a4w:6QMOzQK78Uo" resolve="Date" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="17Uvod" id="40QtTSTCJAK" role="lGtFl">
+      <property role="P4ACc" value="758b51c6-9c80-4abd-8309-d3b51619c9be/8761444038913435464/5287155957403573241" />
+      <property role="2qtEX9" value="systemPiPBehavior" />
+      <node concept="3zFVjK" id="40QtTSTCJAL" role="3zH0cK">
+        <node concept="3clFbS" id="40QtTSTCJAM" role="2VODD2">
+          <node concept="3clFbJ" id="40QtTSTDr1S" role="3cqZAp">
+            <node concept="3clFbS" id="40QtTSTDr1U" role="3clFbx">
+              <node concept="3cpWs6" id="40QtTSTDvIO" role="3cqZAp">
+                <node concept="Xl_RD" id="40QtTSTDw8V" role="3cqZAk">
+                  <property role="Xl_RC" value="POSIX" />
+                </node>
+              </node>
+            </node>
+            <node concept="2OqwBi" id="40QtTSTDu24" role="3clFbw">
+              <node concept="2OqwBi" id="40QtTSTDu25" role="2Oq$k0">
+                <node concept="2OqwBi" id="40QtTSTDu26" role="2Oq$k0">
+                  <node concept="2OqwBi" id="40QtTSTDu27" role="2Oq$k0">
+                    <node concept="1PxgMI" id="40QtTSTDu28" role="2Oq$k0">
+                      <node concept="chp4Y" id="40QtTSTDu29" role="3oSUPX">
+                        <ref role="cht4Q" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                      </node>
+                      <node concept="2OqwBi" id="40QtTSTDu2a" role="1m5AlR">
+                        <node concept="2OqwBi" id="40QtTSTDu2b" role="2Oq$k0">
+                          <node concept="2OqwBi" id="40QtTSTDu2c" role="2Oq$k0">
+                            <node concept="2OqwBi" id="40QtTSTDu2d" role="2Oq$k0">
+                              <node concept="1iwH7S" id="40QtTSTDu2e" role="2Oq$k0" />
+                              <node concept="1st3f0" id="40QtTSTDu2f" role="2OqNvi" />
+                            </node>
+                            <node concept="2RRcyG" id="40QtTSTDu2g" role="2OqNvi">
+                              <ref role="2RRcyH" to="51wr:6GqYvBOf2X8" resolve="BuildConfiguration" />
+                            </node>
+                          </node>
+                          <node concept="1uHKPH" id="40QtTSTDu2h" role="2OqNvi" />
+                        </node>
+                        <node concept="2qgKlT" id="40QtTSTDu2i" role="2OqNvi">
+                          <ref role="37wK5l" to="hwgx:3R$6B6bL1DB" resolve="findItemOfType" />
+                          <node concept="3B5_sB" id="40QtTSTDu2j" role="37wK5m">
+                            <ref role="3B5MYn" to="5wll:12_KeTzXBM1" resolve="ConcurrencyConfigItem" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3TrEf2" id="40QtTSTDu2k" role="2OqNvi">
+                      <ref role="3Tt5mk" to="5wll:12_KeTzXJV4" resolve="genStrategy" />
+                    </node>
+                  </node>
+                  <node concept="2yIwOk" id="40QtTSTDu2l" role="2OqNvi" />
+                </node>
+                <node concept="liA8E" id="40QtTSTDu2m" role="2OqNvi">
+                  <ref role="37wK5l" to="c17a:~SAbstractConcept.getName():java.lang.String" resolve="getName" />
+                </node>
+              </node>
+              <node concept="liA8E" id="40QtTSTDu2n" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.equalsIgnoreCase(java.lang.String):boolean" resolve="equalsIgnoreCase" />
+                <node concept="Xl_RD" id="40QtTSTDuMH" role="37wK5m">
+                  <property role="Xl_RC" value="PThreadsStrategy" />
+                </node>
+              </node>
+            </node>
+            <node concept="9aQIb" id="40QtTSTDE4J" role="9aQIa">
+              <node concept="3clFbS" id="40QtTSTDE4K" role="9aQI4">
+                <node concept="3cpWs6" id="40QtTSTDEoT" role="3cqZAp">
+                  <node concept="Xl_RD" id="40QtTSTDF1k" role="3cqZAk">
+                    <property role="Xl_RC" value="STRICT" />
                   </node>
                 </node>
               </node>

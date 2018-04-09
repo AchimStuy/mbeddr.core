@@ -601,7 +601,7 @@
     <ref role="M4eZT" to="tpck:fKAOsGN" resolve="string" />
     <node concept="M4N5e" id="_lLs7YS6Ox" role="M5hS2">
       <property role="1uS6qo" value="Non Preemptible Fixed Priority" />
-      <property role="1uS6qv" value="Non_Preemtible_FP_Policy" />
+      <property role="1uS6qv" value="Non_Preemptible_FP_Policy" />
     </node>
     <node concept="M4N5e" id="_lLs7YS6Oy" role="M5hS2">
       <property role="1uS6qo" value="Regular Preemptive Fixed Priority" />
