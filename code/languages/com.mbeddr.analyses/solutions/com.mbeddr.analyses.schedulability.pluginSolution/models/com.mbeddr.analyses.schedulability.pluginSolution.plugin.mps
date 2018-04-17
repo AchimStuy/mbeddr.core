@@ -2327,223 +2327,6 @@
       </node>
     </node>
   </node>
-  <node concept="312cEu" id="2Ze$eewbQRr">
-    <property role="TrG5h" value="MastAnalysisResult" />
-    <node concept="3Tm1VV" id="2Ze$eewbQRs" role="1B3o_S" />
-    <node concept="3uibUv" id="2Ze$eewbSbr" role="EKbjA">
-      <ref role="3uigEE" to="npwl:TJrbIN7de$" resolve="IAnalysisResult" />
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSdG" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getResultCategory" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3Tm1VV" id="2Ze$eewbSdI" role="1B3o_S" />
-      <node concept="17QB3L" id="2Ze$eewbSdJ" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSdL" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbV8O" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbV8P" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbVn6" role="3cqZAp">
-          <node concept="Xl_RD" id="2Ze$eewbVn5" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSdM" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSdN" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="TrG5h" value="getUserFriendlyMessage" />
-      <property role="od$2w" value="false" />
-      <property role="DiZV1" value="false" />
-      <property role="2aFKle" value="false" />
-      <node concept="3Tm1VV" id="2Ze$eewbSdP" role="1B3o_S" />
-      <node concept="17QB3L" id="2Ze$eewbSdQ" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSdS" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVnA" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVnB" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbV_S" role="3cqZAp">
-          <node concept="Xl_RD" id="2Ze$eewbV_R" role="3clFbG">
-            <property role="Xl_RC" value="" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSdT" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSdU" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getTimeInMillis" />
-      <node concept="3Tm1VV" id="2Ze$eewbSdW" role="1B3o_S" />
-      <node concept="3cpWsb" id="2Ze$eewbSdX" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSdZ" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVAb" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVAc" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbVOt" role="3cqZAp">
-          <node concept="3cmrfG" id="2Ze$eewbVOs" role="3clFbG">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSe0" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSe1" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isSuccess" />
-      <node concept="3Tm1VV" id="2Ze$eewbSe3" role="1B3o_S" />
-      <node concept="10P_77" id="2Ze$eewbSe4" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSe6" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVPH" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVPI" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbSe9" role="3cqZAp">
-          <node concept="3clFbT" id="2Ze$eewbSe8" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSe7" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSea" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isFail" />
-      <node concept="3Tm1VV" id="2Ze$eewbSec" role="1B3o_S" />
-      <node concept="10P_77" id="2Ze$eewbSed" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSef" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVQc" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVQd" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbSei" role="3cqZAp">
-          <node concept="3clFbT" id="2Ze$eewbSeh" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSeg" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSej" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isUnknown" />
-      <node concept="3Tm1VV" id="2Ze$eewbSel" role="1B3o_S" />
-      <node concept="10P_77" id="2Ze$eewbSem" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSeo" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVQs" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVQt" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbSer" role="3cqZAp">
-          <node concept="3clFbT" id="2Ze$eewbSeq" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSep" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSes" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isRuntimeError" />
-      <node concept="3Tm1VV" id="2Ze$eewbSeu" role="1B3o_S" />
-      <node concept="10P_77" id="2Ze$eewbSev" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSex" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVQG" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVQH" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbSe$" role="3cqZAp">
-          <node concept="3clFbT" id="2Ze$eewbSez" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSey" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSe_" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isCancel" />
-      <node concept="3Tm1VV" id="2Ze$eewbSeB" role="1B3o_S" />
-      <node concept="10P_77" id="2Ze$eewbSeC" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSeE" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVQW" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVQX" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbSeH" role="3cqZAp">
-          <node concept="3clFbT" id="2Ze$eewbSeG" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSeF" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSeI" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="isTimeout" />
-      <node concept="3Tm1VV" id="2Ze$eewbSeK" role="1B3o_S" />
-      <node concept="10P_77" id="2Ze$eewbSeL" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSeN" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVRc" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVRd" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbSeQ" role="3cqZAp">
-          <node concept="3clFbT" id="2Ze$eewbSeP" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSeO" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-    <node concept="3clFb_" id="2Ze$eewbSeR" role="jymVt">
-      <property role="1EzhhJ" value="false" />
-      <property role="2aFKle" value="false" />
-      <property role="TrG5h" value="getWhitnessSize" />
-      <node concept="3Tm1VV" id="2Ze$eewbSeT" role="1B3o_S" />
-      <node concept="10Oyi0" id="2Ze$eewbSeU" role="3clF45" />
-      <node concept="3clFbS" id="2Ze$eewbSeW" role="3clF47">
-        <node concept="3SKdUt" id="2Ze$eewbVRs" role="3cqZAp">
-          <node concept="3SKdUq" id="2Ze$eewbVRt" role="3SKWNk">
-            <property role="3SKdUp" value="TODO: Implement Method" />
-          </node>
-        </node>
-        <node concept="3clFbF" id="2Ze$eewbW5I" role="3cqZAp">
-          <node concept="3cmrfG" id="2Ze$eewbW5H" role="3clFbG">
-            <property role="3cmrfH" value="0" />
-          </node>
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="2Ze$eewbSeX" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
-      </node>
-    </node>
-  </node>
   <node concept="2VgMpV" id="2HdLl_UfEpg">
     <property role="TrG5h" value="EmptyPlan" />
     <node concept="19BiC4" id="2HdLl_UfRBL" role="2VgMA7">
@@ -8488,6 +8271,223 @@
         <node concept="1dT_AC" id="7pgr8iNU2a2" role="1dT_Ay">
           <property role="1dT_AB" value="" />
         </node>
+      </node>
+    </node>
+  </node>
+  <node concept="312cEu" id="2Ze$eewbQRr">
+    <property role="TrG5h" value="SchedulabilityAnalysisResult" />
+    <node concept="3Tm1VV" id="2Ze$eewbQRs" role="1B3o_S" />
+    <node concept="3uibUv" id="2Ze$eewbSbr" role="EKbjA">
+      <ref role="3uigEE" to="npwl:TJrbIN7de$" resolve="IAnalysisResult" />
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSdG" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getResultCategory" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="2Ze$eewbSdI" role="1B3o_S" />
+      <node concept="17QB3L" id="2Ze$eewbSdJ" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSdL" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbV8O" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbV8P" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbVn6" role="3cqZAp">
+          <node concept="Xl_RD" id="2Ze$eewbVn5" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSdM" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSdN" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="TrG5h" value="getUserFriendlyMessage" />
+      <property role="od$2w" value="false" />
+      <property role="DiZV1" value="false" />
+      <property role="2aFKle" value="false" />
+      <node concept="3Tm1VV" id="2Ze$eewbSdP" role="1B3o_S" />
+      <node concept="17QB3L" id="2Ze$eewbSdQ" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSdS" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVnA" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVnB" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbV_S" role="3cqZAp">
+          <node concept="Xl_RD" id="2Ze$eewbV_R" role="3clFbG">
+            <property role="Xl_RC" value="" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSdT" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSdU" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getTimeInMillis" />
+      <node concept="3Tm1VV" id="2Ze$eewbSdW" role="1B3o_S" />
+      <node concept="3cpWsb" id="2Ze$eewbSdX" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSdZ" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVAb" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVAc" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbVOt" role="3cqZAp">
+          <node concept="3cmrfG" id="2Ze$eewbVOs" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSe0" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSe1" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isSuccess" />
+      <node concept="3Tm1VV" id="2Ze$eewbSe3" role="1B3o_S" />
+      <node concept="10P_77" id="2Ze$eewbSe4" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSe6" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVPH" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVPI" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbSe9" role="3cqZAp">
+          <node concept="3clFbT" id="2Ze$eewbSe8" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSe7" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSea" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isFail" />
+      <node concept="3Tm1VV" id="2Ze$eewbSec" role="1B3o_S" />
+      <node concept="10P_77" id="2Ze$eewbSed" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSef" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVQc" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVQd" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbSei" role="3cqZAp">
+          <node concept="3clFbT" id="2Ze$eewbSeh" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSeg" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSej" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isUnknown" />
+      <node concept="3Tm1VV" id="2Ze$eewbSel" role="1B3o_S" />
+      <node concept="10P_77" id="2Ze$eewbSem" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSeo" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVQs" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVQt" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbSer" role="3cqZAp">
+          <node concept="3clFbT" id="2Ze$eewbSeq" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSep" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSes" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isRuntimeError" />
+      <node concept="3Tm1VV" id="2Ze$eewbSeu" role="1B3o_S" />
+      <node concept="10P_77" id="2Ze$eewbSev" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSex" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVQG" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVQH" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbSe$" role="3cqZAp">
+          <node concept="3clFbT" id="2Ze$eewbSez" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSey" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSe_" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isCancel" />
+      <node concept="3Tm1VV" id="2Ze$eewbSeB" role="1B3o_S" />
+      <node concept="10P_77" id="2Ze$eewbSeC" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSeE" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVQW" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVQX" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbSeH" role="3cqZAp">
+          <node concept="3clFbT" id="2Ze$eewbSeG" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSeF" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSeI" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="isTimeout" />
+      <node concept="3Tm1VV" id="2Ze$eewbSeK" role="1B3o_S" />
+      <node concept="10P_77" id="2Ze$eewbSeL" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSeN" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVRc" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVRd" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbSeQ" role="3cqZAp">
+          <node concept="3clFbT" id="2Ze$eewbSeP" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSeO" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="2Ze$eewbSeR" role="jymVt">
+      <property role="1EzhhJ" value="false" />
+      <property role="2aFKle" value="false" />
+      <property role="TrG5h" value="getWhitnessSize" />
+      <node concept="3Tm1VV" id="2Ze$eewbSeT" role="1B3o_S" />
+      <node concept="10Oyi0" id="2Ze$eewbSeU" role="3clF45" />
+      <node concept="3clFbS" id="2Ze$eewbSeW" role="3clF47">
+        <node concept="3SKdUt" id="2Ze$eewbVRs" role="3cqZAp">
+          <node concept="3SKdUq" id="2Ze$eewbVRt" role="3SKWNk">
+            <property role="3SKdUp" value="TODO: Implement Method" />
+          </node>
+        </node>
+        <node concept="3clFbF" id="2Ze$eewbW5I" role="3cqZAp">
+          <node concept="3cmrfG" id="2Ze$eewbW5H" role="3clFbG">
+            <property role="3cmrfH" value="0" />
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="2Ze$eewbSeX" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>
