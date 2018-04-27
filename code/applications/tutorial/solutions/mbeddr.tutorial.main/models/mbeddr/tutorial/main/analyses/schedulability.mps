@@ -15,6 +15,8 @@
     <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="0" />
     <use id="8c1a7e14-9520-42a4-a3a7-b15e523af156" name="com.mbeddr.ext.concurrency.pthreads" version="0" />
     <use id="758b51c6-9c80-4abd-8309-d3b51619c9be" name="com.mbeddr.analyses.schedulability.mast" version="0" />
+    <use id="d6943f81-8340-4661-9d57-8fc1e2d23b36" name="com.mbeddr.ext.concurrency.plainC" version="0" />
+    <use id="9ea02118-bfb2-46ec-b166-51704cdc545d" name="com.mbeddr.analyses.schedulability" version="0" />
   </languages>
   <imports />
   <registry>
@@ -98,6 +100,9 @@
       <concept id="6437088627575722831" name="com.mbeddr.core.modules.structure.IModuleContent" flags="ng" index="N3F5f">
         <property id="1317894735999272944" name="exported" index="2OOxQR" />
       </concept>
+      <concept id="6437088627575724001" name="com.mbeddr.core.modules.structure.Function" flags="ng" index="N3Fnx">
+        <child id="4185783222026475860" name="body" index="3XIRFX" />
+      </concept>
       <concept id="8934095934011938595" name="com.mbeddr.core.modules.structure.EmptyModuleContent" flags="ng" index="2NXPZ9" />
       <concept id="6610873504380357354" name="com.mbeddr.core.modules.structure.GlobalVarRef" flags="ng" index="1S7827">
         <reference id="6610873504380357355" name="var" index="1S7826" />
@@ -136,6 +141,12 @@
         <child id="6847490852670616471" name="kind" index="3Vb1WL" />
       </concept>
       <concept id="6847490852670653132" name="com.mbeddr.core.embedded.structure.EmulatedRegisterKind" flags="ng" index="3VbeTE" />
+    </language>
+    <language id="9ea02118-bfb2-46ec-b166-51704cdc545d" name="com.mbeddr.analyses.schedulability">
+      <concept id="7631312863508257505" name="com.mbeddr.analyses.schedulability.structure.SchedulabilityAnalysisConfigItem" flags="ng" index="26C8hW">
+        <property id="7631312863508258658" name="processor" index="26C87Z" />
+        <child id="7631312863508299021" name="worstContextSwitch" index="26C2eg" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -212,7 +223,9 @@
       </concept>
     </language>
     <language id="8c1a7e14-9520-42a4-a3a7-b15e523af156" name="com.mbeddr.ext.concurrency.pthreads">
-      <concept id="2549588765560351127" name="com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy" flags="ng" index="1PVdNI" />
+      <concept id="2549588765560351127" name="com.mbeddr.ext.concurrency.pthreads.structure.PThreadsStrategy" flags="ng" index="1PVdNI">
+        <property id="4932209942851500486" name="checkWCRT" index="3_8Cc9" />
+      </concept>
     </language>
     <language id="61c69711-ed61-4850-81d9-7714ff227fb0" name="com.mbeddr.core.expressions">
       <concept id="8463282783691618456" name="com.mbeddr.core.expressions.structure.UnsignedInt64tType" flags="ng" index="26Vqp1" />
@@ -289,7 +302,9 @@
       </node>
     </node>
     <node concept="1NkVLJ" id="1Siicpgv$UI" role="2Q9xDr">
-      <node concept="1PVdNI" id="1Siicpgv$UM" role="1NkNSE" />
+      <node concept="1PVdNI" id="1Siicpgv$UM" role="1NkNSE">
+        <property role="3_8Cc9" value="true" />
+      </node>
       <node concept="1OId_O" id="1SiicpgvLD2" role="1OIqLV">
         <ref role="1OIdAa" node="411U5_EsoCy" resolve="sched" />
       </node>
@@ -301,6 +316,14 @@
       </node>
       <node concept="1OId_O" id="1SiicpgvLDp" role="1OIqLV">
         <ref role="1OIdAa" node="1SiicpgvEJ8" resolve="sched" />
+      </node>
+    </node>
+    <node concept="26C8hW" id="6BBRDRJkPU6" role="2Q9xDr">
+      <property role="26C87Z" value="x86" />
+      <node concept="6VUUj" id="6BBRDRJkPUr" role="26C2eg">
+        <node concept="3TlMh9" id="6BBRDRJkPUD" role="6VY68">
+          <property role="2hmy$m" value="1" />
+        </node>
       </node>
     </node>
     <node concept="3_UEaq" id="1Siicpgv$UT" role="2Q9xDr">
@@ -340,6 +363,17 @@
       </node>
       <node concept="3cM6IN" id="1SiicpgvLga" role="lIfQt">
         <ref role="3cM6IK" node="1SiicpgvEJu" resolve="twoCyclicsTaskSignalTwoEventsTest" />
+      </node>
+    </node>
+    <node concept="N3Fnx" id="40QtTSTEgLD" role="N3F5h">
+      <property role="TrG5h" value="time" />
+      <property role="2OOxQR" value="true" />
+      <node concept="3XIRFW" id="40QtTSTEgLF" role="3XIRFX">
+        <node concept="3XISUE" id="40QtTSTEgLG" role="3XIRFZ" />
+      </node>
+      <node concept="19Rifw" id="40QtTSTEgLi" role="2C2TGm">
+        <property role="2caQfQ" value="false" />
+        <property role="2c7vTL" value="false" />
       </node>
     </node>
     <node concept="3GEVxB" id="1Siicpgv_vS" role="2OODSX">

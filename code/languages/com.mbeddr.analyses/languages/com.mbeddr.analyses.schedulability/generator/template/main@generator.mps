@@ -9,6 +9,7 @@
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" />
     <import index="x27k" ref="r:75ecab8a-8931-4140-afc6-4b46398710fc(com.mbeddr.core.modules.structure)" />
     <import index="5wll" ref="r:8bfc0edf-00dc-40ce-9659-fb90c9bd31c8(com.mbeddr.ext.concurrency.structure)" />
+    <import index="vb03" ref="r:57dafd20-26ef-48de-a428-b8c1bed3f04c(com.mbeddr.analyses.schedulability.util)" />
   </imports>
   <registry>
     <language id="13744753-c81f-424a-9c1b-cf8943bf4e86" name="jetbrains.mps.lang.sharedConcepts">
@@ -35,6 +36,10 @@
       <concept id="1070475926800" name="jetbrains.mps.baseLanguage.structure.StringLiteral" flags="nn" index="Xl_RD">
         <property id="1070475926801" name="value" index="Xl_RC" />
       </concept>
+      <concept id="1081236700937" name="jetbrains.mps.baseLanguage.structure.StaticMethodCall" flags="nn" index="2YIFZM">
+        <reference id="1144433194310" name="classConcept" index="1Pybhc" />
+      </concept>
+      <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <child id="1068431790190" name="initializer" index="33vP2m" />
       </concept>
@@ -59,10 +64,17 @@
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1204053956946" name="jetbrains.mps.baseLanguage.structure.IMethodCall" flags="ng" index="1ndlxa">
         <reference id="1068499141037" name="baseMethodDeclaration" index="37wK5l" />
+        <child id="1068499141038" name="actualArgument" index="37wK5m" />
       </concept>
       <concept id="1081773326031" name="jetbrains.mps.baseLanguage.structure.BinaryOperation" flags="nn" index="3uHJSO">
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
+      </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
+      <concept id="1163668896201" name="jetbrains.mps.baseLanguage.structure.TernaryOperatorExpression" flags="nn" index="3K4zz7">
+        <child id="1163668914799" name="condition" index="3K4Cdx" />
+        <child id="1163668922816" name="ifTrue" index="3K4E3e" />
+        <child id="1163668934364" name="ifFalse" index="3K4GZi" />
       </concept>
     </language>
     <language id="b401a680-8325-4110-8fd3-84331ff25bef" name="jetbrains.mps.lang.generator">
@@ -231,6 +243,50 @@
                   </node>
                   <node concept="3TrEf2" id="6GCmiwPe3t5" role="2OqNvi">
                     <ref role="3Tt5mk" to="1768:6GCmiwPe333" resolve="SchedSpec" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbH" id="6BBRDRJjfAf" role="3cqZAp" />
+            <node concept="3cpWs8" id="6BBRDRJjg2g" role="3cqZAp">
+              <node concept="3cpWsn" id="6BBRDRJjg2j" role="3cpWs9">
+                <property role="TrG5h" value="analysisConfig" />
+                <node concept="3Tqbb2" id="6BBRDRJjg2e" role="1tU5fm">
+                  <ref role="ehGHo" to="1768:6BBRDRJhPFx" resolve="SchedulabilityAnalysisConfigItem" />
+                </node>
+                <node concept="2YIFZM" id="6BBRDRJjghR" role="33vP2m">
+                  <ref role="37wK5l" to="vb03:1TgsdXQ1piQ" resolve="getConfigItem" />
+                  <ref role="1Pybhc" to="vb03:6_bq3OpcT4B" resolve="SchedulabilityAnalysisUtil" />
+                  <node concept="1Q6Npb" id="6BBRDRJjgig" role="37wK5m" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="6BBRDRJjeg4" role="3cqZAp">
+              <node concept="37vLTI" id="6BBRDRJjf5x" role="3clFbG">
+                <node concept="2OqwBi" id="6BBRDRJjeA4" role="37vLTJ">
+                  <node concept="37vLTw" id="6BBRDRJjeg2" role="2Oq$k0">
+                    <ref role="3cqZAo" node="7fBF14d7i5z" resolve="schedInfo" />
+                  </node>
+                  <node concept="3TrEf2" id="6BBRDRJjeGr" role="2OqNvi">
+                    <ref role="3Tt5mk" to="1768:6BBRDRJjd_q" resolve="analysisConfig" />
+                  </node>
+                </node>
+                <node concept="3K4zz7" id="6BBRDRJjgIY" role="37vLTx">
+                  <node concept="37vLTw" id="6BBRDRJjgLq" role="3K4E3e">
+                    <ref role="3cqZAo" node="6BBRDRJjg2j" resolve="analysisConfig" />
+                  </node>
+                  <node concept="2ShNRf" id="6BBRDRJjgNH" role="3K4GZi">
+                    <node concept="3zrR0B" id="6BBRDRJjkkX" role="2ShVmc">
+                      <node concept="3Tqbb2" id="6BBRDRJjkkZ" role="3zrR0E">
+                        <ref role="ehGHo" to="1768:6BBRDRJhPFx" resolve="SchedulabilityAnalysisConfigItem" />
+                      </node>
+                    </node>
+                  </node>
+                  <node concept="3y3z36" id="6BBRDRJjgxI" role="3K4Cdx">
+                    <node concept="10Nm6u" id="6BBRDRJjgBk" role="3uHU7w" />
+                    <node concept="37vLTw" id="6BBRDRJjgkM" role="3uHU7B">
+                      <ref role="3cqZAo" node="6BBRDRJjg2j" resolve="analysisConfig" />
+                    </node>
                   </node>
                 </node>
               </node>
