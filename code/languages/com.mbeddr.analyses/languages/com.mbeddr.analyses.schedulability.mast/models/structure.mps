@@ -671,11 +671,23 @@
     <property role="TrG5h" value="Operation" />
     <property role="3GE5qa" value="Operations" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6BBRDRJmwad" role="1TKVEi">
+      <property role="IQ2ns" value="7631312863509480077" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="bestCaseExecutionTime" />
+      <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
+    </node>
     <node concept="1TJgyj" id="4_vK5iD9Qou" role="1TKVEi">
       <property role="IQ2ns" value="5287155957403969054" />
       <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="WorstCaseExecutionTime" />
-      <property role="20lbJX" value="1" />
+      <property role="20kJfa" value="worstCaseExecutionTime" />
+      <property role="20lbJX" value="0..1" />
+      <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
+    </node>
+    <node concept="1TJgyj" id="6BBRDRJmwa9" role="1TKVEi">
+      <property role="IQ2ns" value="7631312863509480073" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="averageExecutionTime" />
       <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
     </node>
     <node concept="1TJgyj" id="6mpqQDsYJK_" role="1TKVEi">

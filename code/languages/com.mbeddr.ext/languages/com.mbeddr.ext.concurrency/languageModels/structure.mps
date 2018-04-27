@@ -453,12 +453,6 @@
     <property role="3GE5qa" value="schedule" />
     <property role="TrG5h" value="IDeclaresTask" />
     <property role="EcuMT" value="2491447282819596071" />
-    <node concept="1TJgyj" id="Lf_sVJ1ewl" role="1TKVEi">
-      <property role="IQ2ns" value="887092367621154837" />
-      <property role="20lmBu" value="aggregation" />
-      <property role="20kJfa" value="wcet" />
-      <ref role="20lvS9" node="6zcb4tI8Sbk" resolve="TimeWithUnit" />
-    </node>
     <node concept="1TJgyi" id="4hMIGYxhuKH" role="1TKVEl">
       <property role="TrG5h" value="taskID" />
       <property role="IQ2nx" value="4932209942850825261" />

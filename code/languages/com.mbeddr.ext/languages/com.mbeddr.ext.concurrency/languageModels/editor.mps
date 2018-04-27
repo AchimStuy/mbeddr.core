@@ -829,13 +829,6 @@
       <node concept="3F1sOY" id="6zcb4tIpoFu" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:4hMIGYwDDVd" resolve="offset" />
       </node>
-      <node concept="3F0ifn" id="Lf_sVJ1tSN" role="3EZMnx">
-        <property role="3F0ifm" value="with wcet" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
-      <node concept="3F1sOY" id="Lf_sVJ1ulx" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:Lf_sVJ1ewl" resolve="wcet" />
-      </node>
       <node concept="3F0ifn" id="6zcb4tIpoH0" role="3EZMnx">
         <property role="3F0ifm" value=";" />
         <ref role="1k5W1q" to="r4b4:2CEi94dhkRt" resolve="Semi" />
@@ -1139,13 +1132,6 @@
       </node>
       <node concept="3F0A7n" id="5szk1ck7g7k" role="3EZMnx">
         <ref role="1NtTu8" to="5wll:5szk1ck7fqw" resolve="priority" />
-      </node>
-      <node concept="3F0ifn" id="Lf_sVJ1ve2" role="3EZMnx">
-        <property role="3F0ifm" value="with wcet" />
-        <ref role="1k5W1q" to="r4b4:2CEi94dgHKA" resolve="KW" />
-      </node>
-      <node concept="3F1sOY" id="Lf_sVJ1vSe" role="3EZMnx">
-        <ref role="1NtTu8" to="5wll:Lf_sVJ1ewl" resolve="wcet" />
       </node>
       <node concept="3F0ifn" id="6zcb4tIvPiW" role="3EZMnx">
         <property role="3F0ifm" value=";" />

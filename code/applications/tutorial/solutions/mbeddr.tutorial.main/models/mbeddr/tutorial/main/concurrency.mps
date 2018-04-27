@@ -5,7 +5,6 @@
     <use id="0d04a6cc-773e-4069-b9b0-11884b2ff1c8" name="com.mbeddr.ext.units" version="-1" />
     <use id="783af01f-87a7-412c-be99-293a162652b5" name="com.mbeddr.core.embedded" version="-1" />
     <use id="ca9e3cd7-a4a7-4d94-943e-79c063754879" name="com.mbeddr.mpsutil.favourites" version="-1" />
-    <use id="758b51c6-9c80-4abd-8309-d3b51619c9be" name="com.mbeddr.analyses.schedulability.mast" version="0" />
     <devkit ref="d2a9c55c-6bdc-4cc2-97e1-4ba7552f5584(com.mbeddr.core)" />
     <devkit ref="aa72fbcf-7e79-465b-a4d9-4517ef4624ee(com.mbeddr.concurrency)" />
     <devkit ref="537c2fcd-71ef-4c92-a9e5-27af92b5182b(com.mbeddr.analyses.spin.mdcc)" />
@@ -232,7 +231,6 @@
       <concept id="2491447282819596071" name="com.mbeddr.ext.concurrency.structure.IDeclaresTask" flags="ng" index="1vwp$X">
         <property id="6278950348356646560" name="priority" index="13fUqN" />
         <property id="4932209942850825261" name="taskID" index="3_dPry" />
-        <child id="887092367621154837" name="wcet" index="3ziRRr" />
       </concept>
       <concept id="4932209942852262205" name="com.mbeddr.ext.concurrency.structure.BlockingConstraint" flags="ng" index="3_amfM" />
       <concept id="3933288758485159593" name="com.mbeddr.ext.concurrency.structure.TaskReference" flags="ng" index="1A7_vw">
@@ -441,21 +439,11 @@
             <property role="2hmy$m" value="100" />
           </node>
         </node>
-        <node concept="6VUUj" id="7S1sqCuF5Pg" role="3ziRRr">
-          <node concept="3TlMh9" id="7S1sqCuF82f" role="6VY68">
-            <property role="2hmy$m" value="50" />
-          </node>
-        </node>
       </node>
       <node concept="3_amfM" id="1zeZsIba810" role="6qQK8">
         <property role="3_dPry" value="2" />
         <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="1zeZsIba3xp" resolve="sumUp" />
-        <node concept="6VUUj" id="7S1sqCuF84s" role="3ziRRr">
-          <node concept="3TlMh9" id="7S1sqCuF84E" role="6VY68">
-            <property role="2hmy$m" value="40" />
-          </node>
-        </node>
       </node>
       <node concept="1NlFWL" id="4_vK5iD8khk" role="6qQK8">
         <node concept="6VUUj" id="4_vK5iD8khm" role="6GRza">
@@ -869,21 +857,11 @@
         <property role="3_dPry" value="1" />
         <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="4hMIGYxmNDe" resolve="measure" />
-        <node concept="6VUUj" id="7S1sqCuF8KF" role="3ziRRr">
-          <node concept="3TlMh9" id="7S1sqCuF8KT" role="6VY68">
-            <property role="2hmy$m" value="50" />
-          </node>
-        </node>
       </node>
       <node concept="3_amfM" id="22CI9oafbHS" role="6qQK8">
         <property role="3_dPry" value="2" />
         <property role="13fUqN" value="1" />
         <ref role="6qQL_" node="4hMIGYxmNDv" resolve="summer" />
-        <node concept="6VUUj" id="7S1sqCuF8N6" role="3ziRRr">
-          <node concept="3TlMh9" id="7S1sqCuF8Nk" role="6VY68">
-            <property role="2hmy$m" value="40" />
-          </node>
-        </node>
       </node>
       <node concept="1NlFWL" id="Lf_sVJ3Hn4" role="6qQK8">
         <node concept="6VUUj" id="Lf_sVJ3Hn6" role="6GRza">
