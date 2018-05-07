@@ -143,5 +143,33 @@
       <ref role="20lvS9" to="5wll:6zcb4tI8Sbk" resolve="TimeWithUnit" />
     </node>
   </node>
+  <node concept="1TIwiD" id="1X5ac6bVLaU">
+    <property role="EcuMT" value="2253252000310301370" />
+    <property role="TrG5h" value="ExternalEventConstraintAnnotation" />
+    <property role="34LRSv" value="externalEventConstraint" />
+    <ref role="1TJDcQ" to="tpck:2ULFgo8_XDk" resolve="NodeAttribute" />
+    <node concept="M6xJ_" id="1X5ac6bVLaV" role="lGtFl">
+      <property role="Hh88m" value="externalEventConstraint" />
+      <node concept="trNpa" id="1X5ac6bVLb1" role="EQaZv">
+        <ref role="trN6q" to="5wll:vg5qBCbSs6" resolve="EventDeclaration" />
+      </node>
+      <node concept="tn0Fv" id="1X5ac6bVLaX" role="HhnKV">
+        <property role="tnX3d" value="false" />
+      </node>
+    </node>
+    <node concept="1TJgyj" id="1X5ac6bVLaY" role="1TKVEi">
+      <property role="IQ2ns" value="2253252000310301374" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="minInterarrival" />
+      <property role="20lbJX" value="1" />
+      <ref role="20lvS9" to="5wll:6zcb4tI8Sbk" resolve="TimeWithUnit" />
+    </node>
+    <node concept="1TJgyj" id="1X5ac6bVLaZ" role="1TKVEi">
+      <property role="IQ2ns" value="2253252000310301375" />
+      <property role="20lmBu" value="aggregation" />
+      <property role="20kJfa" value="avgInterarrival" />
+      <ref role="20lvS9" to="5wll:6zcb4tI8Sbk" resolve="TimeWithUnit" />
+    </node>
+  </node>
 </model>
 

@@ -241,5 +241,58 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="1X5ac6bVLbe">
+    <ref role="1XX52x" to="1768:1X5ac6bVLaU" resolve="ExternalEventConstraintAnnotation" />
+    <node concept="3EZMnI" id="1X5ac6bVLbg" role="2wV5jI">
+      <node concept="3EZMnI" id="1X5ac6bVLbh" role="3EZMnx">
+        <ref role="1k5W1q" to="r4b4:2CEi94dprSJ" resolve="TextComment" />
+        <ref role="1ERwB7" node="1X5ac6bVPmn" resolve="deleteExternalEventConstraintAnnotation" />
+        <node concept="2iRfu4" id="1X5ac6bVLbi" role="2iSdaV" />
+        <node concept="3F0ifn" id="1X5ac6bVLbj" role="3EZMnx">
+          <property role="3F0ifm" value="//" />
+        </node>
+        <node concept="3F0ifn" id="1X5ac6bVLbk" role="3EZMnx">
+          <property role="3F0ifm" value="Interarrival:" />
+        </node>
+        <node concept="3F0ifn" id="1X5ac6bVLbl" role="3EZMnx">
+          <property role="3F0ifm" value="Minimum:" />
+        </node>
+        <node concept="3F1sOY" id="1X5ac6bVLbm" role="3EZMnx">
+          <ref role="1NtTu8" to="1768:1X5ac6bVLaY" resolve="minInterarrival" />
+        </node>
+        <node concept="3F0ifn" id="1X5ac6bVLbn" role="3EZMnx">
+          <property role="3F0ifm" value="," />
+          <node concept="11L4FC" id="1X5ac6bVLbo" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F0ifn" id="1X5ac6bVLbp" role="3EZMnx">
+          <property role="3F0ifm" value="Average:" />
+        </node>
+        <node concept="3F1sOY" id="1X5ac6bVLbq" role="3EZMnx">
+          <ref role="1NtTu8" to="1768:1X5ac6bVLaZ" resolve="avgInterarrival" />
+        </node>
+      </node>
+      <node concept="2iRkQZ" id="1X5ac6bVLbv" role="2iSdaV" />
+      <node concept="2SsqMj" id="1X5ac6bVLbw" role="3EZMnx" />
+    </node>
+  </node>
+  <node concept="1h_SRR" id="1X5ac6bVPmn">
+    <property role="TrG5h" value="deleteExternalEventConstraintAnnotation" />
+    <ref role="1h_SK9" to="1768:1X5ac6bVLaU" resolve="ExternalEventConstraintAnnotation" />
+    <node concept="1hA7zw" id="1X5ac6bVPmo" role="1h_SK8">
+      <property role="1hAc7j" value="delete_action_id" />
+      <node concept="1hAIg9" id="1X5ac6bVPmp" role="1hA7z_">
+        <node concept="3clFbS" id="1X5ac6bVPmq" role="2VODD2">
+          <node concept="3clFbF" id="1X5ac6bVPmr" role="3cqZAp">
+            <node concept="2OqwBi" id="1X5ac6bVPms" role="3clFbG">
+              <node concept="0IXxy" id="1X5ac6bVPmt" role="2Oq$k0" />
+              <node concept="3YRAZt" id="1X5ac6bVPmu" role="2OqNvi" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 

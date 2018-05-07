@@ -906,11 +906,11 @@
       <property role="20lbJX" value="1" />
       <ref role="20lvS9" node="6QMOzQK8OYj" resolve="Time" />
     </node>
-    <node concept="1TJgyj" id="4_vK5iD9bU1" role="1TKVEi">
-      <property role="IQ2ns" value="5287155957403795073" />
-      <property role="20lmBu" value="reference" />
+    <node concept="1TJgyj" id="7LwqQjNYJdP" role="1TKVEi">
+      <property role="IQ2ns" value="8962281339801498485" />
+      <property role="20lmBu" value="aggregation" />
       <property role="20kJfa" value="referencedEvent" />
-      <ref role="20lvS9" node="4_vK5iDaGhB" resolve="IEvent" />
+      <ref role="20lvS9" node="4Z5Uebl2YJ0" resolve="EventRef" />
     </node>
   </node>
   <node concept="AxPO7" id="4_vK5iD99$w">

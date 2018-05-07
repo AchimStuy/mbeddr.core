@@ -1474,23 +1474,36 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="Lf_sVJ2Ckg" role="3eOfB_">
-                  <node concept="lc7rE" id="Lf_sVJ2Dta" role="3cqZAp">
-                    <node concept="2BGw6n" id="7UKVONq$lPY" role="lcghm" />
-                    <node concept="la8eA" id="Lf_sVJ2Dtb" role="lcghm">
-                      <property role="lacIc" value="Avg_Interarrival =&gt; " />
+                  <node concept="3clFbJ" id="7LwqQjO14Kf" role="3cqZAp">
+                    <node concept="3clFbS" id="7LwqQjO14Kh" role="3clFbx">
+                      <node concept="lc7rE" id="Lf_sVJ2Dta" role="3cqZAp">
+                        <node concept="2BGw6n" id="7UKVONq$lPY" role="lcghm" />
+                        <node concept="la8eA" id="Lf_sVJ2Dtb" role="lcghm">
+                          <property role="lacIc" value="Avg_Interarrival =&gt; " />
+                        </node>
+                        <node concept="l9hG8" id="Lf_sVJ2Dtc" role="lcghm">
+                          <node concept="2OqwBi" id="Lf_sVJ2Dtd" role="lb14g">
+                            <node concept="117lpO" id="Lf_sVJ2Dte" role="2Oq$k0" />
+                            <node concept="3TrEf2" id="Lf_sVJ2Dtf" role="2OqNvi">
+                              <ref role="3Tt5mk" to="1a4w:4_vK5iD8n83" resolve="AvgInterarrival" />
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="la8eA" id="Lf_sVJ2Dtg" role="lcghm">
+                          <property role="lacIc" value="," />
+                        </node>
+                        <node concept="l8MVK" id="Lf_sVJ2Dth" role="lcghm" />
+                      </node>
                     </node>
-                    <node concept="l9hG8" id="Lf_sVJ2Dtc" role="lcghm">
-                      <node concept="2OqwBi" id="Lf_sVJ2Dtd" role="lb14g">
-                        <node concept="117lpO" id="Lf_sVJ2Dte" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="Lf_sVJ2Dtf" role="2OqNvi">
+                    <node concept="2OqwBi" id="7LwqQjO15$U" role="3clFbw">
+                      <node concept="2OqwBi" id="7LwqQjO14Z0" role="2Oq$k0">
+                        <node concept="117lpO" id="7LwqQjO14PZ" role="2Oq$k0" />
+                        <node concept="3TrEf2" id="7LwqQjO15ic" role="2OqNvi">
                           <ref role="3Tt5mk" to="1a4w:4_vK5iD8n83" resolve="AvgInterarrival" />
                         </node>
                       </node>
+                      <node concept="3x8VRR" id="7LwqQjO15Q9" role="2OqNvi" />
                     </node>
-                    <node concept="la8eA" id="Lf_sVJ2Dtg" role="lcghm">
-                      <property role="lacIc" value="," />
-                    </node>
-                    <node concept="l8MVK" id="Lf_sVJ2Dth" role="lcghm" />
                   </node>
                   <node concept="lc7rE" id="Lf_sVJ2Dti" role="3cqZAp">
                     <node concept="2BGw6n" id="7UKVONq$lUM" role="lcghm" />
@@ -1505,7 +1518,7 @@
                         </node>
                       </node>
                     </node>
-                    <node concept="la8eA" id="Lf_sVJ2Dto" role="lcghm">
+                    <node concept="la8eA" id="1w0uLaA0FIn" role="lcghm">
                       <property role="lacIc" value="," />
                     </node>
                     <node concept="l8MVK" id="Lf_sVJ2Dtp" role="lcghm" />
@@ -2440,15 +2453,10 @@
                     <property role="lacIc" value="Referenced_Event =&gt; " />
                   </node>
                   <node concept="l9hG8" id="6n_fD0ucc3t" role="lcghm">
-                    <node concept="2OqwBi" id="6n_fD0uccBr" role="lb14g">
-                      <node concept="2OqwBi" id="6n_fD0uccd5" role="2Oq$k0">
-                        <node concept="117lpO" id="6n_fD0ucc4p" role="2Oq$k0" />
-                        <node concept="3TrEf2" id="6n_fD0uccl9" role="2OqNvi">
-                          <ref role="3Tt5mk" to="1a4w:4_vK5iD9bU1" resolve="referencedEvent" />
-                        </node>
-                      </node>
-                      <node concept="3TrcHB" id="6n_fD0uccXt" role="2OqNvi">
-                        <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                    <node concept="2OqwBi" id="6n_fD0uccd5" role="lb14g">
+                      <node concept="117lpO" id="6n_fD0ucc4p" role="2Oq$k0" />
+                      <node concept="3TrEf2" id="7LwqQjO1bZl" role="2OqNvi">
+                        <ref role="3Tt5mk" to="1a4w:7LwqQjNYJdP" resolve="referencedEvent" />
                       </node>
                     </node>
                   </node>

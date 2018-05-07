@@ -1967,7 +1967,7 @@
           <node concept="3F2HdR" id="4_vK5iDa6A6" role="3EZMnx">
             <property role="S$F3r" value="true" />
             <ref role="1NtTu8" to="1a4w:4_vK5iD8mQK" resolve="externalEvents" />
-            <node concept="l2Vlx" id="4_vK5iDc4d1" role="2czzBx" />
+            <node concept="2iRkQZ" id="1w0uLa_ZnP1" role="2czzBx" />
             <node concept="lj46D" id="4_vK5iDcd1q" role="3F10Kt">
               <property role="VOm3f" value="true" />
             </node>
@@ -1985,6 +1985,7 @@
             <property role="3F0ifm" value="Internal Events =&gt;" />
           </node>
           <node concept="3F2HdR" id="4_vK5iDa6Aj" role="3EZMnx">
+            <property role="S$F3r" value="true" />
             <ref role="1NtTu8" to="1a4w:4_vK5iD8mQI" resolve="internalEvents" />
             <node concept="2iRkQZ" id="4_vK5iDa6At" role="2czzBx" />
             <node concept="lj46D" id="4_vK5iDcd1A" role="3F10Kt">
@@ -2309,14 +2310,8 @@
         <node concept="3F0ifn" id="Lf_sVIXvWM" role="3EZMnx">
           <property role="3F0ifm" value="Referenced Event =&gt;" />
         </node>
-        <node concept="1iCGBv" id="Lf_sVIXwd$" role="3EZMnx">
-          <ref role="1NtTu8" to="1a4w:4_vK5iD9bU1" resolve="referencedEvent" />
-          <node concept="1sVBvm" id="Lf_sVIXwdA" role="1sWHZn">
-            <node concept="3F0A7n" id="Lf_sVIXwdI" role="2wV5jI">
-              <property role="1Intyy" value="true" />
-              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-            </node>
-          </node>
+        <node concept="3F1sOY" id="7LwqQjNYWKp" role="3EZMnx">
+          <ref role="1NtTu8" to="1a4w:7LwqQjNYJdP" resolve="referencedEvent" />
         </node>
         <node concept="2iRfu4" id="Lf_sVIXvWO" role="2iSdaV" />
         <node concept="pkWqt" id="Lf_sVIXwef" role="pqm2j">
