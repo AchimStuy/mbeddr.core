@@ -64,6 +64,7 @@
         <module reference="1e7c1f95-336c-4cec-b00e-8cc6e0c2b265(com.mbeddr.mpsutil.preferenceform)" version="0" />
         <module reference="7d01d37a-2398-4f30-a95d-7e42e5f56c19(com.mbeddr.mpsutil.preferenceform#4354378109086982949)" version="0" />
         <module reference="32addf6f-1f14-40cb-991d-e0fddb7506c1(com.mbeddr.mpsutil.preferenceform.runtime)" version="0" />
+        <module reference="ae441f5b-4037-4c89-8804-269f57e2feb1(com.mbeddr.mpsutil.toolrunner)" version="0" />
         <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
         <module reference="985c8c6a-64b4-486d-a91e-7d4112742556(jetbrains.mps.baseLanguage#1129914002933)" version="0" />
         <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
