@@ -151,6 +151,9 @@
         <child id="7631312863509329536" name="worstCase" index="26G6wt" />
         <child id="7631312863509329538" name="bestCase" index="26G6wv" />
       </concept>
+      <concept id="2253252000310301370" name="com.mbeddr.analyses.schedulability.structure.ExternalEventConstraintAnnotation" flags="ng" index="2kEzDV">
+        <child id="2253252000310301374" name="minInterarrival" index="2kEzDZ" />
+      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
@@ -1825,8 +1828,16 @@
   <node concept="N3F5e" id="7LwqQjNYwK6">
     <property role="TrG5h" value="ExternalEvent" />
     <node concept="3JZTaJ" id="7LwqQjNYz4l" role="N3F5h">
-      <property role="TrG5h" value="SignalDoSth" />
+      <property role="TrG5h" value="signalSth" />
       <property role="2OOxQR" value="true" />
+      <node concept="2kEzDV" id="3x2RaBDka62" role="lGtFl">
+        <node concept="6VUUj" id="3x2RaBDkpPv" role="2kEzDZ">
+          <property role="6VZRi" value="s" />
+          <node concept="3TlMh9" id="3x2RaBDkpPH" role="6VY68">
+            <property role="2hmy$m" value="1" />
+          </node>
+        </node>
+      </node>
     </node>
     <node concept="2NXPZ9" id="7LwqQjNYz4b" role="N3F5h">
       <property role="TrG5h" value="empty_1525713112390_8" />
@@ -1837,7 +1848,7 @@
       <node concept="3JSqjV" id="7LwqQjNYyX1" role="3JZT99" />
       <node concept="3XIRFW" id="7LwqQjNYyWW" role="1iABvq">
         <node concept="3JSqjh" id="7LwqQjNYz4z" role="3XIRFZ">
-          <ref role="3JSqIK" node="7LwqQjNYz4l" resolve="SignalDoSth" />
+          <ref role="3JSqIK" node="7LwqQjNYz4l" resolve="signalSth" />
         </node>
       </node>
     </node>
